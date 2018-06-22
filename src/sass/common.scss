@@ -20,6 +20,8 @@ html,body{
 
 .navbar{
   background-color: $headercolor;
+  height: 60px;
+  margin-bottom: 0;
   @include borderadius(0)
 }
 .navbar-nav{
@@ -50,6 +52,50 @@ html,body{
         background-color: $headercolor;
       }
     }
+  }
+}
+
+
+//左侧导航部分
+$leftNavBGColor:#fff;
+$activeBGColor:skyBlue;
+$activeLineColor:pink;
+$LeftNavFontColor:#000;
+
+.left-nav{
+  position: fixed;
+  width: 200px;
+  left: 0;
+  top: 60px;
+  bottom: 0;
+  padding-top: 20px;
+  background-color: $leftNavBGColor;
+  .nav >li>a:hover,.nav >li.active>a{
+    background-color: $activeBGColor!important;
+    color: $leftNavBGColor!important;
+    :after{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background-color: $activeLineColor;
+    }
+  }
+  .nav >li.active>a, .nav >li>a{
+    position: relative;
+    padding: 0 15px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    color: $LeftNavFontColor;
+    img{
+      margin-right: 10px;
+    }
+  }
+  .nav li a:focus{
+    background-color: #fff;
   }
 }
 
