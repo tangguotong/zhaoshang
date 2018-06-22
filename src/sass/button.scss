@@ -1,0 +1,71 @@
+/**
+ Created by ayun 2018.6.20
+ */
+
+@import "_common_var";
+
+.btn{
+  color: #fff;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  outline: none !important;
+  .iconfont{
+    font-size: inherit;
+  }
+}
+
+.btn-group .btn {
+  padding-left: 5px;
+}
+
+.btn-fill-gray{
+  color: $btngray-text;
+  text-align: center;
+  border-color: $btngray;
+  @include borderadius(30px);
+  &:hover,
+  &:focus,
+  &:active{
+    color: $btngray-text;
+  }
+}
+
+.btn-blue {
+  border-color: $btncolor;
+  background-color: $btncolor;
+  text-align: center;
+  @include borderadius(4px);
+  &:hover,
+  &:focus,
+  &:active{
+    color: #fff;
+  }
+}
+
+.btn-orange{
+  background-color: $btnorang;
+  border-color: $btnorang;
+  text-align: center;
+  @include borderadius(4px);
+  &:hover,
+  &:focus,
+  &:active{
+    color: #fff;
+  }
+}
+
+.btn-fill-blue{
+  color: $btncolor;
+  border-color: $btncolor;
+  background-color: #E3F4FF;
+  text-align: center;
+  @include borderadius(2px);
+  &:hover,
+  &:focus,
+  &:active{
+    color: $btncolor;
+  }
+}
+
+
