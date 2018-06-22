@@ -1,0 +1,22 @@
+/**
+  Created by ayun 2018.6.21
+ */
+
+$btncolor: #2a93ed;
+$btnorang: #FD771E;
+$btngray: #ccc;
+$btngray-text: #484848;
+$headercolor:#26303a;
+$white:#fff;
+$bodycolor: #f1f4f6;
+$fontcolor:#000;
+
+@mixin borderadius($size){
+  -webkit-border-radius: $size;
+  -moz-border-radius: $size;
+  border-radius: $size;
+}
+
+@mixin fullScreen{
+    height: 100%;
+}

@@ -1,0 +1,56 @@
+/**
+  Created by ayun 2018.6.21
+ */
+
+@import "zui";
+@import "_common_var";
+@import "button";
+
+
+body{
+  position: relative;
+  background-color: $bodycolor;
+  color: $fontcolor;
+  -webkit-text-size-adjust: 100%;
+}
+html,body{
+  @include fullScreen;
+}
+/*header部分*/
+
+.navbar{
+  background-color: $headercolor;
+  @include borderadius(0)
+}
+.navbar-nav{
+  >li{
+    >a{
+      padding: 20px;
+      color: $white;
+      font-size: 16px;
+      &:hover,
+      &:focus,
+      &:active{
+        background-color: $btncolor;
+      }
+    }
+  }
+}
+
+.navbar-right{
+  >li{
+    >a{
+      >span,iconfont{
+        font-size: 14px;
+        color: $btngray;
+      }
+      &:hover,
+      &:focus,
+      &:active{
+        background-color: $headercolor;
+      }
+    }
+  }
+}
+
+
