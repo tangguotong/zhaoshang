@@ -1,0 +1,160 @@
+<!DOCTYPE html >
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>唐</title>
+
+
+    <link rel="stylesheet" href="../vendor/bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../vendor/bootstrap-select-1.12.2/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../vendor/icheck/skins/flat/blue.css">
+    <link rel="stylesheet" href="../css/tang.css">
+</head>
+<body>
+
+
+<h3>筛选和搜索框</h3>
+
+<div class="panel">
+    <div class="panel-heading clearfix">
+        <!--标题-->
+        <span class="panel-title">线索库</span>
+        <!--搜索框-->
+        <div class="input-group pull-right col-md-3">
+            <input type="text" class="form-control" placeholder="请输入搜索关键词">
+            <span class="input-group-btn">
+						<button class="btn btn-default" type="button">
+							搜索
+						</button>
+					</span>
+        </div>
+
+    </div>
+
+    <div class="panel-body">
+        <div class="search-box">
+            <div class="item">
+                <div class="item-title">标题</div>
+                <ul class="item-list clearfix">
+                    <li class="active">1234</li>
+                    <li>1234</li>
+                    <li>
+                        <input type="text" class="date-select" placeholder="自定义时间" id="date">
+                    </li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="item-title">标题</div>
+                <ul class="item-list">
+                    <li>
+                        <select class="selectpicker" name="">
+                            <option value="">456789</option>
+                        </select>
+                    </li>
+                    <li>1234</li>
+                    <li>1234</li>
+                    <li>1234</li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="item-title">标题</div>
+                <ul class="item-list clearfix">
+                    <li>1234</li>
+                    <li>1234</li>
+                    <li>1234</li>
+
+                </ul>
+            </div>
+            <div class="item">
+                <div class="item-title">标题</div>
+                <ul class="item-list clearfix">
+                    <li>1234</li>
+                    <li>1234</li>
+                    <li>1234</li>
+
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+<h3>tab切换结合panel</h3>
+<div class="panel">
+    <div class="panel-heading">
+        <div class="tab-search clearfix">
+            <ul id="myTab" class="nav nav-tabs pull-left nav-my-style ">
+                <li class="active">
+                    <a href="#tab0" data-toggle="tab">
+                        项目热度分布
+                    </a>
+                </li>
+                <li>
+                    <a href="#tab1" data-toggle="tab">排行分布</a>
+                </li>
+                <li>
+                    <a href="#tab2" data-toggle="tab">落地页分析</a>
+                </li>
+                <li>
+                    <a href="#tab3" data-toggle="tab">终端设备分析</a>
+                </li>
+
+            </ul>
+
+            <div class="input-group pull-right col-md-3">
+                <input type="text" class="form-control" placeholder="请输入搜索关键词">
+                <span class="input-group-btn">
+						<button class="btn btn-default" type="button">
+							搜索
+						</button>
+					</span>
+            </div>
+        </div>
+    </div>
+    <div class="panel-body">
+
+        <!--切换头-->
+
+        <!--切换体-->
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade in active" id="tab0">
+                000
+
+            </div>
+            <div class="tab-pane fade" id="tab1">
+                123
+            </div>
+            <div class="tab-pane fade" id="tab2">
+                456
+            </div>
+            <div class="tab-pane fade" id="tab3">
+                789
+            </div>
+        </div>
+    </div>
+</div>
+
+<h3>icheck选择</h3>
+<div class="panel">
+    <div class="panel-body">
+        <input type="checkbox" class="icheck">
+    </div>
+</div>
+
+
+</body>
+<script src="../vendor/jquery.min.js"></script>
+<script src="../vendor/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script src="../vendor/bootstrap-select-1.12.2/js/bootstrap-select.js"></script>
+<script src="../vendor/icheck/icheck.min.js"></script>
+<script>
+    $(function(){
+        $('.icheck').iCheck({
+            checkboxClass: 'icheckbox_flat-blue',
+            radioClass: 'iradio_flat-blue'
+        });
+    })
+</script>
+</html>

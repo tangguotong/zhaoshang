@@ -1,0 +1,130 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+ul,li{
+  list-style: none;
+  padding: 0;
+}
+
+
+
+//定义变量
+$activeBlueColor:#2a93ed;
+$tabNormalColor:#808080;
+$darkBlack:#333;
+body{
+  background-color: #eaeaea;
+}
+//筛选
+.search-box{
+  background-color: #fff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  .item{
+    position: relative;
+    padding: 0 10px 0 100px;
+    border-bottom: 1px dotted #dddddd;
+    font-size: 14px;
+    .item-title{
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: inline-block;
+      width: 100px;
+      padding: 8px 0 8px 10px;
+      color: $tabNormalColor;
+    }
+    .item-list{
+      display: inline-block;
+      margin-bottom: 0;
+      vertical-align: middle;
+      li{
+        float: left;
+        width: 100px;
+        padding: 8px 5px;
+        text-align: left;
+        color: $darkBlack;
+        cursor: pointer;
+        font-size: 14px;
+        input{
+          border: none;
+          outline: none;
+          font-size: 14px;
+        }
+      //  placeHold的颜色
+        input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+          color: $darkBlack;
+        }
+        input:-moz-placeholder, textarea:-moz-placeholder {
+          color: $darkBlack;
+        }
+        input::-moz-placeholder, textarea::-moz-placeholder {
+          color: $darkBlack;
+        }
+        input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+          color: $darkBlack;
+        }
+
+      }
+      li.active{
+        color: $activeBlueColor;
+        label{
+          color: $activeBlueColor;
+        }
+      }
+    }
+  }
+}
+//面板
+.panel-heading{
+    .panel-title{
+      line-height: 34px;
+    }
+}
+//tab
+.nav-my-style{
+  margin-bottom: 20px;
+  border: none;
+  li{
+    margin-right: 15px;
+    :last-child{
+      margin-right: 0;
+    }
+    a,
+    a:hover,
+    a:active,
+    a:focus,
+    a.active,
+    a:visited{
+      color: $tabNormalColor;
+      border: none;
+      background-color: #fff;
+    }
+  }
+  li:hover,li.active
+  {
+    a,
+    a:hover,
+    a:active,
+    a:focus,
+    a.active,
+    a:visited{
+      color: $activeBlueColor;
+      background-color: #fff;
+      border: none;
+    }
+    :after{
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      right: 0;
+      height: 4px;
+      width: 100%;
+      background-color: #2a93ed;
+    }
+  }
+
+}
+
