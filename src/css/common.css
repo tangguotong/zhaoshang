@@ -116,7 +116,7 @@ pre {
   Created by ayun 2018.6.21
  */
 .btn {
-  color: #fff;
+  color: #000;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
@@ -125,10 +125,6 @@ pre {
 
 .btn .iconfont {
   font-size: inherit;
-}
-
-.btn-group .btn {
-  padding-left: 5px;
 }
 
 .btn-fill-gray {

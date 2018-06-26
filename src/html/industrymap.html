@@ -16,10 +16,12 @@
     <meta name="keywords" content="产业地图">
     <title>产业图谱-产业地图</title>
     <link rel="stylesheet" href="../vendor/bootstrap-3.3.7/css/bootstrap.css">
-    <link rel="stylesheet" href="../vendor/bootstrap-3.3.7/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="../vendor/bootstrap-select-1.12.2/css/bootstrap-select.css">
     <link rel="stylesheet" href="../vendor/iconfont/iconfont.css">
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/button.css">
     <link rel="stylesheet" href="../css/left_nav.css">
+    <link rel="stylesheet" href="../css/panel.css">
     <!--[if lt IE 9]>
     <script src="../vendor/html5shiv_3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -112,8 +114,34 @@
                             <h3 class="panel-title">
                                 产业地图集群热力图
                                 <div class="pull-right">
-                                    <div class="">
-
+                                    <from class="form-inline form">
+                                        <select class="selectpicker" title="第一产业">
+                                            <option value=""></option>
+                                        </select>
+                                        <select class="selectpicker" title="一级分类">
+                                            <option value=""></option>
+                                        </select>
+                                        <select class="selectpicker" title="二级分类">
+                                            <option value=""></option>
+                                        </select>
+                                        <select class="selectpicker" title="三级分类">
+                                            <option value=""></option>
+                                        </select>
+                                        <select class="selectpicker" title="四级分类">
+                                            <option value=""></option>
+                                        </select>
+                                    </from>
+                                    <div class="operate">
+                                        <ul>
+                                            <li>
+                                                <i class="iconfont icon-zidingyibiaodan"></i>
+                                                保存
+                                            </li>
+                                            <li>
+                                                <i class="iconfont icon-quanping"></i>
+                                                全屏
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </h3>
@@ -125,266 +153,15 @@
                                 </div>
                                 <div class="col-md-3">
                                     <div class="panel panel-line-primary">
-                                        <!--<div class="panel-body">-->
+                                        <div class="panel-body">
 
-                                        <!--</div>-->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12">
-                    <div class="panel panel-line-primary">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">
-                                产业地图集群热力图
-                                <div class="pull-right">
-                                    <div class="">
-
-                                    </div>
-                                </div>
-                            </h3>
-                        </div>
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-md-9">
-                                    <div class="echarts" id="map"></div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="panel panel-line-primary">
-                                        <!--<div class="panel-body">-->
-
-                                        <!--</div>-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="panel panel-line-primary">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">
-                                产业地图集群热力图
-                                <div class="pull-right">
-                                    <div class="">
-
-                                    </div>
-                                </div>
-                            </h3>
-                        </div>
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-md-9">
-                                    <div class="echarts" id="map"></div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="panel panel-line-primary">
-                                        <!--<div class="panel-body">-->
-
-                                        <!--</div>-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="panel panel-line-primary">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">
-                                产业地图集群热力图
-                                <div class="pull-right">
-                                    <div class="">
-
-                                    </div>
-                                </div>
-                            </h3>
-                        </div>
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-md-9">
-                                    <div class="echarts" id="map"></div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="panel panel-line-primary">
-                                        <!--<div class="panel-body">-->
-
-                                        <!--</div>-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="panel panel-line-primary">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">
-                                产业地图集群热力图
-                                <div class="pull-right">
-                                    <div class="">
-
-                                    </div>
-                                </div>
-                            </h3>
-                        </div>
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-md-9">
-                                    <div class="echarts" id="map"></div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="panel panel-line-primary">
-                                        <!--<div class="panel-body">-->
-
-                                        <!--</div>-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="panel panel-line-primary">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">
-                                产业地图集群热力图
-                                <div class="pull-right">
-                                    <div class="">
-
-                                    </div>
-                                </div>
-                            </h3>
-                        </div>
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-md-9">
-                                    <div class="echarts" id="map"></div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="panel panel-line-primary">
-                                        <!--<div class="panel-body">-->
-
-                                        <!--</div>-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="panel panel-line-primary">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">
-                                产业地图集群热力图
-                                <div class="pull-right">
-                                    <div class="">
-
-                                    </div>
-                                </div>
-                            </h3>
-                        </div>
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-md-9">
-                                    <div class="echarts" id="map"></div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="panel panel-line-primary">
-                                        <!--<div class="panel-body">-->
-
-                                        <!--</div>-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="panel panel-line-primary">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">
-                                产业地图集群热力图
-                                <div class="pull-right">
-                                    <div class="">
-
-                                    </div>
-                                </div>
-                            </h3>
-                        </div>
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-md-9">
-                                    <div class="echarts" id="map"></div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="panel panel-line-primary">
-                                        <!--<div class="panel-body">-->
-
-                                        <!--</div>-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="panel panel-line-primary">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">
-                                产业地图集群热力图
-                                <div class="pull-right">
-                                    <div class="">
-
-                                    </div>
-                                </div>
-                            </h3>
-                        </div>
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-md-9">
-                                    <div class="echarts" id="map"></div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="panel panel-line-primary">
-                                        <!--<div class="panel-body">-->
-
-                                        <!--</div>-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> <div class="col-md-12">
-                <div class="panel panel-line-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">
-                            产业地图集群热力图
-                            <div class="pull-right">
-                                <div class="">
-
-                                </div>
-                            </div>
-                        </h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="row">
-                            <div class="col-md-9">
-                                <div class="echarts" id="map"></div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="panel panel-line-primary">
-                                    <!--<div class="panel-body">-->
-
-                                    <!--</div>-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             </div>
         </div>
@@ -393,6 +170,7 @@
     </div>
     <script src="../vendor/jquery.min.js"></script>
     <script src="../vendor/bootstrap-3.3.7/js/bootstrap.js"></script>
+    <script src="../vendor/bootstrap-select-1.12.2/js/bootstrap-select.min.js"></script>
 </body>
 
 </html>

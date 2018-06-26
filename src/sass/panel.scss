@@ -23,3 +23,28 @@
 // }
 
 /*页面小面板*/
+.panel-line-primary{
+  @include borderadius(0px);
+ border: 1px solid #ccc;
+ .panel-title{
+  font-size: 18px;
+  font-weight: 400;
+  .pull-right{
+   margin-right: 45px;
+   .form{
+    float: left;
+   }
+   .operate{
+    float: left;
+    li{
+     float: left;
+     margin-left: 8px;
+     line-height: 33px;
+    }
+   }
+  }
+ }
+}
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+ width: 105px;
+}
