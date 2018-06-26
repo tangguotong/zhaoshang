@@ -13,9 +13,7 @@ body{
   color: $fontcolor;
   -webkit-text-size-adjust: 100%;
 }
-html,body{
-  @include fullScreen;
-}
+
 /*header部分*/
 
 .navbar{
@@ -52,6 +50,7 @@ html,body{
         &:hover,
         &:focus,
         &:active{
+          height: 60px;
           background-color: $headercolor;
         }
       }
@@ -68,8 +67,7 @@ html,body{
   @include clearfix;
   .right-content{
     @include fullScreen;
-    padding: 20px 20px 0;
-    overflow-y: auto;
+    padding: 80px 20px 0;
   }
   .left-nav+.right-content{
     margin-left: 200px;
