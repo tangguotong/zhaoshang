@@ -20,83 +20,65 @@ html,body{
 
 .navbar{
   background-color: $headercolor;
-  height: 60px;
+  height: 61px;
   margin-bottom: 0;
-  @include borderadius(0)
-}
-.navbar-nav{
-  >li{
-    >a{
-      padding: 20px;
-      color: $white;
-      font-size: 16px;
-      &:hover,
-      &:focus,
-      &:active{
+  @include borderadius(0);
+  .navbar-nav {
+    > li {
+      > a {
+        padding: 20px;
+        color: $white;
+        font-size: 16px;
+        &:hover,
+        &:focus,
+        &:active{
+          background-color: $btncolor;
+        }
+      }
+      &.active{
         background-color: $btncolor;
       }
     }
-  }
-}
 
-.navbar-right{
-  >li{
-    >a{
-      >span,iconfont{
-        font-size: 14px;
-        color: $btngray;
+  }
+
+  .navbar-right{
+    > li {
+      > a {
+        >span,iconfont{
+          font-size: 14px;
+          color: $btngray;
+        }
+        &:hover,
+        &:focus,
+        &:active{
+          background-color: $headercolor;
+        }
       }
-      &:hover,
-      &:focus,
-      &:active{
-        background-color: $headercolor;
-      }
     }
   }
 }
 
 
-//左侧导航部分
-$leftNavBGColor:#fff;
-$activeBGColor:skyBlue;
-$activeLineColor:pink;
-$LeftNavFontColor:#000;
+// 内容
 
-.left-nav{
-  position: fixed;
-  width: 200px;
-  left: 0;
-  top: 60px;
-  bottom: 0;
-  padding-top: 20px;
-  background-color: $leftNavBGColor;
-  .nav >li>a:hover,.nav >li.active>a{
-    background-color: $activeBGColor!important;
-    color: $leftNavBGColor!important;
-    :after{
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      width: 4px;
-      background-color: $activeLineColor;
-    }
+.page-wrapper{
+  position: relative;
+  height: calc(100% - 61px);
+  @include clearfix;
+  .right-content{
+    @include fullScreen;
+    padding: 20px 20px 0;
+    overflow-y: auto;
   }
-  .nav >li.active>a, .nav >li>a{
-    position: relative;
-    padding: 0 15px;
-    height: 60px;
-    line-height: 60px;
-    font-size: 16px;
-    color: $LeftNavFontColor;
-    img{
-      margin-right: 10px;
-    }
-  }
-  .nav li a:focus{
-    background-color: #fff;
+  .left-nav+.right-content{
+    margin-left: 200px;
   }
 }
+
+
+
+
+
 
 

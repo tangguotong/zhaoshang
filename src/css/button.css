@@ -34,8 +34,8 @@
 }
 
 .btn-blue {
-  border-color: #2a93ed;
-  background-color: #2a93ed;
+  border-color: #367ce4;
+  background-color: #367ce4;
   text-align: center;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -60,8 +60,8 @@
 }
 
 .btn-fill-blue {
-  color: #2a93ed;
-  border-color: #2a93ed;
+  color: #367ce4;
+  border-color: #367ce4;
   background-color: #E3F4FF;
   text-align: center;
   -webkit-border-radius: 2px;
@@ -70,5 +70,5 @@
 }
 
 .btn-fill-blue:hover, .btn-fill-blue:focus, .btn-fill-blue:active {
-  color: #2a93ed;
+  color: #367ce4;
 }
