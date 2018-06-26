@@ -16,13 +16,19 @@
     <meta name="keywords" content="产业地图">
     <title>精准招商-智能推荐</title>
     <link rel="stylesheet" href="../vendor/bootstrap-3.3.7/css/bootstrap.css">
-    <link rel="stylesheet" href="../vendor/bootstrap-3.3.7/css/bootstrap-theme.css">
+    <!--<link rel="stylesheet" href="../vendor/bootstrap-3.3.7/css/bootstrap-theme.css">-->
+    <link rel="stylesheet" href="../vendor/bootstrap-select-1.12.2/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="../vendor/iconfont/iconfont.css">
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/button.css">
     <link rel="stylesheet" href="../css/left_nav.css">
     <!--[if lt IE 9]>
     <script src="../vendor/html5shiv_3.7.3/html5shiv.min.js"></script>
     <![endif]-->
+
+
+    <!--本页面样式-->
+    <link rel="stylesheet" href="../css/tang.css">
 </head>
 
 <body>
@@ -43,7 +49,7 @@
     </div>
     <div class="navbar-collapse collapse" role="navigation">
         <ul class="nav navbar-nav nav-menu">
-            <li class="active">
+            <li class="">
                 <a href="./industrymap.html">产业图谱</a>
             </li>
             <li>
@@ -52,7 +58,7 @@
             <li>
                 <a href="./gardenviewlist.html">园区透视</a>
             </li>
-            <li>
+            <li class="active">
                 <a href="./recommend.html">精准招商</a>
             </li>
             <li>
@@ -104,16 +110,252 @@
     <!--内容部分 start-->
     <div class="right-content">
         <div class="page-content">
-            <div class="row"></div>
-            <div class="row"></div>
-            <div class="row"></div>
-            <div class="row"></div>
+            <div class="panel">
+                <div class="panel-heading clearfix">
+                    <!--标题-->
+                    <span class="panel-title">智能推荐</span>
+                    <!--搜索框-->
+                    <div class="input-group pull-right col-md-3">
+                        <input type="text" class="form-control" placeholder="请输入搜索关键词">
+                        <span class="input-group-btn">
+						<button class="btn btn-search" type="button">
+							搜索
+						</button>
+					</span>
+                    </div>
+
+                </div>
+
+                <div class="panel-body">
+                    <div class="search-box">
+                        <div class="item">
+                            <div class="item-title">标题</div>
+                            <ul class="item-list clearfix">
+                                <li class="active">1234</li>
+                                <li>1234</li>
+                                <li>
+                                    <input type="text" class="date-select" placeholder="自定义时间" id="date">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <div class="item-title">标题</div>
+                            <ul class="item-list">
+                                <li>
+                                    <select class="" name="">
+                                        <option value="">456789</option>
+                                    </select>
+                                </li>
+                                <li>1234</li>
+                                <li>1234</li>
+                                <li>1234</li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <div class="item-title">标题</div>
+                            <ul class="item-list clearfix">
+                                <li>1234</li>
+                                <li>1234</li>
+                                <li>1234</li>
+
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <div class="item-title">标题</div>
+                            <ul class="item-list clearfix">
+                                <li>1234</li>
+                                <li>1234</li>
+                                <li>1234</li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="panel panel-dark">
+                <div class="panel-heading clearfix">
+                    <!--标题-->
+                    <span class="panel-title">为您匹配到<span>4543</span>家优质企业</span>
+                    <!--下拉框-->
+                    <div class="input-group pull-right col-md-3">
+                        <select name="" id="" title="注册资本降序" class="selectpicker my-select">
+                            <option value="1">123</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="panel-body">
+                    <div class="company-box">
+                        <div class="item clearfix">
+                            <div class="col-md-2">
+                                <div class="company-img">
+                                    <!--<img src="../images/test.jpg" alt="">-->
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <h4>杭州阿里创业投资有限公司</h4>
+                                <div class="company-message">
+                                    <span>代表人:马云</span>
+                                    <span>注册资本:500000.00万人民币</span>
+                                    <span>注册时间:2014-09-09</span>
+                                    <span>注册地址:浙江</span>
+                                    <span>联系电话:059000000000  0000000000000</span>
+                                </div>
+
+                                <div class="company-tab">
+                                    <span>高薪技术企业</span>
+                                    <span>创业板<span>
+                                    <span>业内老字号</span>
+                                    <span>注册地址:浙江</span>
+                                    <span>联系电话:059000000000  0000000000000</span>
+                                </div>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="item clearfix">
+                            <div class="col-md-2">
+                                <div class="company-img">
+                                    <!--<img src="../images/test.jpg" alt="">-->
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <h4>杭州阿里创业投资有限公司</h4>
+                                <div class="company-message">
+                                    <span>代表人:马云</span>
+                                    <span>注册资本:500000.00万人民币</span>
+                                    <span>注册时间:2014-09-09</span>
+                                    <span>注册地址:浙江</span>
+                                    <span>联系电话:059000000000  0000000000000</span>
+                                </div>
+
+                                <div class="company-tab">
+                                    <span>高薪技术企业</span>
+                                    <span>创业板<span>
+                                    <span>业内老字号</span>
+                                    <span>注册地址:浙江</span>
+                                    <span>联系电话:059000000000  0000000000000</span>
+                                </div>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="item clearfix">
+                            <div class="col-md-2">
+                                <div class="company-img">
+                                    <!--<img src="../images/test.jpg" alt="">-->
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <h4>杭州阿里创业投资有限公司</h4>
+                                <div class="company-message">
+                                    <span>代表人:马云</span>
+                                    <span>注册资本:500000.00万人民币</span>
+                                    <span>注册时间:2014-09-09</span>
+                                    <span>注册地址:浙江</span>
+                                    <span>联系电话:059000000000  0000000000000</span>
+                                </div>
+
+                                <div class="company-tab">
+                                    <span>高薪技术企业</span>
+                                    <span>创业板<span>
+                                    <span>业内老字号</span>
+                                    <span>注册地址:浙江</span>
+                                    <span>联系电话:059000000000  0000000000000</span>
+                                </div>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="item clearfix">
+                            <div class="col-md-2">
+                                <div class="company-img">
+                                    <!--<img src="../images/test.jpg" alt="">-->
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <h4>杭州阿里创业投资有限公司</h4>
+                                <div class="company-message">
+                                    <span>代表人:马云</span>
+                                    <span>注册资本:500000.00万人民币</span>
+                                    <span>注册时间:2014-09-09</span>
+                                    <span>注册地址:浙江</span>
+                                    <span>联系电话:059000000000  0000000000000</span>
+                                </div>
+
+                                <div class="company-tab">
+                                    <span>高薪技术企业</span>
+                                    <span>创业板<span>
+                                    <span>业内老字号</span>
+                                    <span>注册地址:浙江</span>
+                                    <span>联系电话:059000000000  0000000000000</span>
+                                </div>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="item clearfix">
+                            <div class="col-md-2">
+                                <div class="company-img">
+                                    <!--<img src="../images/test.jpg" alt="">-->
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <h4>杭州阿里创业投资有限公司</h4>
+                                <div class="company-message">
+                                    <span>代表人:马云</span>
+                                    <span>注册资本:500000.00万人民币</span>
+                                    <span>注册时间:2014-09-09</span>
+                                    <span>注册地址:浙江</span>
+                                    <span>联系电话:059000000000  0000000000000</span>
+                                </div>
+
+                                <div class="company-tab">
+                                    <span>高薪技术企业</span>
+                                    <span>创业板<span>
+                                    <span>业内老字号</span>
+                                    <span>注册地址:浙江</span>
+                                    <span>联系电话:059000000000  0000000000000</span>
+                                </div>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="item clearfix">
+                            <div class="col-md-2">
+                                <div class="company-img">
+                                    <!--<img src="../images/test.jpg" alt="">-->
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <h4>杭州阿里创业投资有限公司</h4>
+                                <div class="company-message">
+                                    <span>代表人:马云</span>
+                                    <span>注册资本:500000.00万人民币</span>
+                                    <span>注册时间:2014-09-09</span>
+                                    <span>注册地址:浙江</span>
+                                    <span>联系电话:059000000000  0000000000000</span>
+                                </div>
+
+                                <div class="company-tab">
+                                    <span>高薪技术企业</span>
+                                    <span>创业板<span>
+                                    <span>业内老字号</span>
+                                    <span>注册地址:浙江</span>
+                                    <span>联系电话:059000000000  0000000000000</span>
+                                </div>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
     <!--内容部分 end-->
 </div>
 <script src="../vendor/jquery.min.js"></script>
 <script src="../vendor/bootstrap-3.3.7/js/bootstrap.js"></script>
+<script src="../vendor/bootstrap-select-1.12.2/js/bootstrap-select.min.js"></script>
 </body>
 
 </html>
