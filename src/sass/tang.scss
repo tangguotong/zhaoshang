@@ -14,6 +14,37 @@ $activeBlueColor:#367ce4;
 $tabNormalColor:#808080;
 $darkBlack:#333;
 $lineDeepGrey:#e6e6e6;
+$deepFontGrey:#8c989d;
+$lightFontGrey:#b2b2b2;
+
+
+//公司标题样式
+.p-span{
+  font-size: 14px;
+  //color: #000000;
+  span{
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: middle;
+    img{
+      margin-top: -8px;
+    }
+    //color: #000000;
+  }
+}
+.deepFontGrey{
+  color: $deepFontGrey;
+  font-size: 14px;
+}
+.lightFontGrey{
+  color: $lightFontGrey;
+  font-size: 14px;
+}
+.blueFont{
+  color: $activeBlueColor;
+  font-size: 14px;
+}
+
 //搜索按钮
 .btn-search,
 .btn-search:hover,
@@ -37,6 +68,10 @@ $lineDeepGrey:#e6e6e6;
   margin-left: -15px;
   margin-right: -15px;
   >.item:first-child{
+    border: none;
+  }
+  .item .hidden-item{
+    margin-left: -100px;
     border: none;
   }
   .show-more{
@@ -240,7 +275,16 @@ $lineDeepGrey:#e6e6e6;
       font-size: 14px;
       color: #808080;
       cursor: pointer;
-      span{
+      height: 20px;
+      line-height: 20px;
+      vertical-align: middle;
+      i.glyphicon{
+        //vertical-align: middle;
+        line-height: 20px;
+        margin-right: 5px;
+        font-size: 12px;
+      }
+      span.red-num{
         font-size: 22px;
         color: #ff5329;
       }

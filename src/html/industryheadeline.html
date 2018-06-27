@@ -16,12 +16,17 @@
     <meta name="keywords" content="产业地图">
     <title>产业智参-产业头条</title>
     <link rel="stylesheet" href="../vendor/bootstrap-3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="../vendor/bootstrap-select-1.12.2/css/bootstrap-select.css">
     <link rel="stylesheet" href="../vendor/iconfont/iconfont.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/left_nav.css">
+    <link rel="stylesheet" href="../css/panel.css">
     <!--[if lt IE 9]>
     <script src="../vendor/html5shiv_3.7.3/html5shiv.min.js"></script>
     <![endif]-->
+
+
+    <link rel="stylesheet" href="../css/tang.css">
 </head>
 
 <body>
@@ -42,10 +47,10 @@
     </div>
     <div class="navbar-collapse collapse" role="navigation">
         <ul class="nav navbar-nav nav-menu">
-            <li class="active">
+            <li >
                 <a href="./industrymap.html">产业图谱</a>
             </li>
-            <li>
+            <li class="active">
                 <a href="./industryheadeline.html">产业智参</a>
             </li>
             <li>
@@ -115,16 +120,216 @@
     <!--内容部分 start-->
     <div class="right-content">
         <div class="page-content">
-            <div class="row"></div>
-            <div class="row"></div>
-            <div class="row"></div>
-            <div class="row"></div>
+            <div class="panel panel-line-primary no-margin">
+                <div class="panel-heading have-bottom-border clearfix">
+                    <!--标题-->
+                    <span class="panel-title">产业头条</span>
+                    <!--搜索框-->
+                    <div class="input-group pull-right col-md-3">
+                        <input type="text" class="form-control" placeholder="请输入搜索关键词">
+                        <span class="input-group-btn">
+                            <button class="btn btn-search" type="button">搜索</button>
+					    </span>
+                    </div>
+                </div>
+
+                <div class="panel-body">
+                    <div class="search-box">
+                        <div class="item">
+                            <div class="item-title">情报来源</div>
+                            <ul class="item-list clearfix">
+                                <li class="active">全部</li>
+                                <li>投融资快报</li>
+                                <li>会展情报</li>
+                                <li>政策情报</li>
+                                <li>科研动态</li>
+                                <li>专利</li>
+                                <li>市场情报</li>
+                                <li>中标情报</li>
+                                <li>获奖情报</li>
+                                <li>重大课题</li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <div class="item-title">所在区域</div>
+                            <ul class="item-list clearfix">
+                                <li class="active">全部</li>
+                                <li>安徽</li>
+                                <li>北京</li>
+                                <li>重庆</li>
+                                <li>福建</li>
+                                <li>广东</li>
+                                <li>甘肃</li>
+                                <li>广西</li>
+                                <li>河南</li>
+                                <li>河北</li>
+                                <li>黑龙江</li>
+                                <li>吉林</li>
+                                <li>江苏</li>
+                                <li>江西</li>
+                                <li>内蒙</li>
+                            </ul>
+                            <span class="show-more" data-toggle="collapse" data-target="#showmore1"> 更多 <span class="glyphicon glyphicon-chevron-down"></span></span>
+                            <div class="item hidden-item collapse out" id="showmore1" aria-expanded="true" style="">
+                                <div class="item-title"></div>
+                                <ul class="item-list clearfix">
+                                    <li class="">隐藏的</li>
+                                    <li>隐藏的</li>
+                                    <li>隐藏的</li>
+                                    <li>隐藏的</li>
+                                    <li>隐藏的</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-title">产业类型</div>
+                            <ul class="item-list clearfix">
+                                <li class="active">全部</li>
+                                <li>金融投资</li>
+                                <li>高新科技</li>
+                                <li>房地产业</li>
+                                <li>旅游酒店</li>
+                                <li>矿产冶金</li>
+                                <li> IT互联网</li>
+                                <li> 文化教育</li>
+                                <li> 环保绿化</li>
+                                <li> 石油化工</li>
+                                <li> 建筑建材</li>
+                                <li> 农林牧渔</li>
+                                <li> 汽车汽配</li>
+                            </ul>
+                            <span class="show-more" data-toggle="collapse" data-target="#showmore2"> 更多 <span class="glyphicon glyphicon-chevron-down"></span></span>
+                            <div class="item hidden-item collapse out" id="showmore2" aria-expanded="true" style="">
+                                <div class="item-title"></div>
+                                <ul class="item-list clearfix">
+                                    <li class="">隐藏的</li>
+                                    <li>隐藏的</li>
+                                    <li>隐藏的</li>
+                                    <li>隐藏的</li>
+                                    <li>隐藏的</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-title">发布时间</div>
+                            <ul class="item-list clearfix">
+                                <li class="active">全部</li>
+                                <li>最近一周</li>
+                                <li>最近一月</li>
+                                <li>半年以内</li>
+                                <li>1年以内</li>
+                                <li>
+                                    <input type="text" class="date-select" placeholder="选择时间范围" >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="panel panel-dark">
+                <div class="panel-heading clearfix">
+                    <!--标题-->
+                    <span class="panel-title">为您匹配到<span>4543</span>条情报</span>
+                    <!--下拉框-->
+                    <div class="input-group pull-right col-md-2">
+                        <select name="" id="" title="按照发布时间降序排列" class="selectpicker my-select">
+                            <option value="1">123</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="panel-body">
+                    <div class="company-box">
+                        <div class="item clearfix">
+
+                            <div class="col-md-10">
+                                <h4 >不想对标抖音？淘宝短视频APP可能要考虑下如何PK抖音</h4>
+                                <p class="deepFontGrey">阿里即将上线短视频APP“独客”，杀入短视频红海，与别的短视频平台不同，它的出发点是“卖货”，它如何与其它短视频平台争夺用户时</p>
+                                <p class="p-span blueFont">
+                                    <span>
+                                        <img src="../images/touch_company.png" alt="">
+                                    </span>
+                                    <span>阿里巴巴（中国）集团有限公司</span>
+                                    <span>010-23523453....</span></p>
+                                <p class="p-span lightFontGrey"><span>华尔街见闻</span>  <span>2018-05-015  15:34</span></p>
+
+                            </div>
+                            <div class="col-md-2">
+                                <p class="num lightFontGrey"> <i class="glyphicon glyphicon-list-alt"></i>相似情报<span class="blueFont">(45条)</span></p>
+                                <button class="btn btn-blue btn-bottom"> <i class="iconfont icon-plus"></i>加入线索库</button>
+                            </div>
+                        </div>
+                        <div class="item clearfix">
+
+                            <div class="col-md-10">
+                                <h4 >不想对标抖音？淘宝短视频APP可能要考虑下如何PK抖音</h4>
+                                <p class="deepFontGrey">阿里即将上线短视频APP“独客”，杀入短视频红海，与别的短视频平台不同，它的出发点是“卖货”，它如何与其它短视频平台争夺用户时</p>
+                                <p class="p-span blueFont">
+                                    <span>
+                                        <img src="../images/touch_company.png" alt="">
+                                    </span>
+                                    <span>阿里巴巴（中国）集团有限公司</span>
+                                    <span>010-23523453....</span></p>
+                                <p class="p-span lightFontGrey"><span>华尔街见闻</span>  <span>2018-05-015  15:34</span></p>
+
+                            </div>
+                            <div class="col-md-2">
+                                <p class="num lightFontGrey"> <i class="glyphicon glyphicon-list-alt"></i>相似情报<span class="blueFont">(45条)</span></p>
+                                <button class="btn btn-blue btn-bottom"> <i class="iconfont icon-plus"></i>加入线索库</button>
+                            </div>
+                        </div>
+                        <div class="item clearfix">
+
+                            <div class="col-md-10">
+                                <h4 >不想对标抖音？淘宝短视频APP可能要考虑下如何PK抖音</h4>
+                                <p class="deepFontGrey">阿里即将上线短视频APP“独客”，杀入短视频红海，与别的短视频平台不同，它的出发点是“卖货”，它如何与其它短视频平台争夺用户时</p>
+                                <p class="p-span blueFont">
+                                    <span>
+                                        <img src="../images/touch_company.png" alt="">
+                                    </span>
+                                    <span>阿里巴巴（中国）集团有限公司</span>
+                                    <span>010-23523453....</span></p>
+                                <p class="p-span lightFontGrey"><span>华尔街见闻</span>  <span>2018-05-015  15:34</span></p>
+
+                            </div>
+                            <div class="col-md-2">
+                                <p class="num lightFontGrey"> <i class="glyphicon glyphicon-list-alt"></i>相似情报<span class="blueFont">(45条)</span></p>
+                                <button class="btn btn-blue btn-bottom"> <i class="iconfont icon-plus"></i>加入线索库</button>
+                            </div>
+                        </div>
+                        <div class="item clearfix">
+
+                            <div class="col-md-10">
+                                <h4 >不想对标抖音？淘宝短视频APP可能要考虑下如何PK抖音</h4>
+                                <p class="deepFontGrey">阿里即将上线短视频APP“独客”，杀入短视频红海，与别的短视频平台不同，它的出发点是“卖货”，它如何与其它短视频平台争夺用户时</p>
+                                <p class="p-span blueFont">
+                                    <span>
+                                        <img src="../images/touch_company.png" alt="">
+                                    </span>
+                                    <span>阿里巴巴（中国）集团有限公司</span>
+                                    <span>010-23523453....</span></p>
+                                <p class="p-span lightFontGrey"><span>华尔街见闻</span>  <span>2018-05-015  15:34</span></p>
+
+                            </div>
+                            <div class="col-md-2">
+                                <p class="num lightFontGrey"> <i class="glyphicon glyphicon-list-alt"></i>相似情报<span class="blueFont">(45条)</span></p>
+                                <button class="btn btn-blue btn-bottom"> <i class="iconfont icon-plus"></i>加入线索库</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
     <!--内容部分 end-->
 </div>
 <script src="../vendor/jquery.min.js"></script>
 <script src="../vendor/bootstrap-3.3.7/js/bootstrap.js"></script>
+<script src="../vendor/bootstrap-select-1.12.2/js/bootstrap-select.min.js"></script>
 </body>
 
 </html>
