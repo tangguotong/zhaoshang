@@ -10,34 +10,47 @@ ul,li{
 
 
 //定义变量
-$activeBlueColor:#2a93ed;
+$activeBlueColor:#367ce4;
 $tabNormalColor:#808080;
 $darkBlack:#333;
-body{
-  background-color: #eaeaea;
-}
+$lineDeepGrey:#e6e6e6;
 //搜索按钮
 .btn-search,
 .btn-search:hover,
 .btn-search:active,
 .btn-search:focus,
 .btn-search:visited{
-  background-color: #367ce4;
+  background-color: $activeBlueColor;
   color: #ffffff;
-  border-color: #367ce4;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-color: $activeBlueColor;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
 
+}
+.form-control{
+  border-radius: 2px;
 }
 //筛选
 .search-box{
+  position: relative;
   background-color: #fff;
   margin-left: -15px;
   margin-right: -15px;
+  >.item:first-child{
+    border: none;
+  }
+  .show-more{
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    font-size: 12px;
+    color: #808080;
+    cursor: pointer;
+  }
   .item{
     position: relative;
     padding: 0 10px 0 100px;
-    border-bottom: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
     font-size: 14px;
     .item-title{
       position: absolute;
@@ -67,18 +80,19 @@ body{
           cursor: pointer;
         }
       //  placeHold的颜色
-        input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+        input::-webkit-input-placeholder{
           color: $darkBlack;
         }
-        input:-moz-placeholder, textarea:-moz-placeholder {
+        input:-moz-placeholder{
           color: $darkBlack;
         }
-        input::-moz-placeholder, textarea::-moz-placeholder {
+        input::-moz-placeholder{
           color: $darkBlack;
         }
-        input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+        input:-ms-input-placeholder{
           color: $darkBlack;
         }
+
         select{
           border:none;
           outline: none;
@@ -93,11 +107,13 @@ body{
         label{
           color: $activeBlueColor;
         }
+        input{
+          color: $activeBlueColor;
+        }
       }
     }
   }
-  .item:last-child{
-    border: none;
+  .item-hidden>.item:last-child{
     .item-title{
       padding-bottom: 0;
     }
@@ -112,17 +128,24 @@ body{
       line-height: 34px;
     }
 }
+.have-bottom-border{
+  border-bottom: 1px solid $lineDeepGrey;
+}
+.no-margin{
+  margin: 0;
+}
 //面板2
 .panel-dark {
-  border: 1px solid #e6e6e6;
+  border: 1px solid $lineDeepGrey;
+  border-radius: 0;
   .panel-heading{
     background-color: #fafafa;
-    border-bottom: #e6e6e6;
+    border-bottom:1px solid $lineDeepGrey;
     .panel-title{
       font-size: 14px;
       color: #898989;
       span{
-        color: #367ce4;
+        color: $activeBlueColor;
         cursor: pointer;
       }
     }
@@ -177,7 +200,26 @@ body{
 
 //下拉框样式
 .my-select{
-
+  .btn,
+  .btn:active,
+  .btn:focus,
+  .btn:visited,
+  .btn:hover{
+    font-size: 14px;
+    background-color: #fff!important;
+    border:1px solid $lineDeepGrey!important;
+    outline: none!important;
+    span{
+      color: #666666;
+    }
+  }
+  a,
+  a:active,
+  a:focus,
+  a:visited,
+  a:hover{
+    outline: none;
+  }
 }
 
 
@@ -185,8 +227,31 @@ body{
 .company-box{
   margin: -15px;
   .item{
+    position: relative;
     padding: 15px;
-    border-bottom: 1px solid #e6e6e6;
+    border-bottom: 1px solid $lineDeepGrey;
+    .col-md-2{
+      position: static;
+    }
+    .num{
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 14px;
+      color: #808080;
+      cursor: pointer;
+      span{
+        font-size: 22px;
+        color: #ff5329;
+      }
+    }
+    .btn-bottom{
+      position: absolute;
+      right: 15px;
+      bottom: 15px;
+      font-size: 14px;
+      color: #ffffff;
+    }
     .company-img{
       height: 120px;
       width: 100%;
@@ -196,20 +261,34 @@ body{
         width: 100%;
       }
     }
+    .company-btn-box{
+      position: absolute;
+      display: flex;
+      justify-content: space-around;
+      right: 15px;
+      bottom: 15px;
+      width: 300px;
+    }
 
     div{
-      margin-bottom: 10px;
+      //margin-bottom: 10px;
       span{
         margin-right: 20px;
         //color: #898989;
         font-size: 14px;
       }
     }
+    .company-message,.company-tab{
+      margin-bottom: 10px;
+    }
     .company-message>span{
       color: #898989;
     }
-    .company-tab>span{
-      color: #367ce4;
+    .company-tab>span,.company-tab>i{
+      color: $activeBlueColor;
+    }
+    .company-tab>i{
+      margin-right: 5px;
     }
 
   }

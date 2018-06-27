@@ -31,7 +31,8 @@
   border-color: $btncolor;
   background-color: $btncolor;
   text-align: center;
-  @include borderadius(4px);
+  color: #ffffff;
+  @include borderadius(2px);
   &:hover,
   &:focus,
   &:active{
@@ -64,4 +65,31 @@
   }
 }
 
+.btn-white{
+  border-color: #cccccc;
+  background-color: #ffffff;
+  color: #000;
+  font-size: 14px;
+  text-align: center;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  &:hover,
+  &:focus,
+  &:active{
+    color: #000;
+  }
+}
+.btn-border-blue{
+  border-color: $btncolor;
+  background-color: #ffffff;
+  text-align: center;
+  color: $btncolor;
+  @include borderadius(2px);
+  &:hover,
+  &:focus,
+  &:active{
+    color: $btncolor;
+  }
+}
 

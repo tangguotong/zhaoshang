@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../vendor/bootstrap-select-1.12.2/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="../vendor/icheck/skins/flat/blue.css">
     <link rel="stylesheet" href="../css/tang.css">
+    <link rel="stylesheet" href="../css/button.css">
+    <link rel="stylesheet" href="../css/pop_window.css">
 </head>
 <body>
 
@@ -144,6 +146,30 @@
 </div>
 
 
+<h3>弹窗</h3>
+<button class="btn btn-default" data-toggle="modal" data-target="#myModal">成功</button>
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <p class="modal-title text-center" id="myModalLabel">
+                    对接企业
+                </p>
+            </div>
+            <div class="modal-body text-center">
+                <img src="../images/send_success_log.png" alt="">
+                <p class="message">申请已提交，正在为您对接...</p>
+            </div>
+            <div class="modal-footer ">
+                <button type="button" class="btn btn-blue center-block width100" data-dismiss="modal">关闭</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
 </body>
 <script src="../vendor/jquery.min.js"></script>
 <script src="../vendor/bootstrap-3.3.7/js/bootstrap.min.js"></script>
