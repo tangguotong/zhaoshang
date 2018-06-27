@@ -25,12 +25,12 @@
 /*页面小面板*/
 .panel-line-primary{
   @include borderadius(0px);
- border: 1px solid #ccc;
+ border: 0;
  .panel-title{
   font-size: 18px;
   font-weight: 400;
   .pull-right{
-   margin-right: 45px;
+   margin-right: 10px;
    .form{
     float: left;
    }
@@ -45,6 +45,7 @@
   }
  }
 }
+
 .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
  width: 105px;
 }

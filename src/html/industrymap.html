@@ -9,7 +9,7 @@
     <!--规定360安全浏览器使用webki内核进行渲染-->
     <meta name="applicable-device" content="pc">
     <!--申明网站为pc站，避免被转码-->
-    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-transform"/>
     <!--禁止浏览器转码-->
     <meta content="always" name="referrer">
     <meta name="description" content="产业图谱-产业地图">
@@ -28,64 +28,64 @@
 </head>
 
 <body>
-    <!-- 顶部导航  start-->
-    <div class="navbar navbar-fixed-top">
+<!-- 顶部导航  start-->
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-header">
         <div class="navbar-header">
-            <div class="navbar-header">
-                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">切换菜单</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand">
-                    <img src="../images/logo.png" width="195" height="28" alt="">
-                </a>
-            </div>
-        </div>
-
-        <div class="navbar-collapse collapse " role="navigation">
-            <ul class="nav navbar-nav nav-menu">
-                <li class="active">
-                    <a href="./industrymap.html">产业图谱</a>
-                </li>
-                <li>
-                    <a href="./industryheadeline.html">产业智参</a>
-                </li>
-                <li>
-                    <a href="./gardenviewlist.html">园区透视</a>
-                </li>
-                <li>
-                    <a href="./recommend.html">精准招商</a>
-                </li>
-                <li>
-                    <a href="./industryappraisal.html">企业测评</a>
-                </li>
-                <li>
-                    <a href="">产业监管</a>
-                </li>
-                <li>
-                    <a href="">产业秀</a>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="">
-                        <i class="iconfont icon-xiaoxi"></i>
-                        <span>下午好，济南市投促局</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <i class="iconfont icon-leibieguanli"></i>
-                        <span>应用市场</span>
-                    </a>
-                </li>
-            </ul>
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">切换菜单</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand">
+                <img src="../images/logo.png" width="195" height="28" alt="">
+            </a>
         </div>
     </div>
-    <!-- 顶部导航  end-->
-    <div class="page-wrapper">
+
+    <div class="navbar-collapse collapse " role="navigation">
+        <ul class="nav navbar-nav nav-menu">
+            <li class="active">
+                <a href="./industrymap.html">产业图谱</a>
+            </li>
+            <li>
+                <a href="./industryheadeline.html">产业智参</a>
+            </li>
+            <li>
+                <a href="./gardenviewlist.html">园区透视</a>
+            </li>
+            <li>
+                <a href="./recommend.html">精准招商</a>
+            </li>
+            <li>
+                <a href="./industryappraisal.html">企业测评</a>
+            </li>
+            <li>
+                <a href="">产业监管</a>
+            </li>
+            <li>
+                <a href="">产业秀</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a href="">
+                    <i class="iconfont icon-xiaoxi"></i>
+                    <span>下午好，济南市投促局</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="iconfont icon-leibieguanli"></i>
+                    <span>应用市场</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- 顶部导航  end-->
+<div class="page-wrapper">
     <!-- 左侧导航 start -->
     <div class="left-nav">
         <ul class="nav">
@@ -147,14 +147,21 @@
                             </h3>
                         </div>
                         <div class="panel-body">
-                            <div class="row">
-                                <div class="col-md-9">
-                                    <div class="echarts" id="map"></div>
+                            <div class="row mt">
+                                <div class="col-md-12 text mt30 mb30">
+                                    生物化学农药及微生物农药制造
+                                </div>
+                                <div class="col-md-9 pl100">
+                                    <div class="echarts" id="map">
+
+                                    </div>
                                 </div>
                                 <div class="col-md-3">
                                     <div class="panel panel-line-primary">
                                         <div class="panel-body">
+                                            <div class="echarts" id="top">
 
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -162,15 +169,119 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-12">
+                    <div class="panel panel-line-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                产业结构网络图
+                                <div class="pull-right">
+                                    <from class="form-inline form">
+                                        <select class="selectpicker" title="第一产业">
+                                            <option value=""></option>
+                                        </select>
+                                    </from>
+                                    <div class="operate">
+                                        <ul>
+                                            <li>
+                                                <i class="iconfont icon-zidingyibiaodan"></i>
+                                                保存
+                                            </li>
+                                            <li>
+                                                <i class="iconfont icon-quanping"></i>
+                                                全屏
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row mt">
+                                <div class="col-md-12">
 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="panel panel-line-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                产业资本流向图
+                                <div class="pull-right">
+                                   <div>
+                                       <ul>
+                                           <li>9月</li>
+                                           <li>10月</li>
+                                       </ul>
+                                   </div>
+                                    <div class="operate">
+                                        <ul>
+                                            <li>
+                                                <i class="iconfont icon-zidingyibiaodan"></i>
+                                                保存
+                                            </li>
+                                            <li>
+                                                <i class="iconfont icon-quanping"></i>
+                                                全屏
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="panel panel-line-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                产业关注热力图
+                                <div class="pull-right">
+                                   <div>
+                                       <ul>
+                                           <li></li>
+                                           <li></li>
+                                       </ul>
+                                   </div>
+                                    <div class="operate">
+                                        <ul>
+                                            <li>
+                                                <i class="iconfont icon-quanping"></i>
+                                                全屏
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <!--内容部分 end-->
-    </div>
-    <script src="../vendor/jquery.min.js"></script>
-    <script src="../vendor/bootstrap-3.3.7/js/bootstrap.js"></script>
-    <script src="../vendor/bootstrap-select-1.12.2/js/bootstrap-select.min.js"></script>
+</div>
+<script src="../vendor/jquery.min.js"></script>
+<script src="../vendor/bootstrap-3.3.7/js/bootstrap.js"></script>
+<script src="../vendor/bootstrap-select-1.12.2/js/bootstrap-select.min.js"></script>
+<script src="../vendor/echarts/echarts.min.js"></script>
+<script src="../vendor/echarts/provinces/china.js"></script>
+<script src="../vendor/echarts/customed_GM.js"></script>
+<script src="../js/industrymap/industrymap.js"></script>
 </body>
 
 </html>
