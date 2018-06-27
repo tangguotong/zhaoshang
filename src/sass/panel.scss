@@ -25,9 +25,9 @@
 /*页面小面板*/
 .panel-line-primary{
   @include borderadius(0px);
- border: 0;
+ border: 1px solid #e6e6e6;
  .panel-title{
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   .pull-right{
    margin-right: 10px;
@@ -40,12 +40,23 @@
      float: left;
      margin-left: 8px;
      line-height: 33px;
+     font-size: 14px;
     }
    }
   }
  }
 }
+.panel-buttom{
+ margin-bottom: 0px;
+ border-bottom: 0;
+}
+.panel-top{
+ border-top: 0;
+}
 
+.panel{
+ box-shadow: none;
+}
 .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
- width: 105px;
+ width: 100px;
 }

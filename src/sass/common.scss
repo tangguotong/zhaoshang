@@ -73,7 +73,26 @@ body{
     margin-left: 200px;
   }
 }
-
+/*标签*/
+.induatrylabel{
+  float: left;
+  .ullabel{
+    li{
+      float: left;
+      padding: 8px 20px;
+      background-color: $white;
+      text-align: center;
+      border: 1px solid #e6e6e6;
+      font-size: 12px;
+      &:hover,
+      &:hover,
+      &.active{
+        background-color: $leftNavBGColor;
+        color: $white;
+      }
+    }
+  }
+}
 /*辅助类*/
 .text{
   text-align: center;

@@ -348,3 +348,244 @@ var TopOption = {
     ]
 };
 topChart.setOption(TopOption);
+
+/*资金流向图*/
+var areaArr =[
+
+]
+var price_go = echarts.init(document.getElementById('price_go'));
+var option3 = {
+    color: ['#367CE4', '#d76245'],
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: { // 坐标轴指示器，坐标轴触发有效
+            type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
+        }
+    },
+    legend: {
+        data: ['主力净流入', '主力净流出'],
+        left: 'left'
+    },
+    grid: {
+        zlevel: 0,
+        z: 0,
+        borderWidth: 0 ,
+    },
+    calculable: true,
+    xAxis: [{
+        type: 'category',
+        borderWidth: 0 ,
+        axisTick:{
+            show:false
+        },
+        axisLine:{
+            show:false
+        },
+        splitLine:{
+            show:false,
+        },
+        data: areaArr
+    }],
+    yAxis: [{
+        show:false
+    }],
+    dataZoom: {
+        show: true,
+        start : 0,
+        end:25,
+    },
+    series: [{
+        name: '主力净流入',
+        type: 'bar',
+        barGop:0,
+        barCategoryGap: '70%',
+        barWidth:10,
+
+    }, {
+        name: '主力净流出',
+        type: 'bar',
+        barGap:0,
+        barWidth:10,
+        barCategoryGap: '70%',
+
+    }]
+}
+price_go.setOption(option3);
+
+/*关注热力图*/
+var treemap = echarts.init(document.getElementById('treemap'));
+data = [{
+    "value": 17.6,
+    "name": "保险"
+}, {
+    "value": 16.5,
+    "name": "知识产权"
+}, {
+    "value": 16.5,
+    "name": "出版"
+}, {
+    "value": 15.5,
+    "name": "轻工业"
+}, {
+    "value": 14.8,
+    "name": "金融"
+}, {
+    "value": 13.7,
+    "name": "化工"
+}, {
+    "value": 13.6,
+    "name": "科技"
+}, {
+    "value": 13.4,
+    "name": "教育"
+}, {
+    "value": 13.1,
+    "name": "对外经贸合作"
+}, {
+    "value": 12.6,
+    "name": "节能"
+}, {
+    "value": 12.6,
+    "name": "电力"
+}, {
+    "value": 12.6,
+    "name": "资源综合利用"
+}, {
+    "value": 12.4,
+    "name": "能源"
+}, {
+    "value": 12.2,
+    "name": "矿产"
+}, {
+    "value": 12,
+    "name": "信息产业"
+}, {
+    "value": 12,
+    "name": "基础设施"
+}, {
+    "value": 11.7,
+    "name": "物流"
+}, {
+    "value": 11.6,
+    "name": "环境保护"
+}, {
+    "value": 11.6,
+    "name": "国家安全"
+}, {
+    "value": 11.6,
+    "name": "水运"
+}]
+
+for (var n in data) {
+    data[n]['name'] = data[n]['name'] + ' ' + data[n]['value'] + '%'
+}
+
+option = {
+    title: {
+        left: '50%',
+        top: '30',
+        textAlign: 'center',
+        textStyle: {
+            color: "#000",
+            fontWeight: 'normal',
+        }
+    },
+    tooltip: {
+        trigger: 'item',
+        formatter: "{b}"
+    },
+    series: [{
+        type: 'treemap',
+        width: '100%',
+        height: '85%',
+        top: '15%',
+        roam: false, //是否开启拖拽漫游（移动和缩放）
+        nodeClick: false, //点击节点后的行为,false无反应
+        breadcrumb: {
+            show: false
+        },
+        label: { //描述了每个矩形中，文本标签的样式。
+            normal: {
+                show: true,
+                position: ['10%', '40%']
+            }
+        },
+        itemStyle: {
+            normal: {
+                show: true,
+                textStyle: {
+                    color: '#fff',
+                    fontSize: 16,
+                },
+                borderWidth: 1,
+                borderColor: '#fff',
+            },
+
+            emphasis: {
+                label: {
+                    show: true
+                }
+            }
+        },
+        data: data
+    }]
+};
+treemap.setOption(option);
+
+/*曲线*/
+
+var linecharts=echarts.init(document.getElementById("line"));
+option = {
+
+
+
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月']
+    },
+    yAxis: {
+        type: 'value',
+        splitLine:{
+            show:true,
+            lineStyle: {
+                color: '#ccc'   // 修改网格线颜色
+            }
+        },
+        axisTick: {//去掉刻度
+            show: true
+        }
+
+    },
+    series: [{
+        name: '违法违规数',
+        type: 'line',
+
+        stack: '总量',
+        data: [200, 210, 220, 210, 230, 290, 310, 340, 340, 320, 300, 280, 250, 210],
+
+    },
+        {
+            name: '整改数',
+            type: 'line',
+            stack: '总量',
+            data: [190, 210, 210, 207, 230, 275, 305, 336, 330, 310, 300, 278, 250, 210],
+
+        },
+        {
+            name: '检查主体数',
+            type: 'line',
+            stack: '总量',
+            data: [1422, 1522, 1622, 1422, 1522, 1122, 1422, 1322, 1422, 1352, 1022, 922, 822, 1222],
+
+
+        }
+    ]
+};
+linecharts.setOption(option)
