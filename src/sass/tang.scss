@@ -6,7 +6,17 @@ ul,li{
   list-style: none;
   padding: 0;
 }
+h4{
+  font-size: 16px;
+  margin: 0 0 15px 0;
+}
 
+.mb10{
+  margin-bottom: 10px;
+}
+.mb0{
+  margin-bottom: 0!important;
+}
 
 
 //定义变量
@@ -14,7 +24,7 @@ $activeBlueColor:#367ce4;
 $tabNormalColor:#808080;
 $darkBlack:#333;
 $lineDeepGrey:#e6e6e6;
-$deepFontGrey:#8c989d;
+$deepFontGrey:#808080;
 $lightFontGrey:#b2b2b2;
 
 
@@ -35,14 +45,18 @@ $lightFontGrey:#b2b2b2;
 .deepFontGrey{
   color: $deepFontGrey;
   font-size: 14px;
+  //margin-bottom: 15px;
 }
 .lightFontGrey{
   color: $lightFontGrey;
   font-size: 14px;
+  //margin-bottom: 15px;
+
 }
 .blueFont{
   color: $activeBlueColor;
   font-size: 14px;
+  //margin-bottom: 15px;
 }
 
 //搜索按钮
@@ -161,7 +175,16 @@ $lightFontGrey:#b2b2b2;
 .panel-heading{
     .panel-title{
       line-height: 34px;
+      margin-right: 15px;
+      text-decoration: none;
     }
+  a.panel-title{
+    cursor: pointer;
+  }
+
+  a.panel-title:hover{
+    color: #000;
+  }
 }
 .have-bottom-border{
   border-bottom: 1px solid $lineDeepGrey;
@@ -256,6 +279,29 @@ $lightFontGrey:#b2b2b2;
     outline: none;
   }
 }
+//icheck
+.check-span{
+  //display: inline-block;
+  line-height: 34px;
+  //margin-right: 30px;
+  .word{
+    font-size: 14px;
+    color: #808080;
+    margin-left:2px;
+  }
+}
+.middle-ver-box{
+  div{
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+.linH34{
+  line-height: 34px;
+}
+.linH90{
+  line-height: 75px;
+}
 
 
 //精准招商-智能推荐-优质企业
@@ -323,7 +369,7 @@ $lightFontGrey:#b2b2b2;
       }
     }
     .company-message,.company-tab{
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
     .company-message>span{
       color: #898989;
@@ -341,4 +387,25 @@ $lightFontGrey:#b2b2b2;
   }
 
 
+}
+
+
+
+//产业白皮书
+.word-box{
+  padding-bottom: 0;
+  .item{
+    border-top: 1px solid $lineDeepGrey;
+    padding: 15px 0;
+  }
+  .item:first-child{
+    border: none;
+    padding-top:0;
+  }
+
+}
+.over-hidden{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis
 }

@@ -16,12 +16,18 @@
     <meta name="keywords" content="产业地图">
     <title>企业测评- 测评库</title>
     <link rel="stylesheet" href="../vendor/bootstrap-3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="../vendor/bootstrap-select-1.12.2/css/bootstrap-select.css">
+
     <link rel="stylesheet" href="../vendor/iconfont/iconfont.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/left_nav.css">
     <!--[if lt IE 9]>
     <script src="../vendor/html5shiv_3.7.3/html5shiv.min.js"></script>
     <![endif]-->
+
+
+    <link rel="stylesheet" href="../css/tang.css">
+    <link rel="stylesheet" href="../vendor/bootstrap-daterangepicker/daterangepicker.css">
 </head>
 
 <body>
@@ -42,7 +48,7 @@
     </div>
     <div class="navbar-collapse collapse" role="navigation">
         <ul class="nav navbar-nav nav-menu">
-            <li class="active">
+            <li >
                 <a href="./industrymap.html">产业图谱</a>
             </li>
             <li>
@@ -54,7 +60,7 @@
             <li>
                 <a href="./recommend.html">精准招商</a>
             </li>
-            <li>
+            <li class="active">
                 <a href="./industryappraisal.html">企业测评</a>
             </li>
             <li>
@@ -85,13 +91,13 @@
     <!-- 左侧导航 start -->
     <div class="left-nav">
         <ul class="nav">
-            <li class="active">
+            <li >
                 <a href="./industryappraisal.html">
                     <i class="iconfont icon-qiye"></i>
                     企业测评
                 </a>
             </li>
-            <li class="">
+            <li class="active">
                 <a href="./industryclue.html">
                     <i class="iconfont icon-danganguanli1"></i>
                     测评库
@@ -103,16 +109,202 @@
     <!--内容部分 start-->
     <div class="right-content">
         <div class="page-content">
-            <div class="row"></div>
-            <div class="row"></div>
-            <div class="row"></div>
-            <div class="row"></div>
+            <div class="panel panel-line-primary no-margin">
+                <div class="panel-heading have-bottom-border clearfix">
+                    <!--标题-->
+                    <span class="panel-title">测评库</span>
+                    <!--搜索框-->
+                    <div class="input-group pull-right col-md-3">
+                        <input type="text" class="form-control" placeholder="请输入搜索关键词">
+                        <span class="input-group-btn">
+                            <button class="btn btn-search" type="button">搜索</button>
+					    </span>
+                    </div>
+                </div>
+
+                <div class="panel-body">
+                    <div class="search-box">
+                        <div class="item">
+                            <div class="item-title">所在区域</div>
+                            <ul class="item-list clearfix">
+                                <li class="active">全部</li>
+                                <li>安徽</li>
+                                <li>北京</li>
+                                <li>重庆</li>
+                                <li>福建</li>
+                                <li>广东</li>
+                                <li>甘肃</li>
+                                <li>广西</li>
+                                <li>河南</li>
+                                <li>河北</li>
+                                <li>黑龙江</li>
+                                <li>吉林</li>
+                                <li>江苏</li>
+                                <li>江西</li>
+                                <li>内蒙</li>
+                            </ul>
+                            <span class="show-more collapsed" data-toggle="collapse" data-target="#showmore1" aria-expanded="false"> 更多 <span class="glyphicon glyphicon-chevron-down"></span></span>
+                            <div class="item hidden-item out collapse" id="showmore1" aria-expanded="false" style="height: 0px;">
+                                <div class="item-title"></div>
+                                <ul class="item-list clearfix">
+                                    <li class="">隐藏的</li>
+                                    <li>隐藏的</li>
+                                    <li>隐藏的</li>
+                                    <li>隐藏的</li>
+                                    <li>隐藏的</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-title">注册资本</div>
+                            <ul class="item-list clearfix">
+                                <li class="active">全部</li>
+                                <li>0-100万</li>
+                                <li>100万-200万</li>
+                                <li>200万-500万</li>
+                                <li>500万-1000万</li>
+                                <li>1000万以上</li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <div class="item-title">注册时间</div>
+                            <ul class="item-list clearfix">
+                                <li class="active">全部</li>
+                                <li>成立1年内</li>
+                                <li>成立1－5年</li>
+                                <li>成立5－10年</li>
+                                <li>成立10－15年</li>
+                                <li>成立15年以上</li>
+                                <li>
+                                    <input type="text" class="date-select" placeholder="选择时间范围">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="panel panel-dark">
+                <div class="panel-heading clearfix">
+                    <!--标题-->
+                    <span class="panel-title">为您匹配到<span>4543</span>家优质企业</span>
+                    <!--下拉框-->
+                    <div class="input-group pull-right col-md-2">
+                        <select name="" id="" title="注册资本降序" class="selectpicker my-select">
+                            <option value="1">123</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="panel-body">
+                    <div class="company-box">
+                        <div class="item clearfix">
+                            <div class="col-md-2">
+                                <div class="company-img">
+                                    <!--<img src="../images/test.jpg" alt="">-->
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <h4>杭州阿里创业投资有限公司</h4>
+                                <div class="company-message">
+                                    <span>代表人:马云</span>
+                                    <span>注册资本:500000.00万人民币</span>
+                                    <span>注册时间:2014-09-09</span>
+                                    <span>注册地址:浙江</span>
+                                    <span>联系电话:059000000000</span>
+                                </div>
+
+                                <div class="company-tab">
+                                    <i class="glyphicon glyphicon-tags"></i>
+                                    <span>高薪技术企业</span>
+                                    <span>创业板</span>
+                                    <span>业内老字号</span>
+                                </div>
+                                <p></p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="num">测评分: <span class="red-num">89</span></p>
+                                <button class="btn btn-blue btn-bottom"> <i class="iconfont icon-plus"></i>加入线索库</button>
+                            </div>
+                        </div>
+                        <div class="item clearfix">
+                            <div class="col-md-2">
+                                <div class="company-img">
+                                    <!--<img src="../images/test.jpg" alt="">-->
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <h4>杭州阿里创业投资有限公司</h4>
+                                <div class="company-message">
+                                    <span>代表人:马云</span>
+                                    <span>注册资本:500000.00万人民币</span>
+                                    <span>注册时间:2014-09-09</span>
+                                    <span>注册地址:浙江</span>
+                                    <span>联系电话:059000000000</span>
+                                </div>
+
+                                <div class="company-tab">
+                                    <i class="glyphicon glyphicon-tags"></i>
+                                    <span>高薪技术企业</span>
+                                    <span>创业板</span>
+                                    <span>业内老字号</span>
+                                </div>
+                                <p></p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="num">测评分: <span class="red-num">89</span></p>
+                                <button class="btn btn-blue btn-bottom"> <i class="iconfont icon-plus"></i>加入线索库</button>
+                            </div>
+                        </div>
+                        <div class="item clearfix">
+                            <div class="col-md-2">
+                                <div class="company-img">
+                                    <!--<img src="../images/test.jpg" alt="">-->
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <h4>杭州阿里创业投资有限公司</h4>
+                                <div class="company-message">
+                                    <span>代表人:马云</span>
+                                    <span>注册资本:500000.00万人民币</span>
+                                    <span>注册时间:2014-09-09</span>
+                                    <span>注册地址:浙江</span>
+                                    <span>联系电话:059000000000</span>
+                                </div>
+
+                                <div class="company-tab">
+                                    <i class="glyphicon glyphicon-tags"></i>
+                                    <span>高薪技术企业</span>
+                                    <span>创业板</span>
+                                    <span>业内老字号</span>
+                                </div>
+                                <p></p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="num">测评分: <span class="red-num">89</span></p>
+                                <button class="btn btn-blue btn-bottom"> <i class="iconfont icon-plus"></i>加入线索库</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
     <!--内容部分 end-->
 </div>
 <script src="../vendor/jquery.min.js"></script>
 <script src="../vendor/bootstrap-3.3.7/js/bootstrap.js"></script>
+<script src="../vendor/bootstrap-select-1.12.2/js/bootstrap-select.min.js"></script>
+<!--<script src="../vendor/icheck/"></script>-->
+<script src="../vendor/icheck/icheck.min.js"></script>
+<script src="../vendor/bootstrap-daterangepicker/moment.min.js"></script>
+<script src="../vendor/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script src="../js/tang.js"></script>
+
 </body>
 
 </html>
