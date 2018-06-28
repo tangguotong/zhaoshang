@@ -350,67 +350,119 @@ var TopOption = {
 topChart.setOption(TopOption);
 
 /*资金流向图*/
-var areaArr =[
-
-]
 var price_go = echarts.init(document.getElementById('price_go'));
-var option3 = {
-    color: ['#367CE4', '#d76245'],
+var pricedata=[-5, 15,8, 12, 25, -35, 13];
+priceoption = {
+    color: ['#367CE4', '#ff9c00'],
+    calculable: true,
     tooltip: {
+
         trigger: 'axis',
-        axisPointer: { // 坐标轴指示器，坐标轴触发有效
-            type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
+
+        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+            type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
         }
     },
+
     legend: {
-        data: ['主力净流入', '主力净流出'],
-        left: 'left'
+        data:['主力净流入','主力净流出'],
+        textStyle:{
+            color:'#000',
+        },
+        left:"right"
     },
-    grid: {
-        zlevel: 0,
-        z: 0,
-        borderWidth: 0 ,
+    dataZoom: {
+        show: true,
+        start : 0,
+        end:90,
     },
-    calculable: true,
-    xAxis: [{
-        type: 'category',
-        borderWidth: 0 ,
+    xAxis: [
+        {
+            type: 'category',
+            data: ['1月22','1月23','1月24','1月25','1月26','1月27','1月28',"1月29"],
+            axisPointer: {
+                type: 'shadow'
+            },
+            splitLine: {show: false},
+            axisLine: {
+                lineStyle: {
+                    color: '#555'
+                },
+            },
+            splitLine: {
+                show:true,
+                lineStyle: {
+                    color: ['#000'],
+                    width: 1,
+                    type: 'dotted'
+                }
+            },
+
+            axisLabel: {
+                formatter: '{value} ',
+                color: '#333'
+            },
+
+        }
+    ],
+    yAxis: [{
+        type: 'value',
         axisTick:{
             show:false
         },
         axisLine:{
             show:false
         },
-        splitLine:{
-            show:false,
+        axisLabel:{
+            textStyle:{
+                color: '#fff'
+            },
+            interval:0,
         },
-        data: areaArr
+        splitLine: {
+            show:true,
+            lineStyle: {
+                color: ['#000'],
+                width: 1,
+                type: 'dotted'
+            }
+        },
+        nameLocation: 'middle',
+        nameTextStyle: {
+            fontWeight: 'bold',
+            fontSize: '14',
+        }
     }],
-    yAxis: [{
-        show:false
-    }],
-    dataZoom: {
-        show: true,
-        start : 0,
-        end:25,
-    },
-    series: [{
-        name: '主力净流入',
-        type: 'bar',
-        barGop:0,
-        barCategoryGap: '70%',
-        barWidth:10,
+    series: [
+        {
+            name:'主力净流入',
+            type:'bar',
+            barWidth:30,
+            itemStyle:{
+                normal:{
+                    color:function(item){
 
-    }, {
-        name: '主力净流出',
-        type: 'bar',
-        barGap:0,
-        barWidth:10,
-        barCategoryGap: '70%',
 
-    }]
-}
-price_go.setOption(option3);
+                        if(item.value>0){
+                            return '#367CE4';
+                        }
+                        else{
+                            return '#ff9c00';
+                        }
+
+                    }
+                }},
+            data:pricedata
+        },
+        {
+            name:"主力净流出",
+            type:"bar",
+        }
+
+    ]
+};
+
+price_go.setOption(priceoption);
 
 /*关注热力图*/
 var treemap = echarts.init(document.getElementById('treemap'));
@@ -550,19 +602,34 @@ option = {
         boundaryGap: false,
         data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月']
     },
-    yAxis: {
+    yAxis: [{
         type: 'value',
-        splitLine:{
+        axisTick:{
+            show:false
+        },
+        axisLine:{
+            show:false
+        },
+        axisLabel:{
+            textStyle:{
+                color: '#fff'
+            },
+            interval:0,
+        },
+        splitLine: {
             show:true,
             lineStyle: {
-                color: '#ccc'   // 修改网格线颜色
+                color: ['#000'],
+                width: 1,
+                type: 'dotted'
             }
         },
-        axisTick: {//去掉刻度
-            show: true
+        nameLocation: 'middle',
+        nameTextStyle: {
+            fontWeight: 'bold',
+            fontSize: '14',
         }
-
-    },
+    }],
     series: [{
         name: '违法违规数',
         type: 'line',
