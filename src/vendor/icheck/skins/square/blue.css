@@ -10,6 +10,7 @@
     width: 18px;
     height: 18px;
     background: url(blue.png) no-repeat;
+    background-size: 180px 18px;
     border: none;
     cursor: pointer;
 }
