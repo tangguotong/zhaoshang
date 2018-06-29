@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/*园区对比*/
+.record {
+  border-bottom: 1px solid #ccc;
+  min-height: 150px;
+  line-height: 150px;
+}
+
+.record:last-child {
+  border-bottom: 0;
+}

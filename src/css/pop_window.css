@@ -1,0 +1,38 @@
+.modal-header {
+  background-color: #367ce4;
+  border-radius: 6px 6px 0 0;
+}
+
+.modal-header .close {
+  color: #fff;
+  opacity: 1;
+  font-weight: normal;
+  font-size: 26px;
+}
+
+.modal-title {
+  font-size: 18px;
+  color: #fff;
+}
+
+.modal-content {
+  border: none;
+}
+
+.modal-body .message {
+  font-size: 20px;
+  color: #666666;
+  margin-top: 15px;
+}
+
+.modal-body > img {
+  margin-top: 15px;
+}
+
+.modal-footer {
+  border: none;
+}
+
+.width100 {
+  width: 100px;
+}

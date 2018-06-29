@@ -26,6 +26,7 @@
 
     <link rel="stylesheet" href="../vendor/icheck/skins/square/blue.css">
     <link rel="stylesheet" href="../vendor/bootstrap-daterangepicker/daterangepicker.css">
+    <!--<link rel="stylesheet" href="../css/panel.css">-->
     <link rel="stylesheet" href="../css/tang.css">
 
 </head>
@@ -55,7 +56,7 @@
                 <a href="./industryheadeline.html">产业智参</a>
             </li>
             <li>
-                <a href="./gardenviewlist.html">园区透视</a>
+                <a href="gardenviewlist.html">园区透视</a>
             </li>
             <li>
                 <a href="./recommend.html">精准招商</a>
@@ -121,202 +122,279 @@
     <!--内容部分 start-->
     <div class="right-content">
         <div class="page-content">
-            <div class="panel panel-line-primary no-margin">
-                <div class="panel-heading have-bottom-border clearfix">
-                    <!--标题-->
-                    <a class="panel-title blueFont">白皮书</a>
-                    <a class="panel-title">产业研究报告</a>
-                    <a class="panel-title">产业文献</a>
-                    <!--搜索框-->
-                    <div class="input-group pull-right col-md-3">
-                        <input type="text" class="form-control" placeholder="请输入搜索关键词">
-                        <span class="input-group-btn">
+            <div class="show-file">
+                <div class="panel panel-line-primary no-margin">
+                    <div class="panel-heading have-bottom-border clearfix">
+                        <!--标题-->
+                        <a class="panel-title blueFont">白皮书</a>
+                        <a class="panel-title">产业研究报告</a>
+                        <a class="panel-title">产业文献</a>
+                        <!--搜索框-->
+                        <div class="input-group pull-right col-md-3">
+                            <input type="text" class="form-control" placeholder="请输入搜索关键词">
+                            <span class="input-group-btn">
                             <button class="btn btn-search" type="button">搜索</button>
 					    </span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="panel-body">
-                    <div class="search-box">
-                        <div class="item">
-                            <div class="item-title">产业类型</div>
-                            <ul class="item-list clearfix">
-                                <li class="active">全部</li>
-                                <li>金融融资</li>
-                                <li>高新科技</li>
-                                <li>房地产业</li>
-                                <li>旅游酒店</li>
-                                <li>矿产冶金</li>
-                                <li>IT互联网</li>
-                                <li>文化教育</li>
-                                <li>环保绿化</li>
-                                <li>石油化工</li>
-                                <li>建筑建材</li>
-                                <li>农林牧渔</li>
-                                <li>汽车汽配</li>
-                                <li>交通</li>
-                            </ul>
-                            <span class="show-more" data-toggle="collapse" data-target="#demo"> 更多 <span class="glyphicon glyphicon-chevron-down" ></span></span>
-
-                            <div class="item hidden-item   collapse out"  id="demo">
-                                <div class="item-title"></div>
+                    <div class="panel-body">
+                        <div class="search-box">
+                            <div class="item">
+                                <div class="item-title">产业类型</div>
                                 <ul class="item-list clearfix">
                                     <li class="active">全部</li>
+                                    <li>金融融资</li>
+                                    <li>高新科技</li>
+                                    <li>房地产业</li>
                                     <li>旅游酒店</li>
                                     <li>矿产冶金</li>
                                     <li>IT互联网</li>
+                                    <li>文化教育</li>
+                                    <li>环保绿化</li>
                                     <li>石油化工</li>
                                     <li>建筑建材</li>
                                     <li>农林牧渔</li>
                                     <li>汽车汽配</li>
                                     <li>交通</li>
+                                </ul>
+                                <span class="show-more" data-toggle="collapse" data-target="#demo"> 更多 <span class="glyphicon glyphicon-chevron-down" ></span></span>
+
+                                <div class="item hidden-item   collapse out"  id="demo">
+                                    <div class="item-title"></div>
+                                    <ul class="item-list clearfix">
+                                        <li class="active">全部</li>
+                                        <li>旅游酒店</li>
+                                        <li>矿产冶金</li>
+                                        <li>IT互联网</li>
+                                        <li>石油化工</li>
+                                        <li>建筑建材</li>
+                                        <li>农林牧渔</li>
+                                        <li>汽车汽配</li>
+                                        <li>交通</li>
+                                        <li>
+                                            <input type="text" class="date-select" placeholder="自定义时间" >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-title">发布时间</div>
+                                <ul class="item-list clearfix">
+                                    <li class="active">全部</li>
+                                    <li>最近一周</li>
+                                    <li>最近一月</li>
+                                    <li>半年以内</li>
+                                    <li>1年以内</li>
                                     <li>
-                                        <input type="text" class="date-select" placeholder="自定义时间" >
+                                        <input type="text" class="date-select" placeholder="选择时间范围">
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="item-title">发布时间</div>
-                            <ul class="item-list clearfix">
-                                <li class="active">全部</li>
-                                <li>最近一周</li>
-                                <li>最近一月</li>
-                                <li>半年以内</li>
-                                <li>1年以内</li>
-                                <li>
-                                    <input type="text" class="date-select" placeholder="选择时间范围">
-                                </li>
-                            </ul>
-                        </div>
+
+
                     </div>
-
-
                 </div>
-            </div>
-            <div class="panel panel-dark">
-                <div class="panel-heading clearfix">
-                    <!--标题-->
-                    <div class="row">
-                        <div class="col-md-6">
+                <div class="panel panel-dark">
+                    <div class="panel-heading clearfix">
+                        <!--标题-->
+                        <div class="row">
+                            <div class="col-md-6">
                         <span class="check-span col-md-2">
                             <input type="checkbox" class="icheck">
                             <span class="word">Excel</span>
                         </span>
-                        <span class="check-span col-md-2">
+                                <span class="check-span col-md-2">
                             <input type="checkbox" class="icheck">
                             <span class="word">PDF</span>
                         </span>
-                        <span class="check-span col-md-2">
+                                <span class="check-span col-md-2">
                             <input type="checkbox" class="icheck">
                             <span class="word">Word</span>
                         </span>
-                        <span class="check-span col-md-2">
+                                <span class="check-span col-md-2">
                             <input type="checkbox" class="icheck">
                             <span class="word">PPT</span>
                         </span>
-                        <span class="check-span col-md-2">
+                                <span class="check-span col-md-2">
                             <input type="checkbox" class="icheck">
                             <span class="word">TXT</span>
                         </span>
 
-                        </div>
-                        <div class="col-md-6 middle-ver-box">
-                            <div class="col-md-4 text-center linH34">下载量</div>
-                            <div class="col-md-4 text-center linH34">浏览量</div>
-                            <div class="col-md-4 text-center linH34">上传日期</div>
+                            </div>
+                            <div class="col-md-6 middle-ver-box">
+                                <div class="col-md-4 text-center linH34">下载量</div>
+                                <div class="col-md-4 text-center linH34">浏览量</div>
+                                <div class="col-md-4 text-center linH34">上传日期</div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="panel-body word-box">
-                   <div class="row item">
-                       <div class="col-md-6">
-                           <div class="col-md-1">
-                               <img src="../images/word.png" alt="">
-                           </div>
-                           <div class="col-md-11">
-                               <h4>VR产业白皮书</h4>
-                               <p class="deepFontGrey over-hidden">VR产业白皮书 - VR 产业白皮书 继一系列的各大机构报告之后, 工信部终于在前两天发布了......</p>
-                               <p class="lightFontGrey mb0">文件大小：1.13MB</p>
-                           </div>
-                       </div>
-                       <div class="col-md-6">
-                           <div class="col-md-4 text-center linH90">1</div>
-                           <div class="col-md-4 text-center linH90">1</div>
-                           <div class="col-md-4 text-center linH90">1</div>
-                       </div>
-                   </div>
-                    <div class="row item">
-                        <div class="col-md-6">
-                            <div class="col-md-1">
-                                <img src="../images/excel.png" alt="">
+                    <div class="panel-body word-box">
+                        <div class="row item">
+                            <div class="col-md-6">
+                                <div class="col-md-1">
+                                    <img src="../images/word.png" alt="">
+                                </div>
+                                <div class="col-md-11">
+                                    <h4>VR产业白皮书</h4>
+                                    <p class="deepFontGrey over-hidden">VR产业白皮书 - VR 产业白皮书 继一系列的各大机构报告之后, 工信部终于在前两天发布了......</p>
+                                    <p class="lightFontGrey mb0">文件大小：1.13MB</p>
+                                </div>
                             </div>
-                            <div class="col-md-11">
-                                <h4>VR产业白皮书</h4>
-                                <p class="deepFontGrey over-hidden">VR产业白皮书 - VR 产业白皮书 继一系列的各大机构报告之后, 工信部终于在前两天发布了......</p>
-                                <p class="lightFontGrey mb0">文件大小：1.13MB</p>
+                            <div class="col-md-6">
+                                <div class="col-md-4 text-center linH90">1</div>
+                                <div class="col-md-4 text-center linH90">1</div>
+                                <div class="col-md-4 text-center linH90">1</div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="col-md-4 text-center linH90">1</div>
-                            <div class="col-md-4 text-center linH90">1</div>
-                            <div class="col-md-4 text-center linH90">1</div>
-                        </div>
-                    </div>
-                    <div class="row item">
-                        <div class="col-md-6">
-                            <div class="col-md-1">
-                                <img src="../images/pdf.png" alt="">
+                        <div class="row item">
+                            <div class="col-md-6">
+                                <div class="col-md-1">
+                                    <img src="../images/excel.png" alt="">
+                                </div>
+                                <div class="col-md-11">
+                                    <h4>VR产业白皮书</h4>
+                                    <p class="deepFontGrey over-hidden">VR产业白皮书 - VR 产业白皮书 继一系列的各大机构报告之后, 工信部终于在前两天发布了......</p>
+                                    <p class="lightFontGrey mb0">文件大小：1.13MB</p>
+                                </div>
                             </div>
-                            <div class="col-md-11">
-                                <h4>VR产业白皮书</h4>
-                                <p class="deepFontGrey over-hidden">VR产业白皮书 - VR 产业白皮书 继一系列的各大机构报告之后, 工信部终于在前两天发布了......</p>
-                                <p class="lightFontGrey mb0">文件大小：1.13MB</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="col-md-4 text-center linH90">1</div>
-                            <div class="col-md-4 text-center linH90">1</div>
-                            <div class="col-md-4 text-center linH90">1</div>
-                        </div>
-                    </div>
-                    <div class="row item">
-                        <div class="col-md-6">
-                            <div class="col-md-1">
-                                <img src="../images/txt.png" alt="">
-                            </div>
-                            <div class="col-md-11">
-                                <h4>VR产业白皮书</h4>
-                                <p class="deepFontGrey over-hidden">VR产业白皮书 - VR 产业白皮书 继一系列的各大机构报告之后, 工信部终于在前两天发布了......</p>
-                                <p class="lightFontGrey mb0">文件大小：1.13MB</p>
+                            <div class="col-md-6">
+                                <div class="col-md-4 text-center linH90">1</div>
+                                <div class="col-md-4 text-center linH90">1</div>
+                                <div class="col-md-4 text-center linH90">1</div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="col-md-4 text-center linH90">1</div>
-                            <div class="col-md-4 text-center linH90">1</div>
-                            <div class="col-md-4 text-center linH90">1</div>
-                        </div>
-                    </div>
-                    <div class="row item">
-                        <div class="col-md-6">
-                            <div class="col-md-1">
-                                <img src="../images/ppt.png" alt="">
+                        <div class="row item">
+                            <div class="col-md-6">
+                                <div class="col-md-1">
+                                    <img src="../images/pdf.png" alt="">
+                                </div>
+                                <div class="col-md-11">
+                                    <h4>VR产业白皮书</h4>
+                                    <p class="deepFontGrey over-hidden">VR产业白皮书 - VR 产业白皮书 继一系列的各大机构报告之后, 工信部终于在前两天发布了......</p>
+                                    <p class="lightFontGrey mb0">文件大小：1.13MB</p>
+                                </div>
                             </div>
-                            <div class="col-md-11">
-                                <h4>VR产业白皮书</h4>
-                                <p class="deepFontGrey over-hidden">VR产业白皮书 - VR 产业白皮书 继一系列的各大机构报告之后, 工信部终于在前两天发布了......</p>
-                                <p class="lightFontGrey mb0">文件大小：1.13MB</p>
+                            <div class="col-md-6">
+                                <div class="col-md-4 text-center linH90">1</div>
+                                <div class="col-md-4 text-center linH90">1</div>
+                                <div class="col-md-4 text-center linH90">1</div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="col-md-4 text-center linH90">1</div>
-                            <div class="col-md-4 text-center linH90">1</div>
-                            <div class="col-md-4 text-center linH90">1</div>
+                        <div class="row item">
+                            <div class="col-md-6">
+                                <div class="col-md-1">
+                                    <img src="../images/txt.png" alt="">
+                                </div>
+                                <div class="col-md-11">
+                                    <h4>VR产业白皮书</h4>
+                                    <p class="deepFontGrey over-hidden">VR产业白皮书 - VR 产业白皮书 继一系列的各大机构报告之后, 工信部终于在前两天发布了......</p>
+                                    <p class="lightFontGrey mb0">文件大小：1.13MB</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="col-md-4 text-center linH90">1</div>
+                                <div class="col-md-4 text-center linH90">1</div>
+                                <div class="col-md-4 text-center linH90">1</div>
+                            </div>
+                        </div>
+                        <div class="row item">
+                            <div class="col-md-6">
+                                <div class="col-md-1">
+                                    <img src="../images/ppt.png" alt="">
+                                </div>
+                                <div class="col-md-11">
+                                    <h4>VR产业白皮书</h4>
+                                    <p class="deepFontGrey over-hidden">VR产业白皮书 - VR 产业白皮书 继一系列的各大机构报告之后, 工信部终于在前两天发布了......</p>
+                                    <p class="lightFontGrey mb0">文件大小：1.13MB</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="col-md-4 text-center linH90">1</div>
+                                <div class="col-md-4 text-center linH90">1</div>
+                                <div class="col-md-4 text-center linH90">1</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+
+            <div class="panel hidden file-detail">
+                <div class="panel-heading clearfix white-book-title have-bottom-border">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <img src="../images/word.png" alt="">
+                                </div>
+                                <div class="col-md-11">
+                                    <h3 class="details-title">VP产业白皮书</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="lightFontGrey">
+                                        <span>文件大小:1.13.MB</span>
+                                        <span>上传日期:2011-11-11</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 clearfix">
+                            <ul class="pull-right level-icon">
+                                <li>
+                                    <i class=" 	glyphicon glyphicon-share"></i>
+                                    <!--保存-->
+                                </li>
+                                <li>
+                                    <i class=" 	glyphicon glyphicon-star-empty"></i>
+                                    <!--全屏-->
+                                </li>
+                                <li>
+                                    <i class=" 	glyphicon glyphicon-fullscreen"></i>
+                                </li>
+                                <li>
+                                    <button class="btn btn-blue">立即下载</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="whit-book-body">
+                        <p>学术研讨会，12月中旬出席珠江国际卒中论坛，下旬现身深圳市首届脑卒中筛查防治与转化医学论坛……最近一段时间来，流行病学专家、深
+                            学术研讨会，12月中旬出席珠江国际卒中论坛，下旬现身深圳市首届脑卒中筛查防治与转化医学论坛……最近一段时间来，流行病学专家、深
+                            学术研讨会，12月中旬出席珠江国际卒中论坛，下旬现身深圳市首届脑卒中筛查防治与转化医学论坛……最近一段时间来，流行病学专家、深
+                            学术研讨会，12月中旬出席珠江国际卒中论坛，下旬现身深圳市首届脑卒中筛查防治与转化医学论坛……最近一段时间来，流行病学专家、深
+                            学术研讨会，12月中旬出席珠江国际卒中论坛，下旬现身深圳市首届脑卒中筛查防治与转化医学论坛……最近一段时间来，流行病学专家、深
+                            学术研讨会，12月中旬出席珠江国际卒中论坛，下旬现身深圳市首届脑卒中筛查防治与转化医学论坛……最近一段时间来，流行病学专家、深
+                            学术研讨会，12月中旬出席珠江国际卒中论坛，下旬现身深圳市首届脑卒中筛查防治与转化医学论坛……最近一段时间来，流行病学专家、深
+                        </p>
+                        <p>学术研讨会，12月中旬出席珠江国际卒中论坛，下旬现身深圳市首届脑卒中筛查防治与转化医学论坛……最近一段时间来，流行病学专家、深
+                            学术研讨会，12月中旬出席珠江国际卒中论坛，下旬现身深圳市首届脑卒中筛查防治与转化医学论坛……最近一段时间来，流行病学专家、深
+                            学术研讨会，12月中旬出席珠江国际卒中论坛，下旬现身深圳市首届脑卒中筛查防治与转化医学论坛……最近一段时间来，流行病学专家、深
+                            学术研讨会，12月中旬出席珠江国际卒中论坛，下旬现身深圳市首届脑卒中筛查防治与转化医学论坛……最近一段时间来，流行病学专家、深
+                            学术研讨会，12月中旬出席珠江国际卒中论坛，下旬现身深圳市首届脑卒中筛查防治与转化医学论坛……最近一段时间来，流行病学专家、深
+                            学术研讨会，12月中旬出席珠江国际卒中论坛，下旬现身深圳市首届脑卒中筛查防治与转化医学论坛……最近一段时间来，流行病学专家、深
+                            学术研讨会，12月中旬出席珠江国际卒中论坛，下旬现身深圳市首届脑卒中筛查防治与转化医学论坛……最近一段时间来，流行病学专家、深
+                        </p>
+                        <p>学术研讨会，12月中旬出席珠江国际卒中论坛，下旬现身深圳市首届脑卒中筛查防治与转化医学论坛……最近一段时间来，流行病学专家、深
+                            学术研讨会，12月中旬出席珠江国际卒中论坛，下旬现身深圳市首届脑卒中筛查防治与转化医学论坛……最近一段时间来，流行病学专家、深
+                            学术研讨会，12月中旬出席珠江国际卒中论坛，下旬现身深圳市首届脑卒中筛查防治与转化医学论坛……最近一段时间来，流行病学专家、深
+                            学术研讨会，12月中旬出席珠江国际卒中论坛，下旬现身深圳市首届脑卒中筛查防治与转化医学论坛……最近一段时间来，流行病学专家、深
+                            学术研讨会，12月中旬出席珠江国际卒中论坛，下旬现身深圳市首届脑卒中筛查防治与转化医学论坛……最近一段时间来，流行病学专家、深
+                            学术研讨会，12月中旬出席珠江国际卒中论坛，下旬现身深圳市首届脑卒中筛查防治与转化医学论坛……最近一段时间来，流行病学专家、深
+                            学术研讨会，12月中旬出席珠江国际卒中论坛，下旬现身深圳市首届脑卒中筛查防治与转化医学论坛……最近一段时间来，流行病学专家、深
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </div>
     <!--内容部分 end-->
@@ -332,5 +410,14 @@
 <script src="../vendor/bootstrap-daterangepicker/daterangepicker.js"></script>
 <script src="../js/tang.js"></script>
 </body>
+
+<script>
+    $(function () {
+        $('.word-box').find('.item').on('click',function () {
+            $('.show-file').hide();
+            $('.file-detail').removeClass('hidden');
+        });
+    })
+</script>
 
 </html>

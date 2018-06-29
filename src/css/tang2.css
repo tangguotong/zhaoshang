@@ -1,0 +1,47 @@
+.company-detail-text {
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.num-show {
+  font-size: 14px;
+}
+
+.num-show .red-num {
+  font-size: 20px !important;
+  color: #f1303e;
+  margin-left: 10px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.park-title {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 5px 0 10px 0;
+}
+
+.same-park {
+  padding: 0;
+}
+
+.same-park .item {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 10px 15px;
+}
+
+.same-park .item:last-child {
+  border: none;
+}
+
+.dark-font {
+  font-size: 14px;
+  color: #000000;
+}
+
+.panel-footer {
+  background-color: #fff;
+  padding: 20px 15px;
+}
