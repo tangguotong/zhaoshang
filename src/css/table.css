@@ -5,14 +5,12 @@
   Created by ayun 2018.6.21
  */
 .table-box {
-  width: 450px;
-}
+  width: 450px; }
 
 .table {
-  margin-bottom: 0px;
-}
+  margin-bottom: 0px; }
+  .table thead tr {
+    height: 45px;
+    border-bottom: 0; }
 
-.table thead tr {
-  height: 45px;
-  border-bottom: 0;
-}
+/*# sourceMappingURL=table.css.map */

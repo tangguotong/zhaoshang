@@ -10,6 +10,9 @@ h4{
   font-size: 16px;
   margin: 0 0 15px 0;
 }
+h3{
+  font-size: 22px;
+}
 
 .mb10{
   margin-bottom: 10px;
@@ -51,12 +54,20 @@ $lightFontGrey:#b2b2b2;
   color: $lightFontGrey;
   font-size: 14px;
   //margin-bottom: 15px;
-
+  span{
+    margin-right: 15px;
+  }
 }
 .blueFont{
   color: $activeBlueColor;
   font-size: 14px;
   //margin-bottom: 15px;
+  span{
+    margin-right: 20px;
+  }
+  i{
+    margin-right: 5px;
+  }
 }
 
 //搜索按钮
@@ -190,7 +201,7 @@ $lightFontGrey:#b2b2b2;
   border-bottom: 1px solid $lineDeepGrey;
 }
 .no-margin{
-  margin: 0;
+  margin: 0!important;
 }
 //面板2
 .panel-dark {
@@ -212,7 +223,7 @@ $lightFontGrey:#b2b2b2;
 }
 //tab
 .nav-my-style{
-  margin-bottom: 20px;
+  //margin-bottom: 20px;
   border: none;
   li{
     margin-right: 15px;
@@ -225,9 +236,11 @@ $lightFontGrey:#b2b2b2;
     a:focus,
     a.active,
     a:visited{
+      padding: 5px 15px;
       color: $tabNormalColor;
       border: none;
       background-color: #fff;
+      font-size: 14px;
     }
   }
   li:hover,li.active
@@ -242,16 +255,16 @@ $lightFontGrey:#b2b2b2;
       background-color: #fff;
       border: none;
     }
-    :after{
-      content: '';
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-      right: 0;
-      height: 4px;
-      width: 100%;
-      background-color: #2a93ed;
-    }
+    //:after{
+    //  content: '';
+    //  position: absolute;
+    //  bottom: -2px;
+    //  left: 0;
+    //  right: 0;
+    //  height: 4px;
+    //  width: 100%;
+    //  background-color: #2a93ed;
+    //}
   }
 
 }
@@ -397,6 +410,7 @@ $lightFontGrey:#b2b2b2;
   .item{
     border-top: 1px solid $lineDeepGrey;
     padding: 15px 0;
+    cursor: pointer;
   }
   .item:first-child{
     border: none;
@@ -408,4 +422,31 @@ $lightFontGrey:#b2b2b2;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis
+}
+.details-title{
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.level-icon{
+  overflow: hidden;
+  li{
+    padding: 0 10px;
+    float: left;
+    line-height: 34px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}
+.white-book-title{
+  padding-top: 25px;
+}
+.file-detail .panel-heading>div,.file-detail .panel-body>div{
+  width: 900px;
+  margin: 0 auto;
+  .whit-book-body p{
+    line-height: 40px;
+  }
+}
+.whit-book-body p{
+  line-height: 25px;
 }

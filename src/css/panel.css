@@ -11,32 +11,33 @@
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
-  border: 1px solid #ccc;
-}
+  border: 1px solid #e6e6e6; }
+  .panel-line-primary .panel-title {
+    font-size: 16px;
+    font-weight: 400; }
+    .panel-line-primary .panel-title .pull-right {
+      margin-right: 10px; }
+      .panel-line-primary .panel-title .pull-right .form {
+        float: left; }
+      .panel-line-primary .panel-title .pull-right .operate {
+        float: left; }
+        .panel-line-primary .panel-title .pull-right .operate li {
+          float: left;
+          margin-left: 8px;
+          line-height: 33px;
+          font-size: 14px; }
 
-.panel-line-primary .panel-title {
-  font-size: 18px;
-  font-weight: 400;
-}
+.panel-buttom {
+  margin-bottom: 0px;
+  border-bottom: 0; }
 
-.panel-line-primary .panel-title .pull-right {
-  margin-right: 45px;
-}
+.panel-top {
+  border-top: 0; }
 
-.panel-line-primary .panel-title .pull-right .form {
-  float: left;
-}
-
-.panel-line-primary .panel-title .pull-right .operate {
-  float: left;
-}
-
-.panel-line-primary .panel-title .pull-right .operate li {
-  float: left;
-  margin-left: 8px;
-  line-height: 33px;
-}
+.panel {
+  box-shadow: none; }
 
 .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
-  width: 105px;
-}
+  width: 100px; }
+
+/*# sourceMappingURL=panel.css.map */

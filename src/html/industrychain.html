@@ -16,9 +16,13 @@
     <meta name="keywords" content="产业地图">
     <title>产业图谱-产业链</title>
     <link rel="stylesheet" href="../vendor/bootstrap-3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="../vendor/bootstrap-select-1.12.2/css/bootstrap-select.css">
     <link rel="stylesheet" href="../vendor/iconfont/iconfont.css">
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/button.css">
     <link rel="stylesheet" href="../css/left_nav.css">
+    <link rel="stylesheet" href="../css/panel.css">
+    <link rel="stylesheet" href="../css/tang.css">
     <!--[if lt IE 9]>
     <script src="../vendor/html5shiv_3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -103,16 +107,56 @@
     <!--内容部分 start-->
     <div class="right-content">
         <div class="page-content">
-            <div class="row"></div>
-            <div class="row"></div>
-            <div class="row"></div>
-            <div class="row"></div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-line-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                产业链
+                                <div class="pull-right">
+                                    <from class="form-inline form">
+                                        <select class="selectpicker" title="第一产业">
+                                            <option value=""></option>
+                                        </select>
+                                        <select class="selectpicker" title="一级分类">
+                                            <option value=""></option>
+                                        </select>
+                                        <select class="selectpicker" title="二级分类">
+                                            <option value=""></option>
+                                        </select>
+                                        <select class="selectpicker" title="三级分类">
+                                            <option value=""></option>
+                                        </select>
+                                        <select class="selectpicker" title="四级分类">
+                                            <option value=""></option>
+                                        </select>
+
+                                        <div class="input-group pull-right col-md-3">
+                                            <input type="text" class="form-control" placeholder="请输入搜索关键词">
+                                            <span class="input-group-btn">
+                                            <button class="btn btn-search" type="button">搜索</button>
+                                        </span>
+                                        </div>
+                                    </from>
+
+
+                                </div>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!--内容部分 end-->
 </div>
 <script src="../vendor/jquery.min.js"></script>
 <script src="../vendor/bootstrap-3.3.7/js/bootstrap.js"></script>
+<script src="../vendor/bootstrap-select-1.12.2/js/bootstrap-select.min.js"></script>
+<script src="../vendor/echarts/echarts.min.js"></script>
+<script src="../vendor/echarts/provinces/china.js"></script>
+<script src="../vendor/echarts/customed_GM.js"></script>
+<script src="../js/industrychain/industrychain.js"></script>
 </body>
 
 </html>
