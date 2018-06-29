@@ -1,0 +1,41 @@
+//园区透视表头和tab
+
+.company-detail-text{
+  font-size: 14px;
+  //color: #000;
+  line-height: 25px;
+}
+.num-show{
+  font-size: 14px;
+  .red-num{
+    font-size: 20px!important;
+    color: #f1303e;
+    margin-left: 10px;
+  }
+}
+.mb20{
+  margin-bottom: 20px;
+}
+.park-title{
+  font-size: 20px;
+  font-weight: 400;
+  margin: 5px 0 10px 0;
+}
+.same-park{
+  padding: 0;
+  .item{
+    border-bottom: 1px solid #e6e6e6;
+    padding: 10px 15px;
+  }
+  .item:last-child{
+    border: none;
+  }
+}
+.dark-font {
+  font-size: 14px;
+  color: #000000;
+}
+.panel-footer{
+  background-color: #fff;
+  padding: 20px 15px;
+}
