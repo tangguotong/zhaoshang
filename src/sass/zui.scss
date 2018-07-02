@@ -9,6 +9,14 @@ input::-moz-placeholder, textarea::-moz-placeholder {color:#b8b8b8;}
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {color:#b8b8b8;}
 button{outline: none}
 ul,li{list-style: none;}
+a,
+a:link,
+a:hover,
+a:active,
+a:visited{
+    text-decoration: none;
+    outline: none;
+}
 pre{
     background-color: #f5f5f5;
     white-space: pre-wrap; /*css-3*/
