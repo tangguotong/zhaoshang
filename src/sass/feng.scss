@@ -43,11 +43,103 @@
       }
       span{
         display: inline-block;
-        margin-top: 10px;
+        margin-top: 20px;
         font-size: 14px;
       }
     }
   }
+}
+
+
+/*园区名片*/
+.table{
+  tr{
+    td{
+      font-size: 14px;
+    }
+  }
+}
+
+/*园区动态*/
+.list-group-item:first-child{
+  border-radius: 0px;
+}
+.list-group-item:last-child{
+  border-radius: 0px;
+}
+.list-group{
+  .list-group-item{
+    font-size: 16px;
+    .item-label{
+      border: 1px solid #367ce4;
+      color: #367ce4;
+      padding: 2px 5px;
+      font-size: 14px;
+      border-radius: 2px;
+      margin-right: 8px;
+    }
+    .list-time{
+      float: right;
+      color: #808080;
+    }
+  }
+}
+.pagination{
+  margin: 0;
+}
+
+/*产业集群*/
+.icon-grounp-item{
+  width: 14%;
+  margin-left: 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  float: left;
+
+  .icon-img{
+    width: 52px;
+    height: 52px;
+    margin: 10px auto;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+/*图说园区*/
+.image-grounp{
+  .img-grounp{
+    float: left;
+    width: 25%;
+    margin-top: 20px;
+    .img-grounp-item{
+      display: block;
+      width: 180px;
+      height: 180px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+}
+  /*辅助类*/
+.nobortop{
+  border-top:0;
+}
+.border{
+  border: 1px solid #ccc;
+}
+.ml{
+  margin-left: 15px;
+}
+.mr{
+  margin-right: 15px;
+}
+.t20{
+  font-size: 20px;
+  font-weight: 400;
 }
 
 
