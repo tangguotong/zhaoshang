@@ -107,22 +107,13 @@
   }
 }
 /*图说园区*/
-.image-grounp{
-  .img-grounp{
-    float: left;
-    width: 25%;
+.yuanqu{
+  div{
     margin-top: 20px;
-    .img-grounp-item{
-      display: block;
-      width: 180px;
-      height: 180px;
-      img{
-        width: 100%;
-        height: 100%;
-      }
+    img{
+      width: 100%;
     }
   }
-
 }
   /*辅助类*/
 .nobortop{
@@ -140,6 +131,9 @@
 .t20{
   font-size: 20px;
   font-weight: 400;
+}
+.charts{
+  height: 260px;
 }
 
 
