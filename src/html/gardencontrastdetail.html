@@ -17,6 +17,7 @@
     <title>园区透视-园区对比</title>
     <link rel="stylesheet" href="../vendor/bootstrap-3.3.7/css/bootstrap.css">
     <link rel="stylesheet" href="../vendor/bootstrap-select-1.12.2/css/bootstrap-select.css">
+    <link rel="stylesheet" href="../vendor/bootstrap-table/bootstrap-table.min.css">
     <link rel="stylesheet" href="../vendor/iconfont/iconfont.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/button.css">
@@ -119,7 +120,7 @@
                     </span>
                 </div>
 
-                <div class="panel-body">
+                <div class="panel-body ">
 
                     <h4 class="zhaoshang-title clearfix">园区竞合分析报告
                         <span class="time pull-right deepFontGrey">2018年05月28日</span>
@@ -139,33 +140,491 @@
                 <div class="panel-body">
                     <p class="panel-title">园区实力分析</p>
                     <div class="panel-inner">
-                        123
+                        <table class="table table-bordered our-table">
+                            <tbody>
+                            <tr>
+                                <td>对比园区</td>
+                                <td>天津中新生态城</td>
+                                <td>东营经济技术开发区</td>
+                                <td>中国（广东）自由贸易试验区广州南沙新区</td>
+                            </tr>
+                            <tr>
+                                <td>地区</td>
+                                <td>天津-西青区</td>
+                                <td>天津-西青区</td>
+                                <td>天津-西青区</td>
+                            </tr>
+                            <tr>
+                                <td>园区类型</td>
+                                <td>其他</td>
+                                <td>其他</td>
+                                <td>其他</td>
+                            </tr>
+                            <tr>
+                                <td>园区规划面积</td>
+                                <td>0.13平方公里</td>
+                                <td>0.13平方公里</td>
+                                <td>0.13平方公里</td>
+                            </tr>
+                            <tr>
+                                <td>土地存量</td>
+                                <td>100亩</td>
+                                <td>100亩</td>
+                                <td>100亩</td>
+                            </tr>
+                            <tr>
+                                <td>拿到土地证时间</td>
+                                <td>180天</td>
+                                <td>180天</td>
+                                <td>180天</td>
+                            </tr>
+                            <tr>
+                                <td>园区每年税收</td>
+                                <td>15亿元</td>
+                                <td>15亿元</td>
+                                <td>15亿元</td>
+                            </tr>
+                            <tr>
+                                <td>地址</td>
+                                <td>天津市西青区天祥工业区投资服务中心</td>
+                                <td>天津市西青区天祥工业区投资服务中心</td>
+                                <td>天津市西青区天祥工业区投资服务中心</td>
+                            </tr>
+                            <tr>
+                                <td>园区分类</td>
+                                <td>创业产业园</td>
+                                <td>创业产业园</td>
+                                <td>创业产业园</td>
+                            </tr>
+
+                            <tr>
+                                <td>税收要求</td>
+                                <td>四十平方公里</td>
+                                <td>四十平方公里</td>
+                                <td>四十平方公里</td>
+                            </tr>
+
+                            <tr>
+                                <td>园区已建成面积</td>
+                                <td>四十平方公里</td>
+                                <td>四十平方公里</td>
+                                <td>四十平方公里</td>
+                            </tr>
+
+                            <tr>
+                                <td>是否有指标</td>
+                                <td>是</td>
+                                <td>是</td>
+                                <td>是</td>
+                            </tr>
+                            <tr>
+                                <td>园区每年GDP</td>
+                                <td>60亿</td>
+                                <td>60亿</td>
+                                <td>60亿</td>
+                            </tr>
+                            <tr>
+                                <td>园区每年财政收入</td>
+                                <td>20.00亿元</td>
+                                <td>20.00亿元</td>
+                                <td>20.00亿元</td>
+                            </tr>
+
+                            </tbody>
+                        </table>
                     </div>
                     <p class="panel-title">投资成本分析</p>
                     <div class="panel-inner">
                         <div class="row">
-                            <div class="col-md-6 echartHeight" id="echart1"></div>
-                            <div class="col-md-6 echartHeight" id="echart2"></div>
+                            <div class="col-md-6 echartHeight mb20" id="echart1"></div>
+                            <div class="col-md-6 echartHeight mb20" id="echart2"></div>
+
+                            <div class="col-md-12">
+                                <table class="table table-bordered our-table">
+                                    <tbody>
+                                    <tr>
+                                        <td>对比园区</td>
+                                        <td>天津中新生态城</td>
+                                        <td>东营经济技术开发区</td>
+                                        <td>中国（广东）自由贸易试验区广州南沙新区</td>
+                                    </tr>
+                                    <tr>
+                                        <td>地价</td>
+                                        <td>60万/亩</td>
+                                        <td>60万/亩</td>
+                                        <td>60万/亩</td>
+                                    </tr>
+                                    <tr>
+                                        <td>天然气</td>
+                                        <td>2.77元/平方米</td>
+                                        <td>2.77元/平方米</td>
+                                        <td>2.77元/平方米</td>
+                                    </tr>
+                                    <tr>
+                                        <td>蒸汽</td>
+                                        <td>无</td>
+                                        <td>无</td>
+                                        <td>无</td>
+                                    </tr>
+                                    <tr>
+                                        <td>地价</td>
+                                        <td>60万/亩</td>
+                                    </tr>
+                                    <tr>
+                                        <td>暖气成本</td>
+                                        <td>30元/平方米</td>
+                                        <td>30元/平方米</td>
+                                        <td>30元/平方米</td>
+                                    </tr>
+                                    <tr>
+                                        <td>水价</td>
+                                        <td>7.85元/平方米</td>
+                                    </tr>
+                                    <tr>
+                                        <td>污水处理</td>
+                                        <td>1.2元/吨</td>
+                                        <td>1.2元/吨</td>
+                                        <td>1.2元/吨</td>
+                                    </tr>
+                                    <tr>
+                                        <td>蒸汽价格</td>
+                                        <td>200元/吨</td>
+                                        <td>200元/吨</td>
+                                        <td>200元/吨</td>
+                                    </tr>
+                                    <tr>
+                                        <td>园区每年GDP</td>
+                                        <td>60亿</td>
+                                        <td>60亿</td>
+                                        <td>60亿</td>
+                                    </tr>
+                                    <tr>
+                                        <td>厂房出租价格区间</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>写字楼出租价格区间</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>厂房出售价格区间</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>写字楼出售价格区间</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                     <p class="panel-title">区位交通分析</p>
                     <div class="panel-inner">
-                        <div class="row">
-                            <div class="col-md-12 echartHeight" id="echart3"></div>
+                        <div class="">
+                            <div class="col-md-12 echartHeight mb20" id="echart3"></div>
+                            <table class="table table-bordered our-table">
+                                <tbody>
+                                <tr>
+                                    <td>对比园区</td>
+                                    <td>天津中新生态城</td>
+                                    <td>东营经济技术开发区</td>
+                                    <td>中国（广东）自由贸易试验区广州南沙新区</td>
+                                </tr>
+                                <tr>
+                                    <td>区位价格</td>
+                                    <td>
+                                        距天津港40公里，距北京机场180公里（驱车1.5小时） 距天津机场38公里（驱车40分钟），天祥工业区是距离 市中心最近的工
+                                    </td>
+                                    <td>
+                                        距天津港40公里，距北京机场180公里（驱车1.5小时） 距天津机场38公里（驱车40分钟），天祥工业区是距离 市中心最近的工
+                                    </td>
+                                    <td>
+                                        距天津港40公里，距北京机场180公里（驱车1.5小时） 距天津机场38公里（驱车40分钟），天祥工业区是距离 市中心最近的工
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>公路运输</td>
+                                    <td>
+                                        距天津港40公里，距北京机场180公里（驱车1.5小时） 距天津机场38公里（驱车40分钟），天祥工业区是距离 市中心最近的工
+                                    </td>
+                                    <td>
+                                        距天津港40公里，距北京机场180公里（驱车1.5小时） 距天津机场38公里（驱车40分钟），天祥工业区是距离 市中心最近的工
+                                    </td>
+                                    <td>
+                                        距天津港40公里，距北京机场180公里（驱车1.5小时） 距天津机场38公里（驱车40分钟），天祥工业区是距离 市中心最近的工
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>铁路运输</td>
+                                    <td>
+                                        距天津港40公里，距北京机场180公里（驱车1.5小时） 距天津机场38公里（驱车40分钟），天祥工业区是距离 市中心最近的工
+                                    </td>
+                                    <td>
+                                        距天津港40公里，距北京机场180公里（驱车1.5小时） 距天津机场38公里（驱车40分钟），天祥工业区是距离 市中心最近的工
+                                    </td>
+                                    <td>
+                                        距天津港40公里，距北京机场180公里（驱车1.5小时） 距天津机场38公里（驱车40分钟），天祥工业区是距离 市中心最近的工
+                                    </td>
+                                </tr>
 
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                     <p class="panel-title">园区资源分析</p>
                     <div class="panel-inner">
-                        123
+                        <table class="table table-bordered our-table">
+                            <tbody>
+                            <tr>
+                                <td>对比园区</td>
+                                <td>天津中新生态城</td>
+                                <td>东营经济技术开发区</td>
+                                <td>中国（广东）自由贸易试验区广州南沙新区</td>
+                            </tr>
+                            <tr>
+                                <td>本地人口</td>
+                                <td>
+                                    <div class="item-bar">
+                                        <span class="rect bg-blue"></span>
+                                        <span class="num">12万</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="item-bar">
+                                        <span class="rect bg-blue"></span>
+                                        <span class="num">12万</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="item-bar">
+                                        <span class="rect bg-blue"></span>
+                                        <span class="num">12万</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>每年毕业人数</td>
+                                <td>
+                                    <div class="item-bar">
+                                        <span class="rect bg-dark-blue"></span>
+                                        <span class="num">12万</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="item-bar">
+                                        <span class="rect bg-dark-blue"></span>
+                                        <span class="num">12万</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="item-bar">
+                                        <span class="rect bg-dark-blue"></span>
+                                        <span class="num">12万</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>流动人口</td>
+
+                                <td>
+                                    <div class="item-bar">
+                                        <span class="rect bg-orange"></span>
+                                        <span class="num">12万</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="item-bar">
+                                        <span class="rect bg-orange"></span>
+                                        <span class="num">12万</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="item-bar">
+                                        <span class="rect bg-orange"></span>
+                                        <span class="num">12万</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>周边职业院校</td>
+                                <td>天津理工、天津师大、河北工业大学</td>
+                                <td>天津理工、天津师大、河北工业大学</td>
+                                <td>天津理工、天津师大、河北工业大学</td>
+                            </tr>
+
+                            <tr>
+                                <td>项目审批权限</td>
+                                <td>是</td>
+                                <td>是</td>
+                                <td>是</td>
+                            </tr>
+
+                            <tr>
+                                <td>财政是否独立</td>
+                                <td>是</td>
+                                <td>是</td>
+                                <td>是</td>
+                            </tr>
+
+                            </tbody>
+                        </table>
                     </div>
                     <p class="panel-title">营商环境</p>
                     <div class="panel-inner">
-                        123
+                        <div id="echart4" class="echartHeight mb20"></div>
+                        <div class="newspaper-box">
+                            <div class="item clearfix">
+                                <div class="col-md-6">
+                                    <button class="btn btn-border-blue mr10">正面</button>
+                                    <span class="dark-font">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
+                                </div>
+                                <div class="col-md-3 deepFontGrey">燕赵晚报</div>
+                                <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56</div>
+                            </div>
+                            <div class="item clearfix">
+                                <div class="col-md-6">
+                                    <button class="btn btn-border-blue mr10">正面</button>
+                                    <span class="dark-font">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
+                                </div>
+                                <div class="col-md-3 deepFontGrey">燕赵晚报</div>
+                                <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56</div>
+                            </div>
+                            <div class="item clearfix">
+                                <div class="col-md-6">
+                                    <button class="btn btn-border-blue mr10">正面</button>
+                                    <span class="dark-font">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
+                                </div>
+                                <div class="col-md-3 deepFontGrey">燕赵晚报</div>
+                                <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56</div>
+                            </div>
+                            <div class="item clearfix">
+                                <div class="col-md-6">
+                                    <button class="btn btn-border-blue mr10">正面</button>
+                                    <span class="dark-font">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
+                                </div>
+                                <div class="col-md-3 deepFontGrey">燕赵晚报</div>
+                                <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56</div>
+                            </div>
+                            <div class="item clearfix">
+                                <div class="col-md-6">
+                                    <button class="btn btn-border-blue mr10">正面</button>
+                                    <span class="dark-font">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
+                                </div>
+                                <div class="col-md-3 deepFontGrey">燕赵晚报</div>
+                                <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56</div>
+                            </div>
+                        </div>
+
                     </div>
                     <p class="panel-title">园区配套分析</p>
                     <div class="panel-inner">
-                        123
+                        <table class="table table-bordered our-table">
+                            <tbody>
+                            <tr>
+                                <td>对比园区</td>
+                                <td>天津中新生态城</td>
+                                <td>东营经济技术开发区</td>
+                                <td>中国（广东）自由贸易试验区广州南沙新区</td>
+                            </tr>
+                            <tr>
+                                <td>本市住房均价</td>
+                                <td>20000元/平方米</td>
+                                <td>20000元/平方米</td>
+                                <td>20000元/平方米</td>
+                            </tr>
+                            <tr>
+                                <td>园区周边房价</td>
+                                <td>20000元/平方米</td>
+                                <td>20000元</td>
+                                <td>20000元</td>
+                            </tr>
+                            <tr>
+                                <td>园区生活配套</td>
+                                <td>0.13平方公里</td>
+                                <td>0.13平方公里</td>
+                                <td>0.13平方公里</td>
+                            </tr>
+                            <tr>
+                                <td>居住环境</td>
+                                <td>100亩</td>
+                                <td>100亩</td>
+                                <td>100亩</td>
+                            </tr>
+                            <tr>
+                                <td>商业环境</td>
+                                <td>180天</td>
+                                <td>180天</td>
+                                <td>180天</td>
+                            </tr>
+                            <tr>
+                                <td>百货商场</td>
+                                <td>15亿元</td>
+                                <td>15亿元</td>
+                                <td>15亿元</td>
+                            </tr>
+                            <tr>
+                                <td>酒店商务</td>
+                                <td>天津市西青区天祥工业区投资服务中心</td>
+                                <td>天津市西青区天祥工业区投资服务中心</td>
+                                <td>天津市西青区天祥工业区投资服务中心</td>
+                            </tr>
+                            <tr>
+                                <td>休闲娱乐</td>
+                                <td>创业产业园</td>
+                                <td>创业产业园</td>
+                                <td>创业产业园</td>
+                            </tr>
+
+                            <tr>
+                                <td>医疗</td>
+                                <td>四十平方公里</td>
+                                <td>四十平方公里</td>
+                                <td>四十平方公里</td>
+                            </tr>
+
+                            <tr>
+                                <td>教育</td>
+                                <td>四十平方公里</td>
+                                <td>四十平方公里</td>
+                                <td>四十平方公里</td>
+                            </tr>
+
+                            <tr>
+                                <td>是否有指标</td>
+                                <td>是</td>
+                                <td>是</td>
+                                <td>是</td>
+                            </tr>
+                            <tr>
+                                <td>园区每年GDP</td>
+                                <td>60亿</td>
+                                <td>60亿</td>
+                                <td>60亿</td>
+                            </tr>
+                            <tr>
+                                <td>园区每年财政收入</td>
+                                <td>20.00亿元</td>
+                                <td>20.00亿元</td>
+                                <td>20.00亿元</td>
+                            </tr>
+
+                            </tbody>
+                        </table>
                     </div>
 
                 </div>
@@ -177,6 +636,7 @@
 <script src="../vendor/jquery.min.js"></script>
 <script src="../vendor/bootstrap-3.3.7/js/bootstrap.js"></script>
 <script src="../vendor/bootstrap-select-1.12.2/js/bootstrap-select.min.js"></script>
+<script src="../vendor/bootstrap-table/bootstrap-table.js"></script>
 <script src="../vendor/echarts/echarts.min.js"></script>
 
 <script src="../js/gardencontrastdetail.js"></script>

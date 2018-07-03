@@ -14,7 +14,7 @@
   }
 }
 .mb20{
-  margin-bottom: 20px;
+  margin-bottom: 20px!important;
 }
 .park-title{
   font-size: 20px;
@@ -41,13 +41,33 @@
 }
 
 
+//园区列表tab3
+.special-table{
+  font-size: 14px;
+  tr td{
+    padding-left: 50px!important;
+    text-align: left;
+    color: #333333;
+  }
+  .active{
+     color: #727272;
+    min-width: 180px;
+    vertical-align: middle;
+  }
+}
+.map-box{
+  height: 420px;
+  border: 1px solid #000;
+}
 
-//园区对比详情
+
+
+//园区对比详情页面
 .zhaoshang-title{
   font-size: 22px;
 }
 .mr20{
-  margin-right: 20px;
+  margin-right: 20px!important;
 }
 .panel-inner{
   padding-top: 20px;
@@ -56,4 +76,87 @@
 }
 .echartHeight{
   height: 260px;
+}
+
+.our-table{
+  font-size: 14px;
+  tr td{
+    padding-left: 50px!important;
+    padding-right: 50px!important;
+    text-align: left;
+    color: #727272;
+    line-height: 22px!important;
+    vertical-align: middle!important;
+  }
+  tr td:first-child{
+    background-color: #fafafa;
+    color: #727272;
+    padding-right: 10px!important;
+    text-align: left!important;
+    min-width: 180px;
+  }
+  tr:first-child{
+    background-color: #fafafa;
+    td{
+      color: #333333;
+      font-weight: 500;
+      //text-align: center;
+    }
+
+  }
+}
+.item-bar{
+  position: relative;
+  width: 200px;
+  vertical-align: middle;
+  span{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .rect{
+    height: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 80px;
+    //background-color: #28b7f3;
+  }
+  .num{
+    position: absolute;
+    left: 95px;
+    color: #727272 ;
+  }
+}
+.bg-blue{
+  background-color: #28b7f3;
+}
+.bg-dark-blue{
+  background-color: #367ce4;
+
+}
+.bg-orange{
+  background-color: #ff9c00;
+
+}
+.table{
+  margin-bottom: 0;
+}
+.mr10{
+  margin-right: 10px;
+}
+.newspaper-box{
+  border: 1px solid #e6e6e6;
+  .item{
+    border-bottom: 1px solid #e6e6e6;
+    line-height: 45px;
+  }
+  .item:last-child{
+    border-bottom: none;
+  }
+  .btn-border-blue{
+    font-size: 12px;
+    padding: 3px 6px;
+  }
+  div{
+    vertical-align: middle;
+  }
 }
