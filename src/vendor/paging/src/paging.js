@@ -32,12 +32,12 @@
 				callback: null,
 				pagesize: 10,
 				current: 1,
-				prevTpl: "上一页",
-				nextTpl: "下一页",
+				prevTpl: "＜",
+				nextTpl: "＞",
 				firstTpl: "首页",
 				lastTpl: "末页",
 				ellipseTpl: "...",
-				toolbar: false,
+				toolbar: true,
 				hash:true,
 				pageSizeList: [5, 10, 15, 20]
 			}, settings);
@@ -108,8 +108,9 @@
 		},
 		format: function() {
 			var html = '<ul>'
-			html += '<li class="js-page-first js-page-action ui-pager" >' + this.settings.firstTpl + '</li>';
-			html += '<li class="js-page-prev js-page-action ui-pager">' + this.settings.prevTpl + '</li>';
+			// html += '<li class="js-page-first js-page-action" >' + this.settings.firstTpl + '</li>';
+			// html += '<li class="js-page-prev js-page-action">' + this.settings.prevTpl + '</li>';
+			html += '<li class="js-page-prev js-page-action"><span class="glyphicon glyphicon-chevron-left"></span></li>';
 			if (this.pagecount > 6) {
 				html += '<li data-page="1" class="ui-pager">1</li>';
 				if (this.current <= 2) {
@@ -135,8 +136,9 @@
 					html += '<li data-page="' + i + '" class="ui-pager">' + i + '</li>'
 				}
 			}
-			html += '<li class="js-page-next js-page-action ui-pager">' + this.settings.nextTpl + '</li>';
-			html += '<li class="js-page-last js-page-action ui-pager">' + this.settings.lastTpl + '</li>';
+			html += '<li class="js-page-next js-page-action"><span class="glyphicon glyphicon-chevron-right"></span></li>';
+			// html += '<li class="js-page-next js-page-action">' + this.settings.nextTpl + '</li>';
+			// html += '<li class="js-page-last js-page-action">' + this.settings.lastTpl + '</li>';
 			html += '</ul>';
 			this.container.html(html);
 			if (this.current == 1) {
@@ -154,7 +156,7 @@
 		},
 		bindToolbar: function() {
 			var _this = this;
-			var html = $('<li class="ui-paging-toolbar"><select class="ui-select-pagesize"></select><input type="text" class="ui-paging-count"/><a href="javascript:void(0)">跳转</a></li>');
+			var html = $('<li class="ui-paging-toolbar"><span class="blue">跳转到</span><input type="text" class="ui-paging-count  form-control "/>页<a href="javascript:void(0)">Go</a></li>');
 			var sel = $('.ui-select-pagesize', html);
 			var str = '';
 			for (var i = 0, l = this.settings.pageSizeList.length; i < l; i++) {

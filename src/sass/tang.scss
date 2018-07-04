@@ -128,12 +128,13 @@ $lightFontGrey:#b2b2b2;
       vertical-align: middle;
       li{
         float: left;
-        width: 100px;
+        //width: 100px;
         padding: 8px 5px;
         text-align: left;
         color: $darkBlack;
         cursor: pointer;
         font-size: 14px;
+        margin-right: 20px;
         input{
           border: none;
           outline: none;
