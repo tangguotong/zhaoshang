@@ -13,7 +13,26 @@ $(function(){
        }
 
     });
+
+    $('#myTab a[href="#tab1"]').tab('show')
+
+    initMap(114.309531,30.59619);
+
+
 });
+
+function initMap(long,lat) {
+    //创建中心点坐标,经度纬度
+    var map=new AMap.LngLat(long, lat);
+    //创建实例化地图
+    var mapObj=new AMap.Map("container",{
+        view:new AMap.View2D({
+            center:map,
+            zoom:12
+        })
+    });
+}
+
 
 var sourceData = [{
     name: '马山县',
