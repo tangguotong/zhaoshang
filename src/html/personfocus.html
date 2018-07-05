@@ -14,14 +14,22 @@
     <meta content="always" name="referrer">
     <meta name="description" content="产业图谱-产业地图">
     <meta name="keywords" content="产业地图">
-    <title>产业智参-人物聚焦</title>
+    <title>产业智参-产业头条</title>
     <link rel="stylesheet" href="../vendor/bootstrap-3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="../vendor/bootstrap-select-1.12.2/css/bootstrap-select.css">
     <link rel="stylesheet" href="../vendor/iconfont/iconfont.css">
+    <link rel="stylesheet" href="../vendor/paging/src/paging.css">
+
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/left_nav.css">
+    <link rel="stylesheet" href="../css/panel.css">
+    <link rel="stylesheet" href="../css/feng.css">
     <!--[if lt IE 9]>
     <script src="../vendor/html5shiv_3.7.3/html5shiv.min.js"></script>
     <![endif]-->
+    <link rel="stylesheet" href="../vendor/icheck/skins/square/blue.css">
+    <link rel="stylesheet" href="../vendor/bootstrap-daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="../css/tang.css">
 </head>
 
 <body>
@@ -42,10 +50,10 @@
     </div>
     <div class="navbar-collapse collapse" role="navigation">
         <ul class="nav navbar-nav nav-menu">
-            <li class="active">
+            <li >
                 <a href="./industrymap.html">产业图谱</a>
             </li>
-            <li>
+            <li class="active">
                 <a href="./industryheadeline.html">产业智参</a>
             </li>
             <li>
@@ -85,7 +93,7 @@
     <!-- 左侧导航 start -->
     <div class="left-nav">
         <ul class="nav">
-            <li class="">
+            <li class="active">
                 <a href="./industryheadeline.html">
                     <i class="iconfont icon-toubaoanli"></i>
                     产业头条
@@ -103,7 +111,7 @@
                     产业智库
                 </a>
             </li>
-            <li class="active">
+            <li class="">
                 <a href="./personfocus.html">
                     <i class="iconfont icon-renyuan"></i>
                     人物聚焦
@@ -115,6 +123,157 @@
     <!--内容部分 start-->
     <div class="right-content">
         <div class="page-content">
+            <div class="panel panel-line-primary no-margin">
+                <div class="panel-heading have-bottom-border clearfix">
+                    <!--标题-->
+                    <span class="panel-title">人物聚焦</span>
+                    <!--搜索框-->
+                    <div class="input-group pull-right col-md-3">
+                        <input type="text" class="form-control" placeholder="请输入搜索关键词">
+                        <span class="input-group-btn">
+                            <button class="btn btn-search" type="button"><span class="	glyphicon glyphicon-search"></span></button>
+					    </span>
+                    </div>
+                </div>
+
+                <div class="panel-body">
+                    <div class="search-box">
+                        <div class="item">
+                            <div class="item-title">情报来源</div>
+                            <ul class="item-list clearfix">
+                                <li class="active">全部</li>
+                                <li>投融资快报</li>
+                                <li>会展情报</li>
+                                <li>政策情报</li>
+                                <li>科研动态</li>
+                                <li>专利</li>
+                                <li>市场情报</li>
+                                <li>中标情报</li>
+                                <li>获奖情报</li>
+                                <li>重大课题</li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <div class="item-title">所在区域</div>
+                            <ul class="item-list clearfix">
+                                <li class="active">全部</li>
+                                <li>安徽</li>
+                                <li>北京</li>
+                                <li>重庆</li>
+                                <li>福建</li>
+                                <li>广东</li>
+                                <li>甘肃</li>
+                                <li>广西</li>
+                                <li>河南</li>
+                                <li>河北</li>
+                                <li>黑龙江</li>
+                                <li>吉林</li>
+                                <li>江苏</li>
+                                <li>江西</li>
+                                <li>内蒙</li>
+                            </ul>
+                            <span class="show-more" data-toggle="collapse" data-target="#showmore1"> 更多 <span class="glyphicon glyphicon-chevron-down"></span></span>
+                            <div class="item hidden-item collapse out" id="showmore1" aria-expanded="true" style="">
+                                <div class="item-title"></div>
+                                <ul class="item-list clearfix">
+                                    <li class="">隐藏的</li>
+                                    <li>隐藏的</li>
+                                    <li>隐藏的</li>
+                                    <li>隐藏的</li>
+                                    <li>隐藏的</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-dark nobortop">
+                <div class="panel-heading clearfix">
+                    <!--标题-->
+                    <span class="panel-title">为您匹配到<span>4543</span>条情报</span>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <ul class="person-list border">
+                                <li>
+                                    <img src="../images/renwu.png" alt="">
+                                </li>
+                                <li>
+                                    徐西平
+                                </li>
+                                <li>
+                                    教授
+                                </li>
+                                <li>
+                                    简介：徐希平，日本筑波大学公共卫生 专业博士，美国哈佛公共卫生学院 ......
+                                </li>
+                                <li>
+                                    <button class="btn btn-blue">收藏</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="person-list border">
+                                <li>
+                                    <img src="../images/renwu.png" alt="">
+                                </li>
+                                <li>
+                                    徐西平
+                                </li>
+                                <li>
+                                    教授
+                                </li>
+                                <li>
+                                    简介：徐希平，日本筑波大学公共卫生 专业博士，美国哈佛公共卫生学院 ......
+                                </li>
+                                <li>
+                                    <button class="btn btn-blue">收藏</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="person-list border">
+                                <li>
+                                    <img src="../images/renwu.png" alt="">
+                                </li>
+                                <li>
+                                    徐西平
+                                </li>
+                                <li>
+                                    教授
+                                </li>
+                                <li>
+                                    简介：徐希平，日本筑波大学公共卫生 专业博士，美国哈佛公共卫生学院 ......
+                                </li>
+                                <li>
+                                    <button class="btn btn-blue">收藏</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="person-list border">
+                                <li>
+                                    <img src="../images/renwu.png" alt="">
+                                </li>
+                                <li>
+                                    徐西平
+                                </li>
+                                <li>
+                                    教授
+                                </li>
+                                <li>
+                                    简介：徐希平，日本筑波大学公共卫生 专业博士，美国哈佛公共卫生学院 ......
+                                </li>
+                                <li>
+                                    <button class="btn btn-blue">收藏</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="pageTool" class="mb30"></div>
 
         </div>
     </div>
@@ -122,6 +281,15 @@
 </div>
 <script src="../vendor/jquery.min.js"></script>
 <script src="../vendor/bootstrap-3.3.7/js/bootstrap.js"></script>
+<script src="../vendor/bootstrap-select-1.12.2/js/bootstrap-select.min.js"></script>
+<script src="../vendor/icheck/icheck.min.js"></script>
+<script src="../vendor/bootstrap-daterangepicker/moment.min.js"></script>
+<script src="../vendor/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script src="../vendor/paging/src/query.js"></script>
+<script src="../vendor/paging/src/paging.js"></script>
+<script src="../js/tang.js"></script>
+
+
 </body>
 
 </html>
