@@ -91,13 +91,12 @@ $lightFontGrey:#b2b2b2;
 .search-box{
   position: relative;
   background-color: #fff;
-  margin-left: -15px;
-  margin-right: -15px;
+  margin: -15px -30px;
   >.item:first-child{
     border: none;
   }
   .item .hidden-item{
-    margin-left: -100px;
+    margin-left: -115px;
     border: none;
   }
   .show-more{
@@ -110,26 +109,27 @@ $lightFontGrey:#b2b2b2;
   }
   .item{
     position: relative;
-    padding: 0 10px 0 100px;
+    padding: 0 10px 0 115px;
     border-top: 1px solid #e6e6e6;
     font-size: 14px;
     .item-title{
       position: absolute;
-      left: 20px;
+      left: 30px;
       top: 0;
       display: inline-block;
       width: 100px;
-      padding: 8px 0;
+      padding: 10px 0;
       color: $tabNormalColor;
     }
     .item-list{
       display: inline-block;
       margin-bottom: 0;
       vertical-align: middle;
+      padding-right: 20px;
       li{
         float: left;
         //width: 100px;
-        padding: 8px 5px;
+        padding: 10px 5px;
         text-align: left;
         color: $darkBlack;
         cursor: pointer;
@@ -235,13 +235,16 @@ $lightFontGrey:#b2b2b2;
     a{
       font-size: 18px;
       color: #000;
+      padding-top: 0;
+      padding-bottom: 0;
+      line-height: 34px;
       &:hover,
       &:active,
       &:focus,
       a.active{
         color: $tabNormalColor;
         border: 0;
-        background-color: #fff;
+        background-color: transparent;
         font-size: 18px;
       }
     }
@@ -268,6 +271,49 @@ $lightFontGrey:#b2b2b2;
       border: 0;
     }
   }
+}
+.panel-dark .nav-my-style{
+  //margin-bottom: 20px;
+  border: none;
+  li{
+    margin-right: 15px;
+    :last-child{
+      margin-right: 0;
+    }
+    a{
+      font-size: 14px!important;
+      color: #808080;
+
+      &:hover,
+      &:active,
+      &:focus,
+      a.active{
+        color: #808080;
+        border: none!important;
+        background-color: #fafafa!important;
+        font-size: 14px;
+      }
+    }
+  }
+  li:hover,li.active
+  {
+    a,
+    a:hover,
+    a:active,
+    a:focus,
+    a.active,
+    a:visited{
+      color: $activeBlueColor;
+      background-color: #fafafa!important;
+      border: 0;
+      font-size:18px;
+    }
+  }
+
+}
+//tab切换
+.nav-my-style li:first-child a{
+  padding-left: 0;
 }
 
 //下拉框样式
@@ -320,10 +366,10 @@ $lightFontGrey:#b2b2b2;
 
 //精准招商-智能推荐-优质企业
 .company-box{
-  margin: -15px;
+  margin: -15px -30px;
   .item{
     position: relative;
-    padding: 15px;
+    padding: 15px 30px;
     border-bottom: 1px solid $lineDeepGrey;
     .col-md-2{
       position: static;
@@ -412,6 +458,8 @@ $lightFontGrey:#b2b2b2;
     border-top: 1px solid $lineDeepGrey;
     padding: 15px 0;
     cursor: pointer;
+    margin-left: -30px;
+    margin-right: -30px;
   }
   .item:first-child{
     border: none;
@@ -450,4 +498,11 @@ $lightFontGrey:#b2b2b2;
 }
 .whit-book-body p{
   line-height: 25px;
+}
+.no-bottom-border{
+  border-bottom: none;
+}
+.margin-30{
+  margin-left: -30px;
+  margin-right: -30px;
 }

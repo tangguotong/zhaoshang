@@ -1,7 +1,7 @@
 .ui-paging-container{color:#666;font-size: 12px;}
 .ui-paging-container ul{overflow: hidden;text-align: center;}
 .ui-paging-container ul,.ui-paging-container li{list-style: none;}
-.ui-paging-container li{display: inline-block;padding:3px 6px;margin-left: 5px;color:#808080;}
+.ui-paging-container li{display: inline-block;padding:3px 6px;margin-left: 5px;color:#808080;font-size: 14px;}
 .ui-paging-container li.ui-pager{cursor: pointer;border-radius: 10px;}
 .ui-paging-container li.ui-pager:hover,.ui-paging-container li.focus{background-color: #178aff;color:#FFFFFF;}
 .ui-paging-container li.ui-paging-ellipse{border:none;}
