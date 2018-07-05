@@ -9,7 +9,7 @@
     <!--规定360安全浏览器使用webki内核进行渲染-->
     <meta name="applicable-device" content="pc">
     <!--申明网站为pc站，避免被转码-->
-    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-transform"/>
     <!--禁止浏览器转码-->
     <meta content="always" name="referrer">
     <meta name="description" content="产业图谱-产业地图">
@@ -17,8 +17,13 @@
     <title>产业智参- 产业智库</title>
     <link rel="stylesheet" href="../vendor/bootstrap-3.3.7/css/bootstrap.css">
     <link rel="stylesheet" href="../vendor/iconfont/iconfont.css">
+    <link rel="stylesheet" href="../vendor/paging/src/paging.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/left_nav.css">
+    <link rel="stylesheet" href="../css/tang.css">
+    <link rel="stylesheet" href="../css/feng.css">
+    <link rel="stylesheet" href="../css/panel.css">
+
     <!--[if lt IE 9]>
     <script src="../vendor/html5shiv_3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -85,7 +90,7 @@
     <!-- 左侧导航 start -->
     <div class="left-nav">
         <ul class="nav">
-            <li >
+            <li>
                 <a href="./industryheadeline.html">
                     <i class="iconfont icon-toubaoanli"></i>
                     产业头条
@@ -115,8 +120,214 @@
     <!--内容部分 start-->
     <div class="right-content">
         <div class="page-content">
-            <div class="panel">
-                <div class=""></div>
+            <div class="panel no-margin panel-line-primary">
+                <div class="panel-heading have-bottom-border">
+                    <div class="tab-search clearfix">
+                        <ul id="myTab" class="nav nav-tabs pull-left nav-my-style ">
+                            <li class="active">
+                                <a href="#tab0" data-toggle="tab" aria-expanded="true">
+                                    产业研究机构
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#tab1" data-toggle="tab" aria-expanded="false">产业联盟</a>
+                            </li>
+                            <li class="">
+                                <a href="#tab2" data-toggle="tab" aria-expanded="false">产业专家</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <!--切换-->
+                    <div id="myTabContent" class="tab-content">
+                        <div class="tab-pane fade active in" id="tab0">
+                            产业研究机构
+                        </div>
+                        <div class="tab-pane fade" id="tab1">
+                            产业联盟
+                        </div>
+                        <div class="tab-pane fade" id="tab2">
+                            <div class="panel no-margin">
+                                <div class="search-box">
+                                    <div class="item">
+                                        <div class="item-title">所在区域</div>
+                                        <ul class="item-list clearfix">
+                                            <li class="active">全部</li>
+                                            <li>安徽</li>
+                                            <li>北京</li>
+                                            <li>重庆</li>
+                                            <li>福建</li>
+                                            <li>广东</li>
+                                            <li>甘肃</li>
+                                            <li>广西</li>
+                                            <li>河南</li>
+                                        </ul>
+                                        <span class="show-more" data-toggle="collapse"
+                                              data-target="#showmore1"> 更多 <span
+                                                class="glyphicon glyphicon-chevron-down"></span></span>
+                                        <div class="item hidden-item collapse out" id="showmore1" aria-expanded="true"
+                                             style="">
+                                            <div class="item-title"></div>
+                                            <ul class="item-list clearfix">
+                                                <li class="">隐藏的</li>
+                                                <li>隐藏的</li>
+                                                <li>隐藏的</li>
+                                                <li>隐藏的</li>
+                                                <li>隐藏的</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-title">所在区域</div>
+                                        <ul class="item-list clearfix">
+                                            <li class="active">全部</li>
+                                            <li>安徽</li>
+                                            <li>北京</li>
+                                            <li>重庆</li>
+                                            <li>福建</li>
+                                            <li>广东</li>
+                                            <li>甘肃</li>
+                                            <li>广西</li>
+                                            <li>河南</li>
+                                        </ul>
+                                        <span class="show-more" data-toggle="collapse"
+                                              data-target="#showmore2"> 更多 <span
+                                                class="glyphicon glyphicon-chevron-down"></span></span>
+                                        <div class="item hidden-item collapse out" id="showmore2" aria-expanded="true"
+                                             style="">
+                                            <div class="item-title"></div>
+                                            <ul class="item-list clearfix">
+                                                <li class="">隐藏的</li>
+                                                <li>隐藏的</li>
+                                                <li>隐藏的</li>
+                                                <li>隐藏的</li>
+                                                <li>隐藏的</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-title">所在区域</div>
+                                        <ul class="item-list clearfix">
+                                            <li class="active">全部</li>
+                                            <li>安徽</li>
+                                            <li>北京</li>
+                                            <li>重庆</li>
+                                            <li>福建</li>
+                                            <li>广东</li>
+                                            <li>甘肃</li>
+                                            <li>广西</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-dark mll mrr">
+                                <div class="panel-heading">
+                                    <!--标题-->
+                                    <span class="panel-title">为您匹配到<span>4543</span>条情报</span>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="col-md-3 ">
+                                        <div class="renwu-grounp clearfix">
+                                            <div class="col-md-6">
+                                                <img src="../images/renwu.png" alt="">
+
+                                            </div>
+                                            <div class="col-md-6">
+                                                   <span>
+                                                       <i class="glyphicon glyphicon-tags"></i>
+                                                        千人计划
+                                                    </span>
+                                                <button class="btn btn-blue btn-bottom">
+                                                    <i class="iconfont icon-shoucang1 "></i>
+                                                    收藏
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 ">
+                                        <div class="renwu-grounp clearfix">
+                                            <div class="col-md-6  ">
+                                                <img src="../images/renwu.png" alt="">
+                                                <span>
+                                                <i class="glyphicon glyphicon-tags"></i>
+                                                千人计划
+                                            </span>
+                                            </div>
+                                            <div class="col-md-6">
+                                                文字
+                                                <button class="btn btn-blue btn-bottom">
+                                                    <i class="iconfont icon-shoucang1 "></i>
+                                                    收藏
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 ">
+                                        <div class="renwu-grounp clearfix">
+                                            <div class="col-md-6  ">
+                                                <img src="../images/renwu.png" alt="">
+                                                <span>
+                                                <i class="glyphicon glyphicon-tags"></i>
+                                                千人计划
+                                            </span>
+                                            </div>
+                                            <div class="col-md-6">
+                                                文字
+                                                <button class="btn btn-blue btn-bottom">
+                                                    <i class="iconfont icon-shoucang1 "></i>
+                                                    收藏
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 ">
+                                        <div class="renwu-grounp clearfix">
+                                            <div class="col-md-6  ">
+                                                <img src="../images/renwu.png" alt="">
+                                                <span>
+                                                <i class="glyphicon glyphicon-tags"></i>
+                                                千人计划
+                                            </span>
+                                            </div>
+                                            <div class="col-md-6">
+                                                文字
+                                                <button class="btn btn-blue btn-bottom">
+                                                    <i class="iconfont icon-shoucang1 "></i>
+                                                    收藏
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 ">
+                                        <div class="renwu-grounp clearfix">
+                                            <div class="col-md-6  ">
+                                                <img src="../images/renwu.png" alt="">
+                                                <span>
+                                                <i class="glyphicon glyphicon-tags"></i>
+                                                千人计划
+                                            </span>
+                                            </div>
+                                            <div class="col-md-6">
+                                                文字
+                                                <button class="btn btn-blue btn-bottom">
+                                                    <i class="iconfont icon-shoucang1 "></i>
+                                                    收藏
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="pageTool" class="mb30"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
         </div>
     </div>
@@ -124,6 +335,17 @@
 </div>
 <script src="../vendor/jquery.min.js"></script>
 <script src="../vendor/bootstrap-3.3.7/js/bootstrap.js"></script>
+<script src="../vendor/paging/src/query.js"></script>
+<script src="../vendor/paging/src/paging.js"></script>
+<script>
+    //分页初始化
+    $('#pageTool').Paging({
+        pagesize: 10, count: 100, callback: function (page, size, count) {
+            // console.log(arguments)
+            // alert('当前第 ' +page +'页,每页 '+size+'条,总页数：'+count+'页')
+        }
+    });
+</script>
 </body>
 
 </html>
