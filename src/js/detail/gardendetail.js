@@ -6,29 +6,33 @@
 /*园区评价*/
 
 
-$(function(){
+$(function () {
     $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-       if($(e.target).text() == "园区情报"){
-           showecharts()
-       }
+        if ($(e.target).text() == "园区情报") {
+            showecharts()
+        }
 
     });
 
     $('#myTab a[href="#tab1"]').tab('show')
 
-    initMap(114.309531,30.59619);
+    initMap(114.309531, 30.59619);
 
+    //分页初始化
+    $('.pageTool').Paging({
+        pagesize: 10, count: 100, toolbar:false
+    });
 
 });
 
-function initMap(long,lat) {
+function initMap(long, lat) {
     //创建中心点坐标,经度纬度
-    var map=new AMap.LngLat(long, lat);
+    var map = new AMap.LngLat(long, lat);
     //创建实例化地图
-    var mapObj=new AMap.Map("container",{
-        view:new AMap.View2D({
-            center:map,
-            zoom:12
+    var mapObj = new AMap.Map("container", {
+        view: new AMap.View2D({
+            center: map,
+            zoom: 12
         })
     });
 }
@@ -56,24 +60,24 @@ var sourceData = [{
     services: 13.12
 }];
 
-var seriesData = sourceData.map(function(item, index, array) {
+var seriesData = sourceData.map(function (item, index, array) {
     return {
         name: item['name'],
         value: [item['sales'], item['services']]
     }
 });
 
-var computeServicesAvgLine = function() {
+var computeServicesAvgLine = function () {
     var sum = 0;
-    sourceData.forEach(function(item) {
+    sourceData.forEach(function (item) {
         sum += item['services']
     });
     return sum / sourceData.length
 };
 
-var computeSalesAvgLine = function() {
+var computeSalesAvgLine = function () {
     var sum = 0;
-    sourceData.forEach(function(item) {
+    sourceData.forEach(function (item) {
         sum += item['sales']
     });
     return sum / sourceData.length
@@ -82,14 +86,15 @@ var avg = {
     servicesAvgLine: computeServicesAvgLine(),
     salesAvgLine: computeSalesAvgLine()
 };
-function showecharts(){
-    var scatter=echarts.init(document.getElementById("scatter"));
+
+function showecharts() {
+    var scatter = echarts.init(document.getElementById("scatter"));
 
     var option = {
 
         grid: {
             bottom: '10%',
-            top:"5%"
+            top: "5%"
         },
         tooltip: {
             trigger: 'item',
@@ -101,7 +106,7 @@ function showecharts(){
                     width: 1
                 },
             },
-            formatter: function(obj) {
+            formatter: function (obj) {
                 if (obj.componentType == "series") {
                     return '<div style="border-bottom: 1px solid rgba(255,255,255,.3); font-size: 18px;padding-bottom: 7px;margin-bottom: 7px">' +
                         obj.name +
@@ -122,7 +127,7 @@ function showecharts(){
             normal: {
                 show: true,
                 position: 'bottom',
-                formatter: function(params) {
+                formatter: function (params) {
                     return params.name
                 }
             },
@@ -179,7 +184,7 @@ function showecharts(){
                 normal: {
                     show: true,
                     color: '#367ce4',
-                    formatter: function(sourceData) {
+                    formatter: function (sourceData) {
                         return sourceData.name;
                     },
                     position: 'right'
@@ -187,9 +192,7 @@ function showecharts(){
             },
             markLine: {
                 label: {
-                    normal: {
-
-                    }
+                    normal: {}
                 },
                 lineStyle: {
                     normal: {

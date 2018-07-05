@@ -9,7 +9,7 @@
     <!--规定360安全浏览器使用webki内核进行渲染-->
     <meta name="applicable-device" content="pc">
     <!--申明网站为pc站，避免被转码-->
-    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-transform"/>
     <!--禁止浏览器转码-->
     <meta content="always" name="referrer">
     <meta name="description" content="产业图谱-产业地图">
@@ -17,6 +17,7 @@
     <title>园区透视-园区列表</title>
     <link rel="stylesheet" href="../vendor/bootstrap-3.3.7/css/bootstrap.css">
     <link rel="stylesheet" href="../vendor/iconfont/iconfont.css">
+    <link rel="stylesheet" href="../vendor/paging/src/paging.css">
     <link rel="stylesheet" href="../vendor/bootstrap-select-1.12.2/css/bootstrap-select.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/left_nav.css">
@@ -51,7 +52,7 @@
     </div>
     <div class="navbar-collapse collapse" role="navigation">
         <ul class="nav navbar-nav nav-menu">
-            <li >
+            <li>
                 <a href="./industrymap.html">产业图谱</a>
             </li>
             <li>
@@ -179,227 +180,202 @@
                         <div class="panel-body">
                             <!--切换体-->
                             <div id="myTabContent" class="tab-content">
-                                <div class="tab-pane margin-30 fade active in" id="tab0">
+                                <div class="tab-pane  fade active in" id="tab0">
                                     <!--园区名片-->
-                                    <div class="panel">
-                                        <div class="panel-heading">
-                                            <div class="panel-title">
-                                                园区名片
-                                            </div>
-                                        </div>
-                                        <div class="panel-body">
-                                            <table class="table table-bordered our-table">
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="active">地区</td>
-                                                        <td>123344567848767647</td>
-                                                        <td class="active">园区分类</td>
-                                                        <td>创意产业园</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="active">园区类型</td>
-                                                        <td>其他</td>
-                                                        <td class="active">税收要求</td>
-                                                        <td>40万元/亩</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="active">园区规划面积</td>
-                                                        <td>0.13平方公里</td>
-                                                        <td class="active">园区建成面积</td>
-                                                        <td>0.13平方公里</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="active">土地存量</td>
-                                                        <td>100亩</td>
-                                                        <td class="active">是否有指标</td>
-                                                        <td>是</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="active">拿到土地证时间</td>
-                                                        <td>180天</td>
-                                                        <td class="active">是否有指标</td>
-                                                        <td>是</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="active">园区每年税收</td>
-                                                        <td>15亿元</td>
-                                                        <td class="active">园区每年GDP</td>
-                                                        <td>60亿元</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="active">地址</td>
-                                                        <td colspan="3" >天津市西青区天祥工业区投资服务中心</td>
-                                                    </tr>
+                                    <div class="panel-title">
+                                        园区名片
+                                    </div>
+                                    <div class="panel-inner">
+                                        <table class="table table-bordered our-table">
+                                            <tbody>
+                                            <tr>
+                                                <td class="active">地区</td>
+                                                <td>123344567848767647</td>
+                                                <td class="active">园区分类</td>
+                                                <td>创意产业园</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="active">园区类型</td>
+                                                <td>其他</td>
+                                                <td class="active">税收要求</td>
+                                                <td>40万元/亩</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="active">园区规划面积</td>
+                                                <td>0.13平方公里</td>
+                                                <td class="active">园区建成面积</td>
+                                                <td>0.13平方公里</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="active">土地存量</td>
+                                                <td>100亩</td>
+                                                <td class="active">是否有指标</td>
+                                                <td>是</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="active">拿到土地证时间</td>
+                                                <td>180天</td>
+                                                <td class="active">是否有指标</td>
+                                                <td>是</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="active">园区每年税收</td>
+                                                <td>15亿元</td>
+                                                <td class="active">园区每年GDP</td>
+                                                <td>60亿元</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="active">地址</td>
+                                                <td colspan="3">天津市西青区天祥工业区投资服务中心</td>
+                                            </tr>
 
-                                                </tbody>
-                                            </table>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <!--园区动态-->
+                                    <div class="panel-title">
+                                        园区动态
+                                    </div>
+                                    <div class="panel-inner">
+                                        <div class="newspaper-box">
+                                            <div class="item clearfix">
+                                                <div class="col-md-9">
+                                                    <button class="btn btn-border-blue mr10">正面</button>
+                                                    <span class="dark-font over-hidden maxw">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
+                                                </div>
+
+                                                <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56
+                                                </div>
+                                            </div>
+                                            <div class="item clearfix">
+                                                <div class="col-md-9">
+                                                    <button class="btn btn-border-blue mr10">正面</button>
+                                                    <span class="dark-font over-hidden maxw">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
+                                                </div>
+
+                                                <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56
+                                                </div>
+                                            </div>
+                                            <div class="item clearfix">
+                                                <div class="col-md-9">
+                                                    <button class="btn btn-border-blue mr10">正面</button>
+                                                    <span class="dark-font over-hidden maxw">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
+                                                </div>
+
+                                                <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56
+                                                </div>
+                                            </div>
+                                            <div class="item clearfix">
+                                                <div class="col-md-9">
+                                                    <button class="btn btn-border-blue mr10">正面</button>
+                                                    <span class="dark-font over-hidden maxw">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
+                                                </div>
+
+                                                <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56
+                                                </div>
+                                            </div>
+                                            <div class="item clearfix">
+                                                <div class="col-md-9">
+                                                    <button class="btn btn-border-blue mr10">正面</button>
+                                                    <span class="dark-font over-hidden maxw">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
+                                                </div>
+
+                                                <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <!--园区动态-->
-                                    <div class="panel">
-                                        <div class="panel-heading">
-                                            <div class="panel-title">
-                                                园区动态
-                                            </div>
-                                        </div>
-                                        <div class="newspaper-box ml mr">
-                                            <div class="item clearfix">
-                                                <div class="col-md-9">
-                                                    <button class="btn btn-border-blue mr10">正面</button>
-                                                    <span class="dark-font over-hidden maxw">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
-                                                </div>
+                                    <div class="pageTool" class="mb30">
 
-                                                <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56</div>
-                                            </div>
-                                            <div class="item clearfix">
-                                                <div class="col-md-9">
-                                                    <button class="btn btn-border-blue mr10">正面</button>
-                                                    <span class="dark-font over-hidden maxw">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
-                                                </div>
-
-                                                <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56</div>
-                                            </div>
-                                            <div class="item clearfix">
-                                                <div class="col-md-9">
-                                                    <button class="btn btn-border-blue mr10">正面</button>
-                                                    <span class="dark-font over-hidden maxw">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
-                                                </div>
-
-                                                <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56</div>
-                                            </div>
-                                            <div class="item clearfix">
-                                                <div class="col-md-9">
-                                                    <button class="btn btn-border-blue mr10">正面</button>
-                                                    <span class="dark-font over-hidden maxw">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
-                                                </div>
-
-                                                <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56</div>
-                                            </div>
-                                            <div class="item clearfix">
-                                                <div class="col-md-9">
-                                                    <button class="btn btn-border-blue mr10">正面</button>
-                                                    <span class="dark-font over-hidden maxw">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
-                                                </div>
-
-                                                <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56</div>
-                                            </div>
-                                        </div>
-                                        <div class="panel-footer nobortop text-center">
-                                            <ul class="pagination">
-                                                <li><a href="#">&laquo;</a></li>
-                                                <li><a href="#">1</a></li>
-                                                <li><a href="#">2</a></li>
-                                                <li><a href="#">3</a></li>
-                                                <li><a href="#">4</a></li>
-                                                <li><a href="#">5</a></li>
-                                                <li><a href="#">&raquo;</a></li>
-                                            </ul>
-                                        </div>
                                     </div>
                                     <!--产业集群-->
-                                    <div class="panel">
-                                        <div class="panel-heading">
-                                            <div class="panel-title">
-                                                产业集群
-                                            </div>
-                                        </div>
-                                        <div class="panel-body">
-                                            <ul class="icon-grounp">
-                                                <li class="icon-grounp-item  text-center">
-                                                    <p class="icon-img">
-                                                        <img src="../images/it.png" alt="">
-                                                    </p>
-                                                    <p>IT</p>
-                                                </li>
-                                                <li class="icon-grounp-item  text-center">
-                                                    <p class="icon-img">
-                                                        <img src="../images/it.png" alt="">
-                                                    </p>
-                                                    <p>IT</p>
-                                                </li>
-                                                <li class="icon-grounp-item  text-center">
-                                                    <p class="icon-img">
-                                                        <img src="../images/it.png" alt="">
-                                                    </p>
-                                                    <p>IT</p>
-                                                </li>
-                                                <li class="icon-grounp-item  text-center">
-                                                    <p class="icon-img">
-                                                        <img src="../images/it.png" alt="">
-                                                    </p>
-                                                    <p>IT</p>
-                                                </li>
-                                                <li class="icon-grounp-item  text-center">
-                                                    <p class="icon-img">
-                                                        <img src="../images/it.png" alt="">
-                                                    </p>
-                                                    <p>IT</p>
-                                                </li>
-                                                <li class="icon-grounp-item  text-center">
-                                                    <p class="icon-img">
-                                                        <img src="../images/it.png" alt="">
-                                                    </p>
-                                                    <p>IT</p>
-                                                </li>
-                                                <li class="icon-grounp-item  text-center">
-                                                    <p class="icon-img">
-                                                        <img src="../images/it.png" alt="">
-                                                    </p>
-                                                    <p>IT</p>
-                                                </li>
-                                                <li class="icon-grounp-item  text-center">
-                                                    <p class="icon-img">
-                                                        <img src="../images/it.png" alt="">
-                                                    </p>
-                                                    <p>IT</p>
-                                                </li>
-                                                <li class="icon-grounp-item  text-center">
-                                                    <p class="icon-img">
-                                                        <img src="../images/it.png" alt="">
-                                                    </p>
-                                                    <p>IT</p>
-                                                </li>
-                                                <li class="icon-grounp-item  text-center">
-                                                    <p class="icon-img">
-                                                        <img src="../images/it.png" alt="">
-                                                    </p>
-                                                    <p>IT</p>
-                                                </li>
-                                                <li class="icon-grounp-item text-center">
-                                                    <p class="icon-img">
-                                                        <img src="../images/it.png" alt="">
-                                                    </p>
-                                                    <p>IT</p>
-                                                </li>
-                                                <li class="icon-grounp-item text-center">
-                                                    <p class="icon-img">
-                                                        <img src="../images/it.png" alt="">
-                                                    </p>
-                                                    <p>IT</p>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                    <div class="panel-title">
+                                        产业集群
+                                    </div>
+                                    <div class="panel-inner clearfix">
+                                        <ul class="icon-grounp">
+                                            <li class="icon-grounp-item  text-center">
+                                                <p class="icon-img">
+                                                    <img src="../images/it.png" alt="">
+                                                </p>
+                                                <p>IT</p>
+                                            </li>
+                                            <li class="icon-grounp-item  text-center">
+                                                <p class="icon-img">
+                                                    <img src="../images/it.png" alt="">
+                                                </p>
+                                                <p>IT</p>
+                                            </li>
+                                            <li class="icon-grounp-item  text-center">
+                                                <p class="icon-img">
+                                                    <img src="../images/it.png" alt="">
+                                                </p>
+                                                <p>IT</p>
+                                            </li>
+                                            <li class="icon-grounp-item  text-center">
+                                                <p class="icon-img">
+                                                    <img src="../images/it.png" alt="">
+                                                </p>
+                                                <p>IT</p>
+                                            </li>
+                                            <li class="icon-grounp-item  text-center">
+                                                <p class="icon-img">
+                                                    <img src="../images/it.png" alt="">
+                                                </p>
+                                                <p>IT</p>
+                                            </li>
+                                            <li class="icon-grounp-item  text-center">
+                                                <p class="icon-img">
+                                                    <img src="../images/it.png" alt="">
+                                                </p>
+                                                <p>IT</p>
+                                            </li>
+                                            <li class="icon-grounp-item  text-center">
+                                                <p class="icon-img">
+                                                    <img src="../images/it.png" alt="">
+                                                </p>
+                                                <p>IT</p>
+                                            </li>
+                                            <li class="icon-grounp-item  text-center">
+                                                <p class="icon-img">
+                                                    <img src="../images/it.png" alt="">
+                                                </p>
+                                                <p>IT</p>
+                                            </li>
+                                            <li class="icon-grounp-item  text-center">
+                                                <p class="icon-img">
+                                                    <img src="../images/it.png" alt="">
+                                                </p>
+                                                <p>IT</p>
+                                            </li>
+                                            <li class="icon-grounp-item  text-center">
+                                                <p class="icon-img">
+                                                    <img src="../images/it.png" alt="">
+                                                </p>
+                                                <p>IT</p>
+                                            </li>
+                                            <li class="icon-grounp-item text-center">
+                                                <p class="icon-img">
+                                                    <img src="../images/it.png" alt="">
+                                                </p>
+                                                <p>IT</p>
+                                            </li>
+                                            <li class="icon-grounp-item text-center">
+                                                <p class="icon-img">
+                                                    <img src="../images/it.png" alt="">
+                                                </p>
+                                                <p>IT</p>
+                                            </li>
+                                        </ul>
                                     </div>
                                     <!--图说园区-->
-                                    <div class="panel">
-                                        <div class="panel-heading">
-                                            <div class="panel-title t20">
-                                                图说园区
-                                            </div>
-                                        </div>
-                                        <div class="panel-body yuanqu">
-                                            <div class="col-md-3">
-                                                <img src="../images/yuanquimg.png" alt="">
-                                            </div>
-                                            <div class="col-md-3">
-                                                <img src="../images/yuanquimg.png" alt="">
-                                            </div>
-                                            <div class="col-md-3">
-                                                <img src="../images/yuanquimg.png" alt="">
-                                            </div>
-                                            <div class="col-md-3">
-                                                <img src="../images/yuanquimg.png" alt="">
-                                            </div>
+
+                                    <div class="panel-title ">
+                                        图说园区
+                                    </div>
+                                    <div class="panel-inner yuanqu">
+                                        <div class="row">
                                             <div class="col-md-3">
                                                 <img src="../images/yuanquimg.png" alt="">
                                             </div>
@@ -413,18 +389,27 @@
                                                 <img src="../images/yuanquimg.png" alt="">
                                             </div>
                                         </div>
-                                        <div class="panel-footer nobortop text-center">
-                                            <ul class="pagination">
-                                                <li><a href="#">&laquo;</a></li>
-                                                <li><a href="#">1</a></li>
-                                                <li><a href="#">2</a></li>
-                                                <li><a href="#">3</a></li>
-                                                <li><a href="#">4</a></li>
-                                                <li><a href="#">5</a></li>
-                                                <li><a href="#">&raquo;</a></li>
-                                            </ul>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <img src="../images/yuanquimg.png" alt="">
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img src="../images/yuanquimg.png" alt="">
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img src="../images/yuanquimg.png" alt="">
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img src="../images/yuanquimg.png" alt="">
+                                            </div>
                                         </div>
                                     </div>
+                                    <div class="panel-footer nobortop text-center">
+                                        <div class="pageTool" class="mb30">
+
+                                        </div>
+                                    </div>
+
                                 </div>
                                 <div class="tab-pane fade" id="tab1">
                                     <p class="panel-title">区位交通</p>
@@ -445,17 +430,23 @@
                                             </tr>
                                             <tr>
                                                 <td class="active">公路运输</td>
-                                                <td colspan="3">距天津港 40 公里，距北京机场180公里（驱车1.5小时），距天津机场38公里（驱车40分钟），天祥工业区是离市中心最近的工</td>
+                                                <td colspan="3">距天津港 40
+                                                    公里，距北京机场180公里（驱车1.5小时），距天津机场38公里（驱车40分钟），天祥工业区是离市中心最近的工
+                                                </td>
                                             </tr>
 
                                             <tr>
                                                 <td class="active">区位介绍</td>
-                                                <td colspan="3">距天津港 40 公里，距北京机场180公里（驱车1.5小时），距天津机场38公里（驱车40分钟），天祥工业区是离市中心最近的工</td>
+                                                <td colspan="3">距天津港 40
+                                                    公里，距北京机场180公里（驱车1.5小时），距天津机场38公里（驱车40分钟），天祥工业区是离市中心最近的工
+                                                </td>
                                             </tr>
 
                                             <tr>
                                                 <td class="active">铁路运输</td>
-                                                <td colspan="3">距天津港 40 公里，距北京机场180公里（驱车1.5小时），距天津机场38公里（驱车40分钟），天祥工业区是离市中心最近的工</td>
+                                                <td colspan="3">距天津港 40
+                                                    公里，距北京机场180公里（驱车1.5小时），距天津机场38公里（驱车40分钟），天祥工业区是离市中心最近的工
+                                                </td>
                                             </tr>
                                             </tbody>
                                         </table>
@@ -612,40 +603,56 @@
                                             </tr>
                                             <tr>
                                                 <td class="active">园区生活配套</td>
-                                                <td colspan="3">距天津港 40 公里，距北京机场180公里（驱车1.5小时），距天津机场38公里（驱车40分钟），天祥工业区是离市中心最近的工</td>
+                                                <td colspan="3">距天津港 40
+                                                    公里，距北京机场180公里（驱车1.5小时），距天津机场38公里（驱车40分钟），天祥工业区是离市中心最近的工
+                                                </td>
                                             </tr>
 
                                             <tr>
                                                 <td class="active">居住环境</td>
-                                                <td colspan="3">距天津港 40 公里，距北京机场180公里（驱车1.5小时），距天津机场38公里（驱车40分钟），天祥工业区是离市中心最近的工</td>
+                                                <td colspan="3">距天津港 40
+                                                    公里，距北京机场180公里（驱车1.5小时），距天津机场38公里（驱车40分钟），天祥工业区是离市中心最近的工
+                                                </td>
                                             </tr>
 
                                             <tr>
                                                 <td class="active">商业环境</td>
-                                                <td colspan="3">距天津港 40 公里，距北京机场180公里（驱车1.5小时），距天津机场38公里（驱车40分钟），天祥工业区是离市中心最近的工</td>
+                                                <td colspan="3">距天津港 40
+                                                    公里，距北京机场180公里（驱车1.5小时），距天津机场38公里（驱车40分钟），天祥工业区是离市中心最近的工
+                                                </td>
                                             </tr>
 
                                             <tr>
                                                 <td class="active">百货商场</td>
-                                                <td colspan="3">距天津港 40 公里，距北京机场180公里（驱车1.5小时），距天津机场38公里（驱车40分钟），天祥工业区是离市中心最近的工</td>
+                                                <td colspan="3">距天津港 40
+                                                    公里，距北京机场180公里（驱车1.5小时），距天津机场38公里（驱车40分钟），天祥工业区是离市中心最近的工
+                                                </td>
                                             </tr>
 
                                             <tr>
                                                 <td class="active">酒店商务</td>
-                                                <td colspan="3">距天津港 40 公里，距北京机场180公里（驱车1.5小时），距天津机场38公里（驱车40分钟），天祥工业区是离市中心最近的工</td>
+                                                <td colspan="3">距天津港 40
+                                                    公里，距北京机场180公里（驱车1.5小时），距天津机场38公里（驱车40分钟），天祥工业区是离市中心最近的工
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td class="active">休闲娱乐</td>
-                                                <td colspan="3">距天津港 40 公里，距北京机场180公里（驱车1.5小时），距天津机场38公里（驱车40分钟），天祥工业区是离市中心最近的工</td>
+                                                <td colspan="3">距天津港 40
+                                                    公里，距北京机场180公里（驱车1.5小时），距天津机场38公里（驱车40分钟），天祥工业区是离市中心最近的工
+                                                </td>
                                             </tr>
 
                                             <tr>
                                                 <td class="active">医疗</td>
-                                                <td colspan="3">距天津港 40 公里，距北京机场180公里（驱车1.5小时），距天津机场38公里（驱车40分钟），天祥工业区是离市中心最近的工</td>
+                                                <td colspan="3">距天津港 40
+                                                    公里，距北京机场180公里（驱车1.5小时），距天津机场38公里（驱车40分钟），天祥工业区是离市中心最近的工
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td class="active">教育</td>
-                                                <td colspan="3">距天津港 40 公里，距北京机场180公里（驱车1.5小时），距天津机场38公里（驱车40分钟），天祥工业区是离市中心最近的工</td>
+                                                <td colspan="3">距天津港 40
+                                                    公里，距北京机场180公里（驱车1.5小时），距天津机场38公里（驱车40分钟），天祥工业区是离市中心最近的工
+                                                </td>
                                             </tr>
                                             </tbody>
                                         </table>
@@ -679,138 +686,133 @@
                                         </table>
                                     </div>
                                 </div>
-                                <div class="tab-pane margin-30 fade" id="tab2">
+                                <div class="tab-pane  fade" id="tab2">
                                     <!--园区情报-->
-                                    <div class="panel">
-                                        <div class="panel-heading">
-                                            <div class="panel-title">
-                                                园区情报
-                                            </div>
-                                        </div>
-                                        <div class="newspaper-box ml mr">
-                                            <div class="item clearfix">
-                                                <div class="col-md-9">
-                                                    <button class="btn btn-border-blue mr10">正面</button>
-                                                    <span class="dark-font over-hidden maxw">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
-                                                </div>
-
-                                                <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56</div>
-                                            </div>
-                                            <div class="item clearfix">
-                                                <div class="col-md-9">
-                                                    <button class="btn btn-border-blue mr10">正面</button>
-                                                    <span class="dark-font over-hidden maxw">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
-                                                </div>
-
-                                                <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56</div>
-                                            </div>
-                                            <div class="item clearfix">
-                                                <div class="col-md-9">
-                                                    <button class="btn btn-border-blue mr10">正面</button>
-                                                    <span class="dark-font over-hidden maxw">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
-                                                </div>
-
-                                                <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56</div>
-                                            </div>
-                                            <div class="item clearfix">
-                                                <div class="col-md-9">
-                                                    <button class="btn btn-border-blue mr10">正面</button>
-                                                    <span class="dark-font over-hidden maxw">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
-                                                </div>
-
-                                                <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56</div>
-                                            </div>
-                                            <div class="item clearfix">
-                                                <div class="col-md-9">
-                                                    <button class="btn btn-border-blue mr10">正面</button>
-                                                    <span class="dark-font over-hidden maxw">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
-                                                </div>
-
-                                                <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56</div>
-                                            </div>
-                                        </div>
-                                        <div class="panel-footer nobortop text-center">
-                                            <ul class="pagination">
-                                                <li><a href="#">&laquo;</a></li>
-                                                <li><a href="#">1</a></li>
-                                                <li><a href="#">2</a></li>
-                                                <li><a href="#">3</a></li>
-                                                <li><a href="#">4</a></li>
-                                                <li><a href="#">5</a></li>
-                                                <li><a href="#">&raquo;</a></li>
-                                            </ul>
-                                        </div>
+                                    <div class="panel-title">
+                                        园区情报
                                     </div>
-                                    <div class="panel">
-                                        <div class="panel-heading">
-                                            <h3 class="panel-title">
-                                                园区评价
-                                                <div class="pull-right">
-                                                    <div class="induatrylabel">
-                                                        <ul class="ullabel">
-                                                            <li class="active">今日</li>
-                                                            <li>5月</li>
-                                                            <li>6月</li>
-                                                            <li>7月</li>
-                                                        </ul>
-                                                    </div>
+                                    <div class="panel-inner">
+                                        <div class="newspaper-box">
+                                            <div class="item clearfix">
+                                                <div class="col-md-9">
+                                                    <button class="btn btn-border-blue mr10">正面</button>
+                                                    <span class="dark-font over-hidden maxw">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
                                                 </div>
-                                            </h3>
-                                        </div>
-                                        <div class="panel-body">
 
-                                           <div class="charts mb30" id="scatter">
+                                                <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56
+                                                </div>
+                                            </div>
+                                            <div class="item clearfix">
+                                                <div class="col-md-9">
+                                                    <button class="btn btn-border-blue mr10">正面</button>
+                                                    <span class="dark-font over-hidden maxw">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
+                                                </div>
 
-                                           </div>
+                                                <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56
+                                                </div>
+                                            </div>
+                                            <div class="item clearfix">
+                                                <div class="col-md-9">
+                                                    <button class="btn btn-border-blue mr10">正面</button>
+                                                    <span class="dark-font over-hidden maxw">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
+                                                </div>
 
-                                            <div class="newspaper-box">
-                                                <div class="item clearfix">
-                                                    <div class="col-md-6">
-                                                        <button class="btn btn-border-blue mr10">正面</button>
-                                                        <span class="dark-font over-hidden maxw">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
-                                                    </div>
-                                                    <div class="col-md-3 deepFontGrey">燕赵晚报</div>
-                                                    <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56</div>
+                                                <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56
                                                 </div>
-                                                <div class="item clearfix">
-                                                    <div class="col-md-6">
-                                                        <button class="btn btn-border-blue mr10">正面</button>
-                                                        <span class="dark-font over-hidden maxw">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
-                                                    </div>
-                                                    <div class="col-md-3 deepFontGrey">燕赵晚报</div>
-                                                    <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56</div>
+                                            </div>
+                                            <div class="item clearfix">
+                                                <div class="col-md-9">
+                                                    <button class="btn btn-border-blue mr10">正面</button>
+                                                    <span class="dark-font over-hidden maxw">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
                                                 </div>
-                                                <div class="item clearfix">
-                                                    <div class="col-md-6">
-                                                        <button class="btn btn-border-blue mr10">正面</button>
-                                                        <span class="dark-font over-hidden maxw">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
-                                                    </div>
-                                                    <div class="col-md-3 deepFontGrey">燕赵晚报</div>
-                                                    <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56</div>
+
+                                                <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56
                                                 </div>
-                                                <div class="item clearfix">
-                                                    <div class="col-md-6">
-                                                        <button class="btn btn-border-blue mr10">正面</button>
-                                                        <span class="dark-font over-hidden maxw">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
-                                                    </div>
-                                                    <div class="col-md-3 deepFontGrey">燕赵晚报</div>
-                                                    <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56</div>
+                                            </div>
+                                            <div class="item clearfix">
+                                                <div class="col-md-9">
+                                                    <button class="btn btn-border-blue mr10">正面</button>
+                                                    <span class="dark-font over-hidden maxw">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
                                                 </div>
-                                                <div class="item clearfix">
-                                                    <div class="col-md-6">
-                                                        <button class="btn btn-border-blue mr10">正面</button>
-                                                        <span class="dark-font over-hidden maxw">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
-                                                    </div>
-                                                    <div class="col-md-3 deepFontGrey">燕赵晚报</div>
-                                                    <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56</div>
+
+                                                <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="pageTool" class="mb30">
 
+                                    </div>
+                                    <h3 class="panel-title">
+                                        园区评价
+                                        <div class="pull-right">
+                                            <div class="induatrylabel">
+                                                <ul class="ullabel">
+                                                    <li class="active">今日</li>
+                                                    <li>5月</li>
+                                                    <li>6月</li>
+                                                    <li>7月</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </h3>
+                                    <div class="panel-inner">
+
+                                        <div class="charts mb30" id="scatter">
+
+                                        </div>
+
+                                        <div class="newspaper-box">
+                                            <div class="item clearfix">
+                                                <div class="col-md-6">
+                                                    <button class="btn btn-border-blue mr10">正面</button>
+                                                    <span class="dark-font over-hidden maxw">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
+                                                </div>
+                                                <div class="col-md-3 deepFontGrey">燕赵晚报</div>
+                                                <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56
+                                                </div>
+                                            </div>
+                                            <div class="item clearfix">
+                                                <div class="col-md-6">
+                                                    <button class="btn btn-border-blue mr10">正面</button>
+                                                    <span class="dark-font over-hidden maxw">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
+                                                </div>
+                                                <div class="col-md-3 deepFontGrey">燕赵晚报</div>
+                                                <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56
+                                                </div>
+                                            </div>
+                                            <div class="item clearfix">
+                                                <div class="col-md-6">
+                                                    <button class="btn btn-border-blue mr10">正面</button>
+                                                    <span class="dark-font over-hidden maxw">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
+                                                </div>
+                                                <div class="col-md-3 deepFontGrey">燕赵晚报</div>
+                                                <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56
+                                                </div>
+                                            </div>
+                                            <div class="item clearfix">
+                                                <div class="col-md-6">
+                                                    <button class="btn btn-border-blue mr10">正面</button>
+                                                    <span class="dark-font over-hidden maxw">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
+                                                </div>
+                                                <div class="col-md-3 deepFontGrey">燕赵晚报</div>
+                                                <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56
+                                                </div>
+                                            </div>
+                                            <div class="item clearfix">
+                                                <div class="col-md-6">
+                                                    <button class="btn btn-border-blue mr10">正面</button>
+                                                    <span class="dark-font over-hidden maxw">2018数博会开馆首日 优易数据集团展台“三大亮点”吸粉无数</span>
+                                                </div>
+                                                <div class="col-md-3 deepFontGrey">燕赵晚报</div>
+                                                <div class="col-md-2 col-md-offset-1 deepFontGrey">2018-04-12  14:56
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="tab-pane margin-30 fade" id="tab3">
-                                    <div class="panel panel-dark">
+                                    <div class="panel panel-dark mtt">
                                         <div class="panel-heading clearfix">
                                             <!--标题-->
                                             <span class="panel-title">为您匹配到<span>4543</span>家优质企业</span>
@@ -853,7 +855,9 @@
                                                     </div>
                                                     <div class="col-md-2">
                                                         <p class="num">测评分: <span class="red-num">89</span></p>
-                                                        <button class="btn btn-blue btn-bottom"> <i class="iconfont icon-plus"></i>加入线索库</button>
+                                                        <button class="btn btn-blue btn-bottom"><i
+                                                                class="iconfont icon-plus"></i>加入线索库
+                                                        </button>
                                                     </div>
                                                 </div>
                                                 <div class="item clearfix">
@@ -884,7 +888,9 @@
                                                     </div>
                                                     <div class="col-md-2">
                                                         <p class="num">测评分: <span class="red-num">89</span></p>
-                                                        <button class="btn btn-blue btn-bottom"> <i class="iconfont icon-plus"></i>加入线索库</button>
+                                                        <button class="btn btn-blue btn-bottom"><i
+                                                                class="iconfont icon-plus"></i>加入线索库
+                                                        </button>
                                                     </div>
                                                 </div>
                                                 <div class="item clearfix">
@@ -915,11 +921,15 @@
                                                     </div>
                                                     <div class="col-md-2">
                                                         <p class="num">测评分: <span class="red-num">89</span></p>
-                                                        <button class="btn btn-blue btn-bottom"> <i class="iconfont icon-plus"></i>加入线索库</button>
+                                                        <button class="btn btn-blue btn-bottom"><i
+                                                                class="iconfont icon-plus"></i>加入线索库
+                                                        </button>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="pageTool mrt30" class="mb30">
 
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -928,18 +938,18 @@
                     </div>
                 </div>
                 <div class="col-md-2 pl0">
-                   <div class="panel panel-line-primary">
-                       <div class="panel-heading have-bottom-border clearfix">
+                    <div class="panel panel-line-primary">
+                        <div class="panel-heading have-bottom-border clearfix">
                            <span class="panel-title pull-left">
                                相似园区
                            </span>
-                           <span class="deepFontGrey pull-left small-text">
+                            <span class="deepFontGrey pull-left small-text">
                                匹配到
                                <span class="company-num linH34  blueFont no-margin">45</span>
                                家园区
                            </span>
-                       </div>
-                       <div class="panel-body same-park">
+                        </div>
+                        <div class="panel-body same-park">
                             <div class="item">
                                 <p class="dark-font small-text">东营经济技术开发区</p>
                                 <p class="deepFontGrey small-text no-margin">
@@ -947,34 +957,34 @@
                                     <span>园区类型：开发区</span>
                                 </p>
                             </div>
-                           <div class="item">
-                               <p class="dark-font">东营经济技术开发区</p>
-                               <p class="deepFontGrey no-margin">
-                                   <span>地区：山东-东营区</span>
-                                   <span>园区类型：开发区</span>
-                               </p>
-                           </div>
-                           <div class="item">
-                               <p class="dark-font">东营经济技术开发区</p>
-                               <p class="deepFontGrey no-margin">
-                                   <span>地区：山东-东营区</span>
-                                   <span>园区类型：开发区</span>
-                               </p>
-                           </div>
-                           <div class="item">
-                               <p class="dark-font">东营经济技术开发区</p>
-                               <p class="deepFontGrey no-margin">
-                                   <span>地区：山东-东营区</span>
-                                   <span>园区类型：开发区</span>
-                               </p>
-                           </div>
-                       </div>
-                       <div class="panel-footer text-center blueFont">
+                            <div class="item">
+                                <p class="dark-font">东营经济技术开发区</p>
+                                <p class="deepFontGrey no-margin">
+                                    <span>地区：山东-东营区</span>
+                                    <span>园区类型：开发区</span>
+                                </p>
+                            </div>
+                            <div class="item">
+                                <p class="dark-font">东营经济技术开发区</p>
+                                <p class="deepFontGrey no-margin">
+                                    <span>地区：山东-东营区</span>
+                                    <span>园区类型：开发区</span>
+                                </p>
+                            </div>
+                            <div class="item">
+                                <p class="dark-font">东营经济技术开发区</p>
+                                <p class="deepFontGrey no-margin">
+                                    <span>地区：山东-东营区</span>
+                                    <span>园区类型：开发区</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="panel-footer text-center blueFont">
                            <span class="glyphicon glyphicon-refresh">
                                换一换
                            </span>
-                       </div>
-                   </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -985,6 +995,8 @@
 <script src="../vendor/bootstrap-3.3.7/js/bootstrap.js"></script>
 <script src="../vendor/bootstrap-select-1.12.2/js/bootstrap-select.min.js"></script>
 <script src="../vendor/echarts/echarts.min.js"></script>
+<script src="../vendor/paging/src/query.js"></script>
+<script src="../vendor/paging/src/paging.js"></script>
 <script src="../js/detail/gardendetail.js"></script>
 </body>
 

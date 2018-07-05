@@ -233,7 +233,6 @@ var chinaOption = {
         seriesIndex: 0,
         min: 0,
         max: 100,
-        left: 'left',
         top: 'bottom',
         text: ['高', '低'],        // 文本，默认为数值文本
         calculable: true,
@@ -268,6 +267,7 @@ var chinaOption = {
         type: 'map',
         mapType: 'china',
         zoom: 1.25,
+        left:"auto",
         geoIndex: 0,
         label: {
             normal: {
@@ -303,8 +303,8 @@ var TopOption = {
     color: ["#3ca1ff"],
     grid: {
         top: '0',
-        left: '3%',
-        right: '4%',
+        left: '0%',
+        right:"30",
         bottom: '3%',
         containLabel: true
     },
@@ -353,17 +353,14 @@ topChart.setOption(TopOption);
 var price_go = echarts.init(document.getElementById('price_go'));
 var pricedata=[-5, 15,8, 12, 25, -35, 13];
 priceoption = {
-    color: ['#367CE4', '#ff9c00'],
+    color: ['#28b7f3', '#ff9c00'],
     calculable: true,
     tooltip: {
-
         trigger: 'axis',
-
         axisPointer : {            // 坐标轴指示器，坐标轴触发有效
             type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
         }
     },
-
     legend: {
         data:['主力净流入','主力净流出'],
         textStyle:{
@@ -392,7 +389,7 @@ priceoption = {
             splitLine: {
                 show:true,
                 lineStyle: {
-                    color: ['#000'],
+                    color: ['#e7e7e7'],
                     width: 1,
                     type: 'dotted'
                 }
@@ -422,7 +419,7 @@ priceoption = {
         splitLine: {
             show:true,
             lineStyle: {
-                color: ['#000'],
+                color: ['#e7e7e7'],
                 width: 1,
                 type: 'dotted'
             }
@@ -437,19 +434,16 @@ priceoption = {
         {
             name:'主力净流入',
             type:'bar',
-            barWidth:30,
+            barWidth:10,
             itemStyle:{
                 normal:{
                     color:function(item){
-
-
                         if(item.value>0){
-                            return '#367CE4';
+                            return '#28b7f3';
                         }
                         else{
                             return '#ff9c00';
                         }
-
                     }
                 }},
             data:pricedata
@@ -533,24 +527,16 @@ for (var n in data) {
 }
 
 option = {
-    title: {
-        left: '50%',
-        top: '30',
-        textAlign: 'center',
-        textStyle: {
-            color: "#000",
-            fontWeight: 'normal',
-        }
-    },
     tooltip: {
         trigger: 'item',
         formatter: "{b}"
     },
+    color:["#1981e0","#3cd2ff","#66f7ff"],
     series: [{
         type: 'treemap',
         width: '100%',
         height: '85%',
-        top: '15%',
+        top: '5%',
         roam: false, //是否开启拖拽漫游（移动和缩放）
         nodeClick: false, //点击节点后的行为,false无反应
         breadcrumb: {
@@ -588,12 +574,10 @@ treemap.setOption(option);
 
 var linecharts=echarts.init(document.getElementById("line"));
 option = {
-
-
-
+    color:["#1ad7ff","#ff9c00"],
     grid: {
-        left: '3%',
-        right: '4%',
+        left: '10',
+        right: '10',
         bottom: '3%',
         containLabel: true
     },
@@ -619,7 +603,7 @@ option = {
         splitLine: {
             show:true,
             lineStyle: {
-                color: ['#000'],
+                color: ['#e7e7e7'],
                 width: 1,
                 type: 'dotted'
             }
@@ -633,10 +617,8 @@ option = {
     series: [{
         name: '违法违规数',
         type: 'line',
-
         stack: '总量',
         data: [200, 210, 220, 210, 230, 290, 310, 340, 340, 320, 300, 280, 250, 210],
-
     },
         {
             name: '整改数',

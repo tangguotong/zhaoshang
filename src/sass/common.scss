@@ -97,7 +97,7 @@ body{
 .map-text{
   text-align: center;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
 }
 .mt30{
   margin-top: 30px;
@@ -130,4 +130,11 @@ body{
 .tab-content .panel{
   border-left: none;
   border-right: none;
+}
+.panel-body .panel-dark .panel-heading{
+  font-size: 16px;
+  background-color: #fff !important;
+}
+.panel-body .panel-heading .panel-title{
+  font-size: 16px !important;
 }

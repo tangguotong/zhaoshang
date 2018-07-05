@@ -108,16 +108,20 @@
 }
 /*图说园区*/
 .yuanqu{
-  div{
+  >div{
     margin-top: 20px;
     img{
       width: 100%;
     }
   }
 }
+.yuanqu>div:first-child{
+  margin-top: 0
+}
 
 
 /*产业智库-产业专家*/
+
 .renwu-grounp{
   border: 1px solid #e6e6e6;
   margin-top: 20px;
@@ -125,14 +129,49 @@
     width: 100%;
   }
 }
-
-
+.person-list{
+  padding: 15px;
+  li{
+    margin-bottom: 10px;
+    &:nth-child(1){
+      width: 120px;
+      height: 120px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 100%;
+      border: 1px solid #907aed;
+      img{
+        width: 100%;
+        transform: scale(1.2);
+      }
+    }
+    &:nth-child(2){
+      text-align: center;
+      color: #000;
+      font-size: 20px;
+    }
+    &:nth-child(3){
+      text-align: center;
+      color: #367ce4;
+      font-size: 14px;
+    }
+    &:nth-child(4){
+      font-size: 14px;
+    }
+    &:nth-child(5){
+      text-align: center;
+    }
+  }
+}
 
 
 
 /*辅助类*/
 .nobortop{
-  border-top:0;
+  border-top:0 !important;
+}
+.nobor{
+  border: 0;
 }
 .border{
   border: 1px solid #ccc;
@@ -149,12 +188,24 @@
 .mrr{
   margin-right: -15px;
 }
+.mtt{
+  margin-top: -15px;
+}
 .t20{
   font-size: 20px;
   font-weight: 400;
 }
 .mb30{
   margin-bottom: 30px;
+}
+.mll30{
+  margin-left: -30px;
+}
+.mrr30{
+  margin-right: -30px;
+}
+.mrt30{
+  margin-top: 30px;
 }
 .charts{
   height: 300px;
