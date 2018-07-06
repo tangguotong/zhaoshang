@@ -1,10 +1,9 @@
 /**
-  Created by ayun 2018.6.21
+  Created by ayun tangguotong 2018.6.21
  */
 
 @import "zui";
 @import "_common_var";
-@import "button";
 
 
 body{
@@ -87,7 +86,7 @@ body{
       &:hover,
       &:hover,
       &.active{
-        background-color: $leftNavBGColor;
+        background-color: $btncolor;
         color: $white;
       }
     }
@@ -133,8 +132,1081 @@ body{
 }
 .panel-body .panel-dark .panel-heading{
   font-size: 16px;
-  background-color: #fff !important;
+  background-color: $white !important;
 }
 .panel-body .panel-heading .panel-title{
   font-size: 16px !important;
+}
+
+//公司标题样式
+.p-span{
+  font-size: 14px;
+  //color: $fontcolor;
+  span{
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: middle;
+    img{
+      margin-top: -8px;
+    }
+    //color: $fontcolor;
+  }
+}
+.deepFontGrey{
+  color: $deepFontGrey;
+  font-size: 14px;
+  //margin-bottom: 15px;
+}
+.lightFontGrey{
+  color: $lightFontGrey;
+  font-size: 14px;
+  //margin-bottom: 15px;
+  span{
+    margin-right: 15px;
+  }
+}
+.blueFont{
+  color: $btncolor;
+  font-size: 14px;
+  //margin-bottom: 15px;
+  span{
+    margin-right: 20px;
+  }
+  i{
+    margin-right: 5px;
+  }
+}
+
+//搜索按钮
+.btn-search,
+.btn-search:hover,
+.btn-search:active,
+.btn-search:focus,
+.btn-search:visited{
+  background-color: $btncolor;
+  color: $white !important;
+  border-color: $btncolor;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  height: 34px;
+
+}
+.form-control{
+  @include borderadius(2px);
+}
+//筛选
+.search-box{
+  position: relative;
+  background-color: $white;
+  margin: -15px -30px;
+  >.item:first-child{
+    border: none;
+  }
+  .item .hidden-item{
+    margin-left: -115px;
+    border: none;
+  }
+  .show-more{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 12px;
+    color: #808080;
+    cursor: pointer;
+  }
+  .item{
+    position: relative;
+    padding: 0 10px 0 115px;
+    border-top: 1px solid #e6e6e6;
+    font-size: 14px;
+    .item-title{
+      position: absolute;
+      left: 30px;
+      top: 0;
+      display: inline-block;
+      width: 100px;
+      padding: 10px 0;
+      color: $deepFontGrey;
+    }
+    .item-list{
+      display: inline-block;
+      margin-bottom: 0;
+      vertical-align: middle;
+      padding-right: 20px;
+      li{
+        float: left;
+        //width: 100px;
+        padding: 10px 5px;
+        text-align: left;
+        color: $darkBlack;
+        cursor: pointer;
+        font-size: 14px;
+        margin-right: 20px;
+        input{
+          border: none;
+          outline: none;
+          font-size: 14px;
+          cursor: pointer;
+        }
+        //  placeHold的颜色
+        input::-webkit-input-placeholder{
+          color: $darkBlack;
+        }
+        input:-moz-placeholder{
+          color: $darkBlack;
+        }
+        input::-moz-placeholder{
+          color: $darkBlack;
+        }
+        input:-ms-input-placeholder{
+          color: $darkBlack;
+        }
+
+        select{
+          border:none;
+          outline: none;
+          option{
+            outline: none;
+          }
+        }
+
+      }
+      li.active{
+        color: $btncolor;
+        label{
+          color: $btncolor;
+        }
+        input{
+          color: $btncolor;
+        }
+      }
+    }
+  }
+  .item-hidden>.item:last-child{
+    .item-title{
+      padding-bottom: 0;
+    }
+    .item-list li{
+      padding-bottom: 0;
+    }
+  }
+}
+//面板
+.panel-heading{
+  .panel-title{
+    line-height: 34px;
+    margin-right: 15px;
+    text-decoration: none;
+  }
+  a.panel-title{
+    cursor: pointer;
+  }
+
+  a.panel-title:hover{
+    color: $fontcolor;
+  }
+}
+.have-bottom-border{
+  border-bottom: 1px solid $lineDeepGrey;
+}
+.no-margin{
+  margin: 0!important;
+}
+//面板2
+.panel-dark {
+  border: 1px solid $lineDeepGrey;
+  @include borderadius(0);
+  .panel-heading{
+    background-color: #fafafa;
+    border-bottom:1px solid $lineDeepGrey;
+    .panel-title{
+      font-size: 14px;
+      color: #898989;
+      span{
+        color: $btncolor;
+        cursor: pointer;
+      }
+    }
+  }
+
+}
+//tab
+.nav-my-style{
+  //margin-bottom: 20px;
+  border: 0;
+  li{
+    margin-right: 15px;
+    :last-child{
+      margin-right: 0;
+    }
+    a{
+      font-size: 18px;
+      color: $fontcolor;
+      padding-top: 0;
+      padding-bottom: 0;
+      line-height: 34px;
+      &:hover,
+      &:active,
+      &:focus,
+      a.active{
+        color: $deepFontGrey;
+        border: 0;
+        background-color: transparent;
+        font-size: 18px;
+      }
+    }
+  }
+  li:hover,li.active
+  {
+    a,
+    a:hover,
+    a:active,
+    a:focus,
+    a.active,
+    a:visited{
+      color: $btncolor;
+      background-color: $white;
+      border: 0;
+      font-size:18px;
+    }
+  }
+
+}
+.nav-tabs{
+  li{
+    a{
+      border: 0;
+    }
+  }
+}
+.panel-dark .nav-my-style{
+  //margin-bottom: 20px;
+  border: none;
+  li{
+    margin-right: 15px;
+    :last-child{
+      margin-right: 0;
+    }
+    a{
+      font-size: 14px!important;
+      color: #808080;
+
+      &:hover,
+      &:active,
+      &:focus,
+      a.active{
+        color: #808080;
+        border: none!important;
+        background-color: #fafafa!important;
+        font-size: 14px;
+      }
+    }
+  }
+  li:hover,li.active
+  {
+    a,
+    a:hover,
+    a:active,
+    a:focus,
+    a.active,
+    a:visited{
+      color: $btncolor;
+      background-color: #fafafa!important;
+      border: 0;
+      font-size:18px;
+    }
+  }
+
+}
+//tab切换
+.nav-my-style li:first-child a{
+  padding-left: 0;
+}
+
+//下拉框样式
+.my-select{
+  .btn,
+  .btn:active,
+  .btn:focus,
+  .btn:visited,
+  .btn:hover{
+    font-size: 14px;
+    background-color: $white!important;
+    border:1px solid $lineDeepGrey!important;
+    outline: none!important;
+    span{
+      color: #666666;
+    }
+  }
+  a,
+  a:active,
+  a:focus,
+  a:visited,
+  a:hover{
+    outline: none;
+  }
+}
+//icheck
+.check-span{
+  //display: inline-block;
+  line-height: 34px;
+  //margin-right: 30px;
+  .word{
+    font-size: 14px;
+    color: #808080;
+    margin-left:2px;
+  }
+}
+.middle-ver-box{
+  div{
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+.linH34{
+  line-height: 34px;
+}
+.linH90{
+  line-height: 75px;
+}
+
+
+//精准招商-智能推荐-优质企业
+.company-box{
+  margin: -15px -30px;
+  .item{
+    position: relative;
+    padding: 15px 30px;
+    border-bottom: 1px solid $lineDeepGrey;
+    .col-md-2{
+      position: static;
+    }
+    .num{
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 14px;
+      color: #808080;
+      cursor: pointer;
+      height: 20px;
+      line-height: 20px;
+      vertical-align: middle;
+      i.glyphicon{
+        //vertical-align: middle;
+        line-height: 20px;
+        margin-right: 5px;
+        font-size: 12px;
+      }
+      span.red-num{
+        font-size: 22px;
+        color: #ff5329;
+      }
+    }
+    .btn-bottom{
+      position: absolute;
+      right: 15px;
+      bottom: 15px;
+      font-size: 14px;
+      color: $white;
+    }
+    .company-img{
+      height: 120px;
+      width: 100%;
+      border: 1px solid #f1f4f6;
+      img{
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .company-btn-box{
+      position: absolute;
+      display: flex;
+      justify-content: space-around;
+      right: 15px;
+      bottom: 15px;
+      width: 300px;
+    }
+
+    div{
+      //margin-bottom: 10px;
+      span{
+        margin-right: 20px;
+        //color: #898989;
+        font-size: 14px;
+      }
+    }
+    .company-message,.company-tab{
+      margin-bottom: 15px;
+    }
+    .company-message>span{
+      color: #898989;
+    }
+    .company-tab>span,.company-tab>i{
+      color: $btncolor;
+    }
+    .company-tab>i{
+      margin-right: 5px;
+    }
+
+  }
+  .item:last-child{
+    border-bottom: none;
+  }
+
+
+}
+
+
+
+//产业白皮书
+.word-box{
+  padding-bottom: 0;
+  .item{
+    border-top: 1px solid $lineDeepGrey;
+    padding: 15px 0;
+    cursor: pointer;
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+  .item:first-child{
+    border: none;
+    padding-top:0;
+  }
+
+}
+.over-hidden{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis
+}
+.details-title{
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.level-icon{
+  overflow: hidden;
+  li{
+    padding: 0 10px;
+    float: left;
+    line-height: 34px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}
+.white-book-title{
+  padding-top: 25px;
+}
+.file-detail .panel-heading>div,.file-detail .panel-body>div{
+  width: 900px;
+  margin: 0 auto;
+  .whit-book-body p{
+    line-height: 40px;
+  }
+}
+.whit-book-body p{
+  line-height: 25px;
+}
+.no-bottom-border{
+  border-bottom: none;
+}
+.margin-30{
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+
+/*园区对比*/
+
+.record{
+  border-bottom: 1px solid $btngray;
+  height: 140px;
+  margin-left: -15px;
+  margin-right: -15px;
+  &:last-child{
+    border-bottom: 0;
+  }
+  li{
+    line-height: 140px;
+    &:nth-child(2){
+      line-height: 0px;
+    }
+    .img-grounp{
+      margin-left: 40px;
+      width: 190px;
+      height: 80px;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      &:nth-child(1){
+        margin-left: 0px;
+      }
+      &:after{
+        position: absolute;
+        left: 200px;
+        right: 15px;
+        bottom:30px;
+        display: block;
+        content: "VS";
+        color: $btngray;
+        font-size: 16px;
+      }
+      &:last-child:after{
+        content: "";
+      }
+      img{
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+      }
+      span{
+        display: inline-block;
+        margin-top: 20px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+
+/*园区名片*/
+.table{
+  tr{
+    td{
+      font-size: 14px;
+    }
+  }
+}
+
+/*园区动态*/
+.list-group-item:first-child{
+  @include borderadius(0);
+}
+.list-group-item:last-child{
+  @include borderadius(0);
+}
+.list-group{
+  .list-group-item{
+    font-size: 16px;
+    .item-label{
+      border: 1px solid #367ce4;
+      color: #367ce4;
+      padding: 2px 5px;
+      font-size: 14px;
+      @include borderadius(2px);
+      margin-right: 8px;
+    }
+    .list-time{
+      float: right;
+      color: #808080;
+    }
+  }
+}
+.pagination{
+  margin: 0;
+}
+
+/*产业集群*/
+.icon-grounp-item{
+  width: 14%;
+  margin-left: 20px;
+  border: 1px solid $btngray;
+  margin-bottom: 20px;
+  float: left;
+
+  .icon-img{
+    width: 52px;
+    height: 52px;
+    margin: 10px auto;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+/*图说园区*/
+.yuanqu{
+  >div{
+    margin-top: 20px;
+    img{
+      width: 100%;
+    }
+  }
+}
+.yuanqu>div:first-child{
+  margin-top: 0
+}
+
+
+/*产业智库-产业专家*/
+
+.renwu-grounp{
+  border: 1px solid #e6e6e6;
+  margin-top: 20px;
+  img{
+    width: 100%;
+  }
+}
+.person-list{
+  padding: 15px;
+  li{
+    margin-bottom: 10px;
+    &:nth-child(1){
+      width: 120px;
+      height: 120px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 100%;
+      border: 1px solid #907aed;
+      img{
+        width: 100%;
+        transform: scale(1.2);
+      }
+    }
+    &:nth-child(2){
+      text-align: center;
+      color: $fontcolor;
+      font-size: 20px;
+    }
+    &:nth-child(3){
+      text-align: center;
+      color: #367ce4;
+      font-size: 14px;
+    }
+    &:nth-child(4){
+      font-size: 14px;
+    }
+    &:nth-child(5){
+      text-align: center;
+    }
+  }
+}
+
+/*button样式*/
+.btn{
+  color: $fontcolor;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  outline: none !important;
+  .iconfont{
+    font-size: inherit;
+  }
+}
+
+.btn-fill-gray{
+  color: $btngray-text;
+  text-align: center;
+  border-color: $btngray;
+  @include borderadius(30px);
+  &:hover,
+  &:focus,
+  &:active{
+    color: $btngray-text;
+  }
+}
+
+.btn-blue {
+  border-color: $btncolor;
+  background-color: $btncolor;
+  text-align: center;
+  color: $white;
+  @include borderadius(2px);
+  &:hover,
+  &:focus,
+  &:active{
+    color: $white;
+  }
+}
+
+.btn-orange{
+  background-color: $btnorang;
+  border-color: $btnorang;
+  text-align: center;
+  @include borderadius(4px);
+  &:hover,
+  &:focus,
+  &:active{
+    color: $white;
+  }
+}
+
+.btn-fill-blue{
+  color: $btncolor;
+  border-color: $btncolor;
+  background-color: #E3F4FF;
+  text-align: center;
+  @include borderadius(2px);
+  &:hover,
+  &:focus,
+  &:active{
+    color: $btncolor;
+  }
+}
+
+.btn-white{
+  border-color: $btngray;
+  background-color: $white;
+  color: $fontcolor;
+  font-size: 14px;
+  text-align: center;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  &:hover,
+  &:focus,
+  &:active{
+    color: $fontcolor;
+  }
+}
+.btn-border-blue{
+  border-color: $btncolor;
+  background-color: $white;
+  text-align: center;
+  color: $btncolor;
+  @include borderadius(2px);
+  &:hover,
+  &:focus,
+  &:active{
+    color: $btncolor;
+  }
+}
+
+
+//左侧导航部分
+.left-nav{
+  position: fixed;
+  width: 200px;
+  left: 0;
+  top: 61px;
+  bottom: 0;
+  padding-top: 20px;
+  background-color: $white;
+  .nav >li>a:hover,.nav >li.active>a{
+    background-color: $activeBGColor!important;
+    color: $btncolor!important;
+    :after{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background-color: $btncolor;
+    }
+  }
+  .nav >li.active>a, .nav >li>a{
+    position: relative;
+    padding: 0 15px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    color: $fontcolor;
+    img{
+      margin-right: 10px;
+    }
+  }
+  .nav li a:focus{
+    background-color: $white;
+  }
+}
+
+
+
+/*页面小面板*/
+.panel-line-primary{
+  @include borderadius(0px);
+  border: 1px solid #e6e6e6;
+  @include borderadius(0);
+  .panel-title{
+    //font-size: 16px;
+    font-weight: 400;
+    .pull-right{
+      margin-right: 10px;
+      .form{
+        float: left;
+      }
+      .operate{
+        float: left;
+        li{
+          float: left;
+          margin-left: 8px;
+          line-height: 33px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+.panel-buttom{
+  margin-bottom: 0px;
+  border-bottom: 0;
+}
+.panel-top{
+  border-top: 0;
+}
+
+.panel{
+  box-shadow: none;
+  @include borderadius(0);
+  .panel-title{
+    line-height: 34px;
+  }
+}
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+  width: 100px;
+}
+
+/*弹窗样式*/
+.modal-header{
+  background-color:$btncolor;
+  border-radius:6px 6px 0 0;
+}
+.modal-header .close{
+  color:$white;
+  opacity:1;
+  font-weight:normal;
+  font-size:26px;
+}
+.modal-title{
+  font-size:18px;
+  color:$white;
+}
+.modal-content{
+  border: none;
+}
+.modal-body  .message{
+  font-size:20px;
+  color:#666666;
+  margin-top:15px;
+}
+.modal-body  >img{
+  margin-top:15px;
+}
+.modal-footer {
+  border:none;
+}
+.width100{
+  width:100px;
+}
+
+
+/*table样式*/
+.table-box{
+  width: 450px;
+}
+.table{
+  margin-bottom: 0px;
+  thead{
+    tr{
+      height: 45px;
+      border-bottom: 0;
+    }
+  }
+}
+
+
+//园区透视表头和tab
+
+.company-detail-text{
+  font-size: 14px;
+  //color: $fontcolor;
+  line-height: 25px;
+}
+.num-show{
+  font-size: 14px;
+  .red-num{
+    font-size: 20px!important;
+    color: #f1303e;
+    margin-left: 10px;
+  }
+}
+
+.park-title{
+  font-size: 20px;
+  font-weight: 400;
+  margin: 5px 0 10px 0;
+}
+.same-park{
+  padding: 0;
+  .item{
+    border-bottom: 1px solid #e6e6e6;
+    padding: 10px 15px;
+    p{
+      margin-bottom: 5px;
+      font-size: 12px;
+    }
+  }
+  .item:last-child{
+    border: none;
+  }
+}
+.small-text{
+  font-size: 12px;
+}
+.dark-font {
+  font-size: 14px;
+  color: $fontcolor;
+}
+.panel-footer{
+  background-color: $white;
+  padding: 20px 15px;
+}
+.pl0{
+  padding-left: 0;
+}
+
+
+//园区列表tab3
+.special-table{
+  font-size: 14px;
+  tr td{
+    padding-left: 50px!important;
+    text-align: left;
+    color: $darkBlack;
+  }
+  .active{
+    color: #727272;
+    min-width: 150px;
+    vertical-align: middle;
+  }
+}
+//地图区域
+.map-box{
+  position: relative;
+  height: 420px;
+  //border: 1px solid $fontcolor;
+  padding: 20px;
+  .search-group{
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    z-index: 999;
+    .search-hidden{
+      position: absolute;
+      top: 34px;
+      left: 16px;
+      padding: 15px;
+      background-color: $white;
+      //width: 31%;
+      border: 1px solid $btngray;
+      .item{
+        .col-md-4{
+          text-align: center;
+          cursor: pointer;
+        }
+        .img-box{
+          background: url("../images/map_icon.png")no-repeat;
+          width: 35px;
+          height: 35px;
+          margin:  0 auto;
+          margin-bottom: 5px;
+          //background-position: 19px 0;
+        }
+      }
+    }
+  }
+}
+
+.container-map{
+  position: absolute;
+  top: 0;
+  left:0;
+  right: 0;
+  bottom: 0px;
+  height: 420px;
+  width: 100%;
+  div{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+//园区对比详情页面
+.zhaoshang-title{
+  font-size: 22px;
+}
+.mr20{
+  margin-right: 20px!important;
+}
+.panel-inner{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  //clear: both;
+}
+.echartHeight{
+  height: 260px;
+}
+
+.our-table{
+  font-size: 14px;
+  tr td{
+    padding-left: 50px!important;
+    padding-right: 50px!important;
+    text-align: left;
+    color: #727272;
+    line-height: 22px!important;
+    vertical-align: middle!important;
+  }
+  tr td:first-child{
+    background-color: #fafafa;
+    color: #727272;
+    padding-right: 10px!important;
+    text-align: left!important;
+    min-width: 180px;
+  }
+  tr:first-child{
+    background-color: #fafafa;
+    td{
+      color: $darkBlack;
+      font-weight: 500;
+      //text-align: center;
+    }
+
+  }
+}
+.item-bar{
+  position: relative;
+  width: 200px;
+  vertical-align: middle;
+  span{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .rect{
+    height: 10px;
+    @include borderadius(5px);
+    margin-right: 10px;
+    width: 80px;
+    //background-color: #28b7f3;
+  }
+  .num{
+    position: absolute;
+    left: 95px;
+    color: #727272 ;
+  }
+}
+
+.newspaper-box{
+  border: 1px solid #e6e6e6;
+  .item{
+    border-bottom: 1px solid #e6e6e6;
+    line-height: 45px;
+  }
+  .item:last-child{
+    border-bottom: none;
+  }
+  .btn-border-blue{
+    font-size: 12px;
+    padding: 3px 6px;
+  }
+  div{
+    vertical-align: middle;
+  }
 }

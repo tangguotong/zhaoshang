@@ -1,70 +1,272 @@
 html,
-body{
-    background-color: #ffffff;
+body {
+  background-color: #ffffff;
 }
-body { font-family: PingFang SC,Lantinghei SC,Helvetica Neue,Helvetica,Arial,Microsoft YaHei,微软雅黑,STHeitiSC-Light,simsun,宋体,WenQuanYi Zen Hei,WenQuanYi Micro Hei,'sans-serif'; font-size: 13px; color: #666666; }
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {color: #b8b8b8;}
-input:-moz-placeholder, textarea:-moz-placeholder {color:#b8b8b8;}
-input::-moz-placeholder, textarea::-moz-placeholder {color:#b8b8b8;}
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {color:#b8b8b8;}
-button{outline: none}
-ul,li{list-style: none;margin: 0}
+
+body {
+  font-family: PingFang SC, Lantinghei SC, Helvetica Neue, Helvetica, Arial, Microsoft YaHei, 微软雅黑, STHeitiSC-Light, simsun, 宋体, WenQuanYi Zen Hei, WenQuanYi Micro Hei, 'sans-serif';
+  font-size: 13px;
+  color: #666666;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #b8b8b8;
+}
+
+input:-moz-placeholder, textarea:-moz-placeholder {
+  color: #b8b8b8;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #b8b8b8;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #b8b8b8;
+}
+
+button {
+  outline: none
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 a,
 a:link,
 a:hover,
 a:active,
-a:visited{
-    text-decoration: none;
-    outline: none;
+a:visited {
+  text-decoration: none;
+  outline: none;
 }
-pre{
-    background-color: #f5f5f5;
-    white-space: pre-wrap; /*css-3*/
-    white-space: -moz-pre-wrap; /*Mozilla,since1999*/
-    white-space: -pre-wrap; /*Opera4-6*/
-    white-space: -o-pre-wrap; /*Opera7*/
-    word-wrap: break-word; /*InternetExplorer5.5+*/
+
+pre {
+  background-color: #f5f5f5;
+  white-space: pre-wrap; /*css-3*/
+  white-space: -moz-pre-wrap; /*Mozilla,since1999*/
+  white-space: -pre-wrap; /*Opera4-6*/
+  white-space: -o-pre-wrap; /*Opera7*/
+  word-wrap: break-word; /*InternetExplorer5.5+*/
 }
-.text-left{
-    text-align: left !important;
+
+* {
+  padding: 0;
+  margin: 0;
 }
-.text-center{
-    text-align: center !important;
+
+h4 {
+  font-size: 16px;
+  margin: 0 0 15px 0;
 }
-.text-right{
-    text-align: right !important;
+
+h3 {
+  font-size: 22px;
 }
+
+/*辅助类*/
+.nobortop {
+  border-top: 0 !important;
+}
+
+.nobor {
+  border: 0;
+}
+
+.border {
+  border: 1px solid #ccc;
+}
+
+.ml {
+  margin-left: 15px;
+}
+
+.mr {
+  margin-right: 15px;
+}
+
+.mll {
+  margin-left: -15px;
+}
+
+.mrr {
+  margin-right: -15px;
+}
+
+.mtt {
+  margin-top: -15px;
+}
+
+.t20 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+
+.mll30 {
+  margin-left: -30px;
+}
+
+.mrr30 {
+  margin-right: -30px;
+}
+
+.mrt30 {
+  margin-top: 30px;
+}
+
+.mb20 {
+  margin-bottom: 20px !important;
+}
+
+.charts {
+  height: 300px;
+}
+
+.maxw {
+  max-width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb0 {
+  margin-bottom: 0 !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
 .footer {
-    color: #777;
-    padding: 30px 0;
-    border-top: 1px solid #e5e5e5;
+  color: #777;
+  padding: 30px 0;
+  border-top: 1px solid #e5e5e5;
 }
-.footer-top .about>div {
-    min-height: 110px;
-    margin-bottom: 10px;
+
+.footer-top .about > div {
+  min-height: 110px;
+  margin-bottom: 10px;
 }
-.footer-top .about>div h4 {
-    color: #563d7c;
-    font-size: 16px;
+
+.footer-top .about > div h4 {
+  color: #563d7c;
+  font-size: 16px;
 }
+
 .footer a {
-    color: #777;
+  color: #777;
 }
+
+.bg-blue {
+  background-color: #28b7f3;
+}
+
+.bg-dark-blue {
+  background-color: #367ce4;
+
+}
+
+.bg-orange {
+  background-color: #ff9c00;
+
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.amap-copyright {
+  display: none !important;
+}
+
+.amap-logo {
+  display: none !important;
+}
+
+.gongjiao {
+  background-position: 0 0;
+}
+
+.ditie {
+  background-position: -86px 0 !important;
+
+}
+
+.canyin {
+  background-position: -42px 0 !important;
+}
+
+.jiudian {
+  background-position: -86px -40px !important;
+
+}
+
+.gouwu {
+  background-position: 0 -40px !important;
+
+}
+
+.yinhang {
+  background-position: -128px 0 !important;
+
+}
+
+.chaoshi {
+  background-position: -128px -40px !important;
+
+}
+
+.dianyingyuan {
+  background-position: -42px -40px !important;
+
+}
+
+.huochepiao {
+  background-position: -172px 0 !important;
+
+}
+
 /*面板*/
-.panel-title .btn-right-title{
-    line-height: 34px;
+.panel-title .btn-right-title {
+  line-height: 34px;
 }
+
 /*按钮*/
-.btn-box .btn+.btn{
-    margin-left: 15px;
+.btn-box .btn + .btn {
+  margin-left: 15px;
 }
-.bootstrap-select.form-control:not([class*=col-]) .btn{
-    width: 100%;
-    padding-right: 20px;
+
+.bootstrap-select.form-control:not([class*=col-]) .btn {
+  width: 100%;
+  padding-right: 20px;
 }
-.bootstrap-select.form-control:not([class*=col-]) .btn .caret{
-    right: 10px;
+
+.bootstrap-select.form-control:not([class*=col-]) .btn .caret {
+  right: 10px;
 }
-.checkbox-box{
-    padding-top: 7px;
+
+.checkbox-box {
+  padding-top: 7px;
 }

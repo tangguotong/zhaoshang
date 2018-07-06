@@ -1,7 +1,7 @@
 /**
-  Created by ayun 2018.6.21
+  Created by ayun tangguotong 2018.6.21
  */
-
+//定义变量
 $btncolor: #367ce4;
 $btnorang: #FD771E;
 $btngray: #ccc;
@@ -10,8 +10,12 @@ $headercolor:#26303a;
 $white:#fff;
 $bodycolor: #f1f4f6;
 $fontcolor:#000;
-$leftNavBGColor:#367CE4;
 $activeBGColor:#d7e5fa;
+$darkBlack:#333;
+$lineDeepGrey:#e6e6e6;
+$deepFontGrey:#808080;
+$lightFontGrey:#b2b2b2;
+$greay_message:#666666;
 
 @mixin borderadius($size){
   -webkit-border-radius: $size;
