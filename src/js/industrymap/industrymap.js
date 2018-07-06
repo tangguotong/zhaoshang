@@ -267,7 +267,6 @@ var chinaOption = {
         type: 'map',
         mapType: 'china',
         zoom: 1.25,
-        left:"auto",
         geoIndex: 0,
         label: {
             normal: {
@@ -452,7 +451,6 @@ priceoption = {
             name:"主力净流出",
             type:"bar",
         }
-
     ]
 };
 
@@ -523,7 +521,7 @@ data = [{
 }]
 
 for (var n in data) {
-    data[n]['name'] = data[n]['name'] + ' ' + data[n]['value'] + '%'
+    data[n]['name'] = data[n]['name'];
 }
 
 option = {
@@ -544,8 +542,7 @@ option = {
         },
         label: { //描述了每个矩形中，文本标签的样式。
             normal: {
-                show: true,
-                position: ['10%', '40%']
+                show: true
             }
         },
         itemStyle: {
