@@ -182,6 +182,6 @@
 			});
 			this.container.children('ul').append(html);
 		}
-	}
+	};
 	return Paging;
 });

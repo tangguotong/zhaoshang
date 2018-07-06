@@ -5,9 +5,9 @@ $(function () {
         radioClass: 'iradio_square-blue '
     });
     //分页初始化
-    $('#pageTool').Paging({pagesize:10,count:100,callback:function(page,size,count){
-
-    }});
+    // $('#pageTool').Paging({pagesize:10,count:100,callback:function(page,size,count){
+    //
+    // }});
 });
 
 //时间插件初始化
@@ -61,4 +61,14 @@ function headerFilter(callback) {
             callback($(this));
         }
     })
+}
+
+//时间戳转时间
+function timestampToTime(timestamp) {
+    var date = new Date(timestamp);//时间戳为10位需*1000，时间戳为13位的话不需乘1000
+    Y = date.getFullYear() + '-';
+    M = (date.getMonth()+1 < 10 ? '0'+(date.getMonth()+1) : date.getMonth()+1) + '-';
+    D = date.getDate() + ' ';
+
+    return Y+M+D;
 }
