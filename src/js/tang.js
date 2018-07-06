@@ -4,12 +4,14 @@ $(function () {
         checkboxClass: 'icheckbox_square-blue',
         radioClass: 'iradio_square-blue '
     });
+    //分页初始化
+    $('#pageTool').Paging({pagesize:10,count:100,callback:function(page,size,count){
 
-    //时间插件初始化
-   //
-    /**
-     * 初始化日期插件
-     */
+    }});
+});
+
+//时间插件初始化
+function initDateSelect(callback) {
     $(".date-select").daterangepicker({
         maxDate : moment(), //最大时间
         dateLimit : {
@@ -34,18 +36,29 @@ $(function () {
             firstDay : 1
         }
     }).on('apply.daterangepicker', function(ev, picker) {
-        alert(123 )
         $(this).val(picker.startDate.format('YYYY-MM-DD') + ' ~ ' + picker.endDate.format('YYYY-MM-DD'));
         $("input[name=startDate]").val(picker.startDate.format('YYYY-MM-DD'));
         $("input[name=endDate]").val(picker.endDate.format('YYYY-MM-DD'));
+        $(this).parents('li').addClass('active').siblings().removeClass('active');
+
+
+        callback();
     }).on('cancel.daterangepicker', function(ev, picker) {
         $(this).val('');
     });
 
+}
 
-    //分页初始化
-    $('#pageTool').Paging({pagesize:10,count:100,callback:function(page,size,count){
-        // console.log(arguments)
-        // alert('当前第 ' +page +'页,每页 '+size+'条,总页数：'+count+'页')
-    }});
-});
+//筛选项的点击事件
+function headerFilter(callback) {
+    $('.search-box').on('click','.item-list li',function () {
+        //如果li下面没有input说明不是时间插件
+        if($(this).find('input').length == 0){
+            $(this).addClass('active').siblings().removeClass('active');
+            if($(this).siblings().find('input').length != 0){
+                $(this).siblings().find('input').val('');
+            }
+            callback($(this));
+        }
+    })
+}

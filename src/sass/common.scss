@@ -451,7 +451,7 @@ body{
   //display: inline-block;
   line-height: 34px;
   //margin-right: 30px;
-  .word{
+  .word-txt{
     font-size: 14px;
     color: #808080;
     margin-left:2px;
@@ -567,6 +567,10 @@ body{
     cursor: pointer;
     margin-left: -30px;
     margin-right: -30px;
+    .file-box{
+      width: 24px;
+      height: 24px;
+    }
   }
   .item:first-child{
     border: none;
@@ -574,6 +578,25 @@ body{
   }
 
 }
+.PDF{
+  background:url("../images/pdf.png") no-repeat;
+}
+.WORD{
+  background:url("../images/word.png")no-repeat;
+}
+.TXT{
+  background:url("../images/txt.png") no-repeat;
+
+}
+.PPT{
+  background:url("../images/ppt.png") no-repeat;
+
+}
+.EXCEL{
+  background:url("../images/excel.png") no-repeat;
+
+}
+
 .over-hidden{
   overflow: hidden;
   white-space: nowrap;
@@ -1209,4 +1232,11 @@ body{
   div{
     vertical-align: middle;
   }
+}
+
+
+
+//文件类型
+.pdf{
+  
 }

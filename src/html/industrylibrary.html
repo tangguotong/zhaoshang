@@ -26,8 +26,6 @@
 
     <link rel="stylesheet" href="../vendor/icheck/skins/square/blue.css">
     <link rel="stylesheet" href="../vendor/bootstrap-daterangepicker/daterangepicker.css">
-    <!--<link rel="stylesheet" href="../css/panel.css">-->
-    <link rel="stylesheet" href="../css/tang.css">
 
 </head>
 
@@ -199,7 +197,7 @@
                                                     <li>半年以内</li>
                                                     <li>1年以内</li>
                                                     <li>
-                                                        <input type="text" class="date-select" placeholder="选择时间范围">
+                                                        <input type="text" id="date-select" class="date-select" placeholder="选择时间范围">
                                                     </li>
                                                 </ul>
                                             </div>
@@ -216,23 +214,23 @@
                                                 <div class="row">
                                                     <span class="check-span col-md-2">
                                                     <input type="checkbox" class="icheck">
-                                                    <span class="word">Excel</span>
+                                                    <span class="word-txt">Excel</span>
                                                 </span>
                                                     <span class="check-span col-md-2">
                                                     <input type="checkbox" class="icheck">
-                                                    <span class="word">PDF</span>
+                                                    <span class="word-txt">PDF</span>
                                                 </span>
                                                     <span class="check-span col-md-2">
                                                     <input type="checkbox" class="icheck">
-                                                    <span class="word">Word</span>
+                                                    <span class="word-txt">Word</span>
                                                 </span>
                                                     <span class="check-span col-md-2">
                                                     <input type="checkbox" class="icheck">
-                                                    <span class="word">PPT</span>
+                                                    <span class="word-txt">PPT</span>
                                                 </span>
                                                     <span class="check-span col-md-2">
                                                     <input type="checkbox" class="icheck">
-                                                    <span class="word">TXT</span>
+                                                    <span class="word-txt">TXT</span>
                                                 </span>
                                                 </div>
                                             </div>
@@ -248,7 +246,10 @@
                                         <div class="row item">
                                             <div class="col-md-7">
                                                 <div class="col-md-1">
-                                                    <img src="../images/word.png" alt="">
+                                                    <!--<img src="../images/word.png" alt="">-->
+                                                    <div class="file-box WORD">
+
+                                                    </div>
                                                 </div>
                                                 <div class="col-md-11">
                                                     <h4>VR产业白皮书</h4>
@@ -265,7 +266,10 @@
                                         <div class="row item">
                                             <div class="col-md-7">
                                                 <div class="col-md-1">
-                                                    <img src="../images/excel.png" alt="">
+                                                    <!--<img src="../images/word.png" alt="">-->
+                                                    <div class="file-box PPT">
+
+                                                    </div>
                                                 </div>
                                                 <div class="col-md-11">
                                                     <h4>VR产业白皮书</h4>
@@ -282,7 +286,10 @@
                                         <div class="row item">
                                             <div class="col-md-7">
                                                 <div class="col-md-1">
-                                                    <img src="../images/pdf.png" alt="">
+                                                    <!--<img src="../images/word.png" alt="">-->
+                                                    <div class="file-box PDF">
+
+                                                    </div>
                                                 </div>
                                                 <div class="col-md-11">
                                                     <h4>VR产业白皮书</h4>
@@ -299,7 +306,10 @@
                                         <div class="row item">
                                             <div class="col-md-7">
                                                 <div class="col-md-1">
-                                                    <img src="../images/txt.png" alt="">
+                                                    <!--<img src="../images/word.png" alt="">-->
+                                                    <div class="file-box TXT">
+
+                                                    </div>
                                                 </div>
                                                 <div class="col-md-11">
                                                     <h4>VR产业白皮书</h4>
@@ -316,7 +326,10 @@
                                         <div class="row item">
                                             <div class="col-md-7">
                                                 <div class="col-md-1">
-                                                    <img src="../images/ppt.png" alt="">
+                                                    <!--<img src="../images/word.png" alt="">-->
+                                                    <div class="file-box EXCEL">
+
+                                                    </div>
                                                 </div>
                                                 <div class="col-md-11">
                                                     <h4>VR产业白皮书</h4>
@@ -330,6 +343,8 @@
                                                 <div class="col-md-4 text-center linH90">1</div>
                                             </div>
                                         </div>
+
+
                                     </div>
 
                                 </div>
@@ -364,6 +379,7 @@
     <script src="../vendor/bootstrap-daterangepicker/moment.min.js"></script>
     <script src="../vendor/bootstrap-daterangepicker/daterangepicker.js"></script>
     <script src="../js/tang.js"></script>
+    <script src="../js/industrylibrary.js"></script>
 
 </body>
 </html>
