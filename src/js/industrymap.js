@@ -193,7 +193,6 @@ var geoCoordMap = {
 };
 var convertData = function (data) {
     var res = [];
-
     for (var i = 0; i < data.length; i++) {
         var geoCoord = geoCoordMap[data[i].name];
         if (data[i].value > 500) {
@@ -212,12 +211,7 @@ var convertData = function (data) {
 
 var industryMap = echarts.init(document.getElementById('map'), "customed");
 var chinaOption = {
-
-
     tooltip: {
-        // tooltip:{
-        //     trigger: "item"
-        // },
         show: true,
         formatter: function (data) {
             if (isArray(data.data['value'])) {
@@ -225,10 +219,8 @@ var chinaOption = {
             } else {
                 return data.data["name"] + data.data['value'];
             }
-
         }
     },
-
     visualMap: {
         seriesIndex: 0,
         min: 0,
@@ -349,6 +341,14 @@ var TopOption = {
 topChart.setOption(TopOption);
 
 /*资金流向图*/
+
+$(function(){
+    function listMoney(data) {
+
+    }
+    $.getJSON("http://172.168.17.37:8077/api/getIndustryMap/findGartnar.json",listMoney)
+});
+
 var price_go = echarts.init(document.getElementById('price_go'));
 var pricedata=[-5, 15,8, 12, 25, -35, 13];
 priceoption = {
